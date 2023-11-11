@@ -1,69 +1,73 @@
-from pydrive.auth import GoogleAuth
-from pydrive.drive import GoogleDrive
-import openpyxl
+import os
+from openpyxl import load_workbook
+from datetime import datetime
 
-import Links
-def download_file_from_drive(drive, file_name, folder_id):
-    # Ищем файл в указанной папке по имени
-    file_list = drive.ListFile({'q': f"'{folder_id}' in parents and title = '{file_name}'"}).GetList()
 
-    if file_list:
-        # Скачиваем файл
-        file_id = file_list[0]['id']
-        downloaded_file = drive.CreateFile({'id': file_id})
-        downloaded_file.GetContentFile(file_name)
+def parse_xlsx(file_path, search_date, search_pair, search_type, search_value):
+    wb = load_workbook(file_path)
 
-def parse_excel(file_path):
-    workbook = openpyxl.load_workbook(file_path)
-    result = {}
+    for sheet_name in wb.sheetnames:
+        if str(search_pair) in sheet_name:
+            sheet = wb[sheet_name]
 
-    for sheet_name in workbook.sheetnames:
-        sheet = workbook[sheet_name]
-        date, lesson, occupancy, *schedule_data = sheet[1][0].value.split()
-        result[sheet_name] = {'date': date, 'lesson': lesson, 'occupancy': occupancy, 'schedule_data': []}
+            header_date = sheet.cell(row=1, column=1).value
+            header_pair = sheet.cell(row=1, column=2).value
+            occupancy_cell = sheet.cell(row=1, column=3)
 
-        for row in sheet.iter_rows(min_row=2, values_only=True):
-            if row[0]:  # Если есть номер аудитории
-                room, *group_teacher = row
-                group, teacher = group_teacher[0] if group_teacher else (None, None)
-                result[sheet_name]['schedule_data'].append({'room': room, 'group': group, 'teacher': teacher})
+            occupancy_str = str(occupancy_cell.value)
 
-    # Закрываем файл
-    workbook.close()
+            parts = occupancy_str.split(" корпус ") if " корпус " in occupancy_str else ["Нет данных", "Нет данных"]
+            occupancy, percentage = parts[0], parts[1].split("% заполненность ")[0] if len(parts) > 1 else "Нет данных"
 
-    return result
+            if header_date != search_date:
+                continue
 
-def main():
-    # Авторизация в Google Drive
-    gauth = GoogleAuth()
-    gauth.LocalWebserverAuth()
-    drive = GoogleDrive(gauth)
+            for row in range(2, sheet.max_row + 1):
+                room_a = str(sheet.cell(row=row, column=1).value)
+                room_d = str(sheet.cell(row=row, column=4).value)
+                group_b = str(sheet.cell(row=row, column=2).value)
+                group_e = str(sheet.cell(row=row, column=5).value)
+                teacher_c = str(sheet.cell(row=row, column=3).value)
+                teacher_f = str(sheet.cell(row=row, column=6).value)
 
-    # ID папки на Google Drive
-    folder_id = Links.folder_id
+                if (not room_a or not room_d) and search_value == room_a == room_d:
+                    print("Кабинет пустой")
+                    continue
 
-    # Ввод даты (пока что в формате 'dd-mm-yyyy')
-    date_input = input("Введите дату (в формате 'dd-mm-yyyy'): ")
+                if search_type == "кабинет" and search_value == room_a:
+                    print_details(occupancy, header_date, header_pair, room_a, group_b, teacher_c)
+                elif search_type == "кабинет" and search_value == room_d:
+                    print_details(occupancy, header_date, header_pair, room_d, group_e, teacher_f)
+                elif search_type == "группа" and search_value == group_b:
+                    print_details(occupancy, header_date, header_pair, room_a, group_b, teacher_c)
+                elif search_type == "группа" and search_value == group_e:
+                    print_details(occupancy, header_date, header_pair, room_d, group_e, teacher_f)
+                elif search_type == "преподаватель" and search_value == teacher_c:
+                    print_details(occupancy, header_date, header_pair, room_a, group_b, teacher_c)
+                elif search_type == "преподаватель" and search_value == teacher_f:
+                    print_details(occupancy, header_date, header_pair, room_d, group_e, teacher_f)
 
-    # Формируем имя файла
-    file_name = f"{date_input}.xlsx"
 
-    # Скачиваем файл из Google Drive
-    download_file_from_drive(drive, file_name, folder_id)
+def print_details(occupancy, header_date, header_pair, room, group, teacher):
+    print("Корпус:", occupancy)
+    print("Дата:", header_date)
+    print("Пара:", header_pair)
+    print("Кабинет:", room if room else "отсутствует")
+    print("Группа:", group if group else "отсутствует")
+    print("Преподаватель:", teacher if teacher else "отсутствует")
+    print()
 
-    # Парсим скачанный файл
-    data = parse_excel(file_name)
 
-    # Вывод результата
-    for sheet_name, sheet_data in data.items():
-        print(f"Лист: {sheet_name}")
-        print(f"Дата: {sheet_data['date']}")
-        print(f"Пара: {sheet_data['lesson']}")
-        print(f"Корпус: {sheet_data['occupancy']}")
-        print("Расписание:")
-        for schedule_item in sheet_data['schedule_data']:
-            print(f"  Аудитория: {schedule_item['room']}, Группа: {schedule_item['group']}, Преподаватель: {schedule_item['teacher']}")
-        print("\n")
+directory = "all_planchette"
 
-if __name__ == "__main__":
-    main()
+search_date_str = input("Введи дату в виде дд.мм.гггг: ")
+search_date = datetime.strptime(search_date_str, "%d.%m.%Y")
+search_pair = input("Введи номер пары: ")
+search_type = input("Выбери тип ввода (кабинет/группа/преподаватель): ")
+search_value = input(f"Введи {search_type}: ")
+
+for filename in os.listdir(directory):
+    if filename.endswith(".xlsx") and search_date_str in filename:
+        file_path = os.path.join(directory, filename)
+        print("Обрабатываем файл:", file_path)
+        parse_xlsx(file_path, search_date, search_pair, search_type, search_value)
