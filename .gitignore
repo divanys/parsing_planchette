@@ -1,6 +1,6 @@
 client_secret.apps.googleusercontent.com.json
 Links.py
 client_secrets.json
-*.~lock.*.xlsx#
+./all_planchette/*.~lock.*.xlsx#
 token.json
-**/.idea
+../**/.idea
