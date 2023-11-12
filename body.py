@@ -69,9 +69,8 @@ def print_details(occupancy, header_date, header_pair, room, group, teacher):
     print("Дата:", header_date)
     print("Пара:", header_pair)
     print("Кабинет:", room.replace('.0', '', 1) if room and any(c.isdigit() for c in room) else "отсутствует")
-    print("Группа:", group if group else "отсутствует")
-    print("Преподаватель:", teacher if teacher else "отсутствует")
-    print()
+    print(f"Группа: {group}" if group is not None and group != "None" else "Группа: отсутствует")
+    print(f"Преподаватель: {teacher}" if teacher is not None and teacher != "None" else "Преподаватель: отсутствует")
 
 
 directory = "all_planchette"
