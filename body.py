@@ -22,6 +22,7 @@ def parse_xlsx(file_path, search_date, search_pair, search_type, search_value):
             if header_date != search_date:
                 continue
 
+            found = False
             for row in range(2, sheet.max_row + 1):
                 room_a = str(sheet.cell(row=row, column=1).value)
                 room_d = str(sheet.cell(row=row, column=4).value)
@@ -30,22 +31,36 @@ def parse_xlsx(file_path, search_date, search_pair, search_type, search_value):
                 teacher_c = str(sheet.cell(row=row, column=3).value)
                 teacher_f = str(sheet.cell(row=row, column=6).value)
 
-                if (not room_a or not room_d) and search_value == room_a == room_d:
-                    print("Кабинет пустой")
-                    continue
+                if search_type == "кабинет":
+                    if search_value == room_a:
+                        print_details(occupancy, header_date, header_pair, room_a, group_b, teacher_c)
+                        found = True
+                        break
+                    if search_value == room_d:
+                        print_details(occupancy, header_date, header_pair, room_d, group_e, teacher_f)
+                        found = True
+                        break
+                elif search_type == "группа":
+                    if search_value == group_b:
+                        print_details(occupancy, header_date, header_pair, room_a, group_b, teacher_c)
+                        found = True
+                        break
+                    if search_value == group_e:
+                        print_details(occupancy, header_date, header_pair, room_d, group_e, teacher_f)
+                        found = True
+                        break
+                elif search_type == "преподаватель":
+                    if search_value == teacher_c:
+                        print_details(occupancy, header_date, header_pair, room_a, group_b, teacher_c)
+                        found = True
+                        break
+                    if search_value == teacher_f:
+                        print_details(occupancy, header_date, header_pair, room_d, group_e, teacher_f)
+                        found = True
+                        break
 
-                if search_type == "кабинет" and search_value == room_a:
-                    print_details(occupancy, header_date, header_pair, room_a, group_b, teacher_c)
-                elif search_type == "кабинет" and search_value == room_d:
-                    print_details(occupancy, header_date, header_pair, room_d, group_e, teacher_f)
-                elif search_type == "группа" and search_value == group_b:
-                    print_details(occupancy, header_date, header_pair, room_a, group_b, teacher_c)
-                elif search_type == "группа" and search_value == group_e:
-                    print_details(occupancy, header_date, header_pair, room_d, group_e, teacher_f)
-                elif search_type == "преподаватель" and search_value == teacher_c:
-                    print_details(occupancy, header_date, header_pair, room_a, group_b, teacher_c)
-                elif search_type == "преподаватель" and search_value == teacher_f:
-                    print_details(occupancy, header_date, header_pair, room_d, group_e, teacher_f)
+            if not found:
+                print(f"Нет данных для типа {search_type} '{search_value}' на листе '{sheet_name}' в файле {file_path}")
 
 
 def print_details(occupancy, header_date, header_pair, room, group, teacher):
@@ -55,7 +70,6 @@ def print_details(occupancy, header_date, header_pair, room, group, teacher):
     print("Кабинет:", room if room else "отсутствует")
     print("Группа:", group if group else "отсутствует")
     print("Преподаватель:", teacher if teacher else "отсутствует")
-    print()
 
 
 directory = "all_planchette"
@@ -64,7 +78,10 @@ search_date_str = input("Введи дату в виде дд.мм.гггг: ")
 search_date = datetime.strptime(search_date_str, "%d.%m.%Y")
 search_pair = input("Введи номер пары: ")
 search_type = input("Выбери тип ввода (кабинет/группа/преподаватель): ")
-search_value = input(f"Введи {search_type}: ")
+search_value = str(input(f"Введи {search_type}: "))
+
+if search_value.isdigit():
+    search_value = f"{int(search_value)}.0"
 
 for filename in os.listdir(directory):
     if filename.endswith(".xlsx") and search_date_str in filename:
