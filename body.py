@@ -23,6 +23,7 @@ def parse_xlsx(file_path, search_date, search_pair, search_type, search_value):
                 continue
 
             found = False
+
             for row in range(2, sheet.max_row + 1):
                 room_a = str(sheet.cell(row=row, column=1).value)
                 room_d = str(sheet.cell(row=row, column=4).value)
@@ -35,41 +36,42 @@ def parse_xlsx(file_path, search_date, search_pair, search_type, search_value):
                     if search_value == room_a:
                         print_details(occupancy, header_date, header_pair, room_a, group_b, teacher_c)
                         found = True
-                        break
+
                     if search_value == room_d:
                         print_details(occupancy, header_date, header_pair, room_d, group_e, teacher_f)
                         found = True
-                        break
+
                 elif search_type == "группа":
                     if search_value == group_b:
                         print_details(occupancy, header_date, header_pair, room_a, group_b, teacher_c)
                         found = True
-                        break
+
                     if search_value == group_e:
                         print_details(occupancy, header_date, header_pair, room_d, group_e, teacher_f)
                         found = True
-                        break
+
                 elif search_type == "преподаватель":
                     if search_value == teacher_c:
                         print_details(occupancy, header_date, header_pair, room_a, group_b, teacher_c)
                         found = True
-                        break
+
                     if search_value == teacher_f:
                         print_details(occupancy, header_date, header_pair, room_d, group_e, teacher_f)
                         found = True
-                        break
 
             if not found:
                 print(f"Нет данных для типа {search_type} '{search_value}' на листе '{sheet_name}' в файле {file_path}")
 
 
 def print_details(occupancy, header_date, header_pair, room, group, teacher):
+    print()
     print("Корпус:", occupancy)
     print("Дата:", header_date)
     print("Пара:", header_pair)
-    print("Кабинет:", room if room else "отсутствует")
+    print("Кабинет:", room.replace('.0', '', 1) if room and any(c.isdigit() for c in room) else "отсутствует")
     print("Группа:", group if group else "отсутствует")
     print("Преподаватель:", teacher if teacher else "отсутствует")
+    print()
 
 
 directory = "all_planchette"
