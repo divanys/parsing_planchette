@@ -2,16 +2,20 @@ import os
 import json
 from openpyxl import load_workbook
 
-
 def parse_and_convert_to_json(directory):
+    data_concretn = {}
+
     for filename in os.listdir(directory):
         if filename.endswith(".xlsx"):
             file_path = os.path.join(directory, filename)
             print("Обрабатываем файл:", file_path)
-            parse_xlsx_and_convert_to_json(file_path, directory, filename)
+            parse_xlsx_and_convert_to_json(file_path, directory, filename, data_concretn)
 
+    # Создаем JSON-файл для data_concretn
+    with open("data_concretn.json", 'w', encoding='utf-8') as json_file:
+        json.dump(data_concretn, json_file, ensure_ascii=False, indent=4)
 
-def parse_xlsx_and_convert_to_json(file_path, output_directory, filename):
+def parse_xlsx_and_convert_to_json(file_path, output_directory, filename, data_concretn):
     wb = load_workbook(file_path)
     json_data = {}
 
@@ -41,8 +45,21 @@ def parse_xlsx_and_convert_to_json(file_path, output_directory, filename):
                          "room_d": room_d, "group_e": group_e, "teacher_f": teacher_f}
                 json_data[sheet_name].append(entry)
 
-    json_filename = f"{os.path.splitext(filename)[0]}.json"
-    json_filepath = os.path.join(output_directory, json_filename)
+        date_key = os.path.splitext(filename)[0] + ".xlsx"
+        if date_key not in data_concretn:
+            data_concretn[date_key] = [sheet_name]
+        else:
+            data_concretn[date_key].append(sheet_name)
 
-    with open(json_filepath, 'w', encoding='utf-8') as json_file:
-        json.dump(json_data, json_file, ensure_ascii=False, indent=4)
+        json_filename = f"{os.path.splitext(filename)[0]}.json"
+        json_filepath = os.path.join(output_directory, json_filename)
+
+        with open(json_filepath, 'w', encoding='utf-8') as json_file:
+            json.dump(json_data, json_file, ensure_ascii=False, indent=4)
+
+    # Создаем JSON-файл только с датами и названиями листов
+    data_concretn_filename = "data_concretn.json"
+    data_concretn_filepath = os.path.join(output_directory, data_concretn_filename)
+
+    with open(data_concretn_filepath, 'w', encoding='utf-8') as json_file:
+        json.dump(data_concretn, json_file, ensure_ascii=False, indent=4)

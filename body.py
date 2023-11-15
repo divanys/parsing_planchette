@@ -1,6 +1,7 @@
 import os
 import pickle
 import json
+import time
 from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
 from google.auth.transport.requests import Request
@@ -65,17 +66,29 @@ def download_files_from_json(json_file_path, download_dir):
         print(f'File {file_name} downloaded to {download_dir}')
 
 
+def download_and_process_updates(updated_files):
+    for file_name, file_id in updated_files.items():
+        download_path = os.path.join(DOWNLOAD_DIR, file_name)
+        download_file_from_google_drive(file_id, download_path)
+        print(f'File {file_name} downloaded to {download_path}')
+
+        to_json.parse_and_convert_to_json(download_path)
+        print(f'File {file_name} processed and converted to JSON')
+
+
 if __name__ == '__main__':
-    service = get_drive_service()
+    while True:
+        service = get_drive_service()
 
-    folder_id = Links.folder_id
+        folder_id = Links.folder_id
 
-    files_data = list_files_in_folder(service, folder_id)
+        files_data = list_files_in_folder(service, folder_id)
 
-    with open(OUTPUT_JSON_FILE, 'w') as json_file:
-        json.dump(files_data, json_file, indent=2)
+        with open(OUTPUT_JSON_FILE, 'w') as json_file:
+            json.dump(files_data, json_file, indent=2)
 
-    download_files_from_json(OUTPUT_JSON_FILE, DOWNLOAD_DIR)
+        download_files_from_json(OUTPUT_JSON_FILE, DOWNLOAD_DIR)
 
-    print(f'Files downloaded to {DOWNLOAD_DIR}')
-    to_json.parse_and_convert_to_json(DOWNLOAD_DIR)
+        print(f'Files downloaded to {DOWNLOAD_DIR}')
+        to_json.parse_and_convert_to_json(DOWNLOAD_DIR)
+        time.sleep(101)  # Пауза в 10 cek
