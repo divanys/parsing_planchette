@@ -4,3 +4,4 @@ client_secrets.json
 ./all_planchette/*.~lock.*.xlsx#
 token.json
 ../**/.idea
+token.pickle

@@ -1,7 +1,6 @@
 import os
 import json
 from openpyxl import load_workbook
-from datetime import datetime
 
 
 def parse_and_convert_to_json(directory):
@@ -47,7 +46,3 @@ def parse_xlsx_and_convert_to_json(file_path, output_directory, filename):
 
     with open(json_filepath, 'w', encoding='utf-8') as json_file:
         json.dump(json_data, json_file, ensure_ascii=False, indent=4)
-
-
-directory = "all_planchette"
-parse_and_convert_to_json(directory)
