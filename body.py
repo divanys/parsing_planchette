@@ -1,3 +1,4 @@
+from datetime import datetime
 import os
 import pickle
 import json
@@ -36,6 +37,27 @@ def get_drive_service():
             pickle.dump(credentials, token)
 
     return build('drive', 'v3', credentials=credentials)
+
+
+def delete_old_files(directory):
+    current_date = datetime.now()
+
+    files = os.listdir(directory)
+
+    for file in files:
+        file_path = os.path.join(directory, file)
+
+        file_name, file_extension = os.path.splitext(file)
+        try:
+            file_date = datetime.strptime(file_name, "%d.%m.%Y")
+        except ValueError:
+            continue
+        days_difference = (current_date - file_date).days
+        if days_difference > 2:
+            os.remove(file_path)
+            print(f"Файл {file} удален.")
+        else:
+            print(f"Файл {file} не удален.")
 
 
 def list_files_in_folder(service, folder_id):
@@ -78,6 +100,8 @@ def download_and_process_updates(updated_files):
 
 if __name__ == '__main__':
     while True:
+        delete_old_files(DOWNLOAD_DIR)
+
         service = get_drive_service()
 
         folder_id = Links.folder_id

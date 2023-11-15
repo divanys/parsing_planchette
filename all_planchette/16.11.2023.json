@@ -159,13 +159,27 @@
             "header_pair": "Пара 1",
             "room_a": "118.0",
             "group_b": "СА-13",
-            "teacher_c": "Кравченко И.Ю."
+            "teacher_c": "Рожченко Т.В."
         },
         {
             "header_date": "2023-11-16 00:00:00",
             "header_pair": "Пара 1",
             "room_d": "406.0",
             "group_e": "СА-14",
+            "teacher_f": "Гуденко О.Н."
+        },
+        {
+            "header_date": "2023-11-16 00:00:00",
+            "header_pair": "Пара 1",
+            "room_a": "118.0",
+            "group_b": "ИС-16",
+            "teacher_c": "Рожченко Т.В."
+        },
+        {
+            "header_date": "2023-11-16 00:00:00",
+            "header_pair": "Пара 1",
+            "room_d": "406.0",
+            "group_e": "ИКС-11",
             "teacher_f": "Гуденко О.Н."
         },
         {
@@ -178,9 +192,9 @@
         {
             "header_date": "2023-11-16 00:00:00",
             "header_pair": "Пара 1",
-            "room_d": "406.0",
-            "group_e": "ИКС-11",
-            "teacher_f": "Гуденко О.Н."
+            "room_d": "406а",
+            "group_e": "None",
+            "teacher_f": "None"
         },
         {
             "header_date": "2023-11-16 00:00:00",
@@ -192,7 +206,7 @@
         {
             "header_date": "2023-11-16 00:00:00",
             "header_pair": "Пара 1",
-            "room_d": "406а",
+            "room_d": "408.0",
             "group_e": "None",
             "teacher_f": "None"
         },
@@ -206,7 +220,7 @@
         {
             "header_date": "2023-11-16 00:00:00",
             "header_pair": "Пара 1",
-            "room_d": "408.0",
+            "room_d": "410.0",
             "group_e": "None",
             "teacher_f": "None"
         },
@@ -220,7 +234,7 @@
         {
             "header_date": "2023-11-16 00:00:00",
             "header_pair": "Пара 1",
-            "room_d": "410.0",
+            "room_d": "411.0",
             "group_e": "None",
             "teacher_f": "None"
         },
@@ -234,9 +248,9 @@
         {
             "header_date": "2023-11-16 00:00:00",
             "header_pair": "Пара 1",
-            "room_d": "411.0",
-            "group_e": "None",
-            "teacher_f": "None"
+            "room_d": "412.0",
+            "group_e": "ИС-18",
+            "teacher_f": "Видинеева Е.А."
         },
         {
             "header_date": "2023-11-16 00:00:00",
@@ -248,9 +262,9 @@
         {
             "header_date": "2023-11-16 00:00:00",
             "header_pair": "Пара 1",
-            "room_d": "412.0",
-            "group_e": "ИС-18",
-            "teacher_f": "Видинеева Е.А."
+            "room_d": "414.0",
+            "group_e": "ИС-28",
+            "teacher_f": "Каламбет В.Б."
         },
         {
             "header_date": "2023-11-16 00:00:00",
@@ -262,9 +276,9 @@
         {
             "header_date": "2023-11-16 00:00:00",
             "header_pair": "Пара 1",
-            "room_d": "414.0",
-            "group_e": "ИС-28",
-            "teacher_f": "Каламбет В.Б."
+            "room_d": "415.0",
+            "group_e": "ПИ-42",
+            "teacher_f": "Сулавко С.Н."
         },
         {
             "header_date": "2023-11-16 00:00:00",
@@ -277,21 +291,21 @@
             "header_date": "2023-11-16 00:00:00",
             "header_pair": "Пара 1",
             "room_d": "415.0",
-            "group_e": "ПИ-42",
+            "group_e": "ПИ-41",
             "teacher_f": "Сулавко С.Н."
         },
         {
             "header_date": "2023-11-16 00:00:00",
             "header_pair": "Пара 1",
             "room_a": "216.0",
-            "group_b": "ИС-16",
-            "teacher_c": "Рожченко Т.В."
+            "group_b": "None",
+            "teacher_c": "None"
         },
         {
             "header_date": "2023-11-16 00:00:00",
             "header_pair": "Пара 1",
             "room_d": "415.0",
-            "group_e": "ПИ-41",
+            "group_e": "ПИ-43",
             "teacher_f": "Сулавко С.Н."
         },
         {
@@ -304,20 +318,6 @@
         {
             "header_date": "2023-11-16 00:00:00",
             "header_pair": "Пара 1",
-            "room_d": "415.0",
-            "group_e": "ПИ-43",
-            "teacher_f": "Сулавко С.Н."
-        },
-        {
-            "header_date": "2023-11-16 00:00:00",
-            "header_pair": "Пара 1",
-            "room_a": "217.0",
-            "group_b": "None",
-            "teacher_c": "None"
-        },
-        {
-            "header_date": "2023-11-16 00:00:00",
-            "header_pair": "Пара 1",
             "room_d": "416.0",
             "group_e": "ИС-15",
             "teacher_f": "Грицай О.П."
@@ -325,7 +325,7 @@
         {
             "header_date": "2023-11-16 00:00:00",
             "header_pair": "Пара 1",
-            "room_a": "220.0",
+            "room_a": "217.0",
             "group_b": "None",
             "teacher_c": "None"
         },
@@ -339,7 +339,7 @@
         {
             "header_date": "2023-11-16 00:00:00",
             "header_pair": "Пара 1",
-            "room_a": "303.0",
+            "room_a": "220.0",
             "group_b": "None",
             "teacher_c": "None"
         },
@@ -353,9 +353,9 @@
         {
             "header_date": "2023-11-16 00:00:00",
             "header_pair": "Пара 1",
-            "room_a": "305.0",
-            "group_b": "ИКС-13",
-            "teacher_c": "Гвоздецкая Г.И."
+            "room_a": "303.0",
+            "group_b": "None",
+            "teacher_c": "None"
         },
         {
             "header_date": "2023-11-16 00:00:00",
@@ -367,9 +367,9 @@
         {
             "header_date": "2023-11-16 00:00:00",
             "header_pair": "Пара 1",
-            "room_a": "306.0",
-            "group_b": "2-ИС-З",
-            "teacher_c": "Демиденко А.В."
+            "room_a": "305.0",
+            "group_b": "ИКС-13",
+            "teacher_c": "Гвоздецкая Г.И."
         },
         {
             "header_date": "2023-11-16 00:00:00",
@@ -381,9 +381,9 @@
         {
             "header_date": "2023-11-16 00:00:00",
             "header_pair": "Пара 1",
-            "room_a": "307.0",
-            "group_b": "None",
-            "teacher_c": "None"
+            "room_a": "306.0",
+            "group_b": "2-ИС-З",
+            "teacher_c": "Демиденко А.В."
         },
         {
             "header_date": "2023-11-16 00:00:00",
@@ -395,9 +395,9 @@
         {
             "header_date": "2023-11-16 00:00:00",
             "header_pair": "Пара 1",
-            "room_a": "310.0",
-            "group_b": "СА-11",
-            "teacher_c": "Смолянинова В.А."
+            "room_a": "307.0",
+            "group_b": "None",
+            "teacher_c": "None"
         },
         {
             "header_date": "2023-11-16 00:00:00",
@@ -409,9 +409,9 @@
         {
             "header_date": "2023-11-16 00:00:00",
             "header_pair": "Пара 1",
-            "room_a": "312.0",
-            "group_b": "None",
-            "teacher_c": "None"
+            "room_a": "310.0",
+            "group_b": "СА-11",
+            "teacher_c": "Смолянинова В.А."
         },
         {
             "header_date": "2023-11-16 00:00:00",
@@ -423,7 +423,7 @@
         {
             "header_date": "2023-11-16 00:00:00",
             "header_pair": "Пара 1",
-            "room_a": "314.0",
+            "room_a": "312.0",
             "group_b": "None",
             "teacher_c": "None"
         },
@@ -437,7 +437,7 @@
         {
             "header_date": "2023-11-16 00:00:00",
             "header_pair": "Пара 1",
-            "room_a": "315а",
+            "room_a": "314.0",
             "group_b": "None",
             "teacher_c": "None"
         },
@@ -451,7 +451,7 @@
         {
             "header_date": "2023-11-16 00:00:00",
             "header_pair": "Пара 1",
-            "room_a": "None",
+            "room_a": "315а",
             "group_b": "None",
             "teacher_c": "None"
         },
