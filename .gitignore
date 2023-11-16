@@ -6,4 +6,4 @@ token.json
 ../**/.idea
 token.pickle
 files_data.json
-./tg/Links_tg.py
+tg/Links_tg.py
