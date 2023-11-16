@@ -112,10 +112,44 @@ class MyFilter(Filter):
 @router.message(DateState.waiting_for_action, F.text.lower() == 'все пары')
 async def handle_all_classes_choice(message: types.Message, state: FSMContext):
     data = await state.get_data()
-    await message.answer(f"Вы выбрали {data['data_type']} {data['value']} за {data['selected_date']} и все пары.",
-                         reply_markup=ReplyKeyboardRemove())
-    await state.clear()
 
+    lst_room = ["room_a", "room_d"]
+    lst_group = ["group_b", 'group_e']
+    lst_teacher = ["teacher_c", "teacher_f"]
+
+    file_path = f'/home/divan/гетБрейнсИТолькоУдалиЯТебzУдалюСЛицаЗемли/parsing_planchette/all_planchette/{str(data["selected_date"]).replace(".xlsx", "")}.json'
+    try:
+        with open(file_path, 'r') as f:
+            json_file = json.load(f)
+
+        await message.answer(
+            f"Вы выбрали {data['data_type']} {data['value']} за {data['selected_date']} и все пары.",
+            reply_markup=ReplyKeyboardRemove())
+
+        for num_para, items in json_file.items():
+            await state.update_data(num_para=num_para)
+            data = await state.get_data()
+
+            if str(data['num_para']) in json_file:
+                if data['data_type'] == "Группа":
+                    await handle_group_type(data, message, json_file, lst_group, lst_room, lst_teacher)
+                elif data['data_type'] == "Кабинет":
+                    await handle_room_type(data, message, json_file, lst_group, lst_room, lst_teacher)
+                elif data['data_type'] == "Преподаватель":
+                    await handle_teacher_type(data, message, json_file, lst_group, lst_room, lst_teacher)
+                else:
+                    await message.answer("Неизвестный тип данных")
+
+            await state.update_data(num_para=None)  # Сброс данных о паре
+
+    except FileNotFoundError:
+        await message.answer(f"Файл {file_path} не найден")
+    except json.JSONDecodeError:
+        await message.answer(f"Ошибка при чтении файла {file_path}")
+    finally:
+        await state.clear()
+
+    await message.answer("Все пары обработаны", reply_markup=ReplyKeyboardRemove())
 
 @router.message(DateState.waiting_for_action, F.text.lower() == 'конкретная')
 async def handle_concrete_choice(message: types.Message, state: FSMContext):
@@ -169,22 +203,27 @@ async def handle_concrete_choice_is(message: types.Message, state: FSMContext):
     finally:
         await state.clear()
 
+
 async def handle_group_type(data, message, json_file, lst_group, lst_room, lst_teacher):
-    found = False
+    found_items = []
     if isinstance(json_file[data['num_para']], list):
         for item in json_file[data['num_para']]:
             found = await handle_group_item(data, message, item, lst_group, lst_room, lst_teacher)
             if found:
-                break
+                found_items.append(found)
     else:
         found = await handle_group_item(data, message, json_file[data['num_para']], lst_group, lst_room, lst_teacher)
+        if found:
+            found_items.append(found)
 
-    if not found:
+    if not found_items:
         await message.answer(
             f"Выбранная {data['data_type']} {data['value']} не найдена на {data['num_para']} паре.",
             reply_markup=ReplyKeyboardRemove())
 
+
 async def handle_group_item(data, message, item, lst_group, lst_room, lst_teacher):
+    found = False
     for group_key in lst_group:
         if item.get(group_key) is not None and item.get(group_key) == data['value']:
             await message.answer(
@@ -193,26 +232,31 @@ async def handle_group_item(data, message, item, lst_group, lst_room, lst_teache
                 f"{item.get(group_key)}\n"
                 f"{item.get(lst_teacher[lst_group.index(group_key)])}\n",
                 reply_markup=ReplyKeyboardRemove())
-            return True
+            found = True
 
-    return False
+    return found
+
 
 async def handle_room_type(data, message, json_file, lst_group, lst_room, lst_teacher):
-    found = False
+    found_items = []
     if isinstance(json_file[data['num_para']], list):
         for item in json_file[data['num_para']]:
             found = await handle_room_item(data, message, item, lst_group, lst_room, lst_teacher)
             if found:
-                break
+                found_items.append(found)
     else:
         found = await handle_room_item(data, message, json_file[data['num_para']], lst_group, lst_room, lst_teacher)
+        if found:
+            found_items.append(found)
 
-    if not found:
+    if not found_items:
         await message.answer(
             f"Выбранный {data['data_type']} {data['value']} не найден на {data['num_para']} паре.",
             reply_markup=ReplyKeyboardRemove())
 
+
 async def handle_room_item(data, message, item, lst_group, lst_room, lst_teacher):
+    found_items = []
     for room_key in lst_room:
         if item.get(room_key) is not None and item.get(room_key) == data['value']:
             await message.answer(
@@ -221,26 +265,30 @@ async def handle_room_item(data, message, item, lst_group, lst_room, lst_teacher
                 f"{item.get(lst_group[lst_room.index(room_key)])}\n"
                 f"{item.get(lst_teacher[lst_room.index(room_key)])}\n",
                 reply_markup=ReplyKeyboardRemove())
-            return True
+            found_items.append(True)
 
-    return False
+    return found_items
+
 
 async def handle_teacher_type(data, message, json_file, lst_group, lst_room, lst_teacher):
-    found = False
+    found_items = []
     if isinstance(json_file[data['num_para']], list):
         for item in json_file[data['num_para']]:
             found = await handle_teacher_item(data, message, item, lst_group, lst_room, lst_teacher)
             if found:
-                break
+                found_items.append(found)
     else:
         found = await handle_teacher_item(data, message, json_file[data['num_para']], lst_group, lst_room, lst_teacher)
+        if found:
+            found_items.append(found)
 
-    if not found:
+    if not found_items:
         await message.answer(
             f"Выбранный {data['data_type']} {data['value']} не найден на {data['num_para']} паре.",
             reply_markup=ReplyKeyboardRemove())
 
 async def handle_teacher_item(data, message, item, lst_group, lst_room, lst_teacher):
+    found_items = []
     for teacher_key in lst_teacher:
         if item.get(teacher_key) is not None and item.get(teacher_key) == data['value']:
             await message.answer(
@@ -249,9 +297,9 @@ async def handle_teacher_item(data, message, item, lst_group, lst_room, lst_teac
                 f"{item.get(lst_group[lst_teacher.index(teacher_key)])}\n"
                 f"{item.get(teacher_key)}\n",
                 reply_markup=ReplyKeyboardRemove())
-            return True
+            found_items.append(True)
 
-    return False
+    return found_items
 
 
 @router.message(Command("help"))
