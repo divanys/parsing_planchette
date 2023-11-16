@@ -1,1094 +1,1136 @@
 {
     "1 пара": [
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 1",
-            "room_a": "5.0",
+            "room_a": "5",
             "group_b": "None",
             "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 1",
-            "room_d": "316.0",
-            "group_e": "ИБТ-31",
+            "room_d": "316",
+            "group_e": "РТ-41",
             "teacher_f": "Толкачев В.Н."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 1",
-            "room_a": "6.0",
+            "room_a": "6",
             "group_b": "None",
             "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 1",
-            "room_d": "318.0",
-            "group_e": "ИС-16",
-            "teacher_f": "Дедова А.Д."
+            "room_d": "318",
+            "group_e": "None",
+            "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 1",
-            "room_a": "103.0",
-            "group_b": "ИС-15",
+            "room_a": "103",
+            "group_b": "ИС-17",
             "teacher_c": "Троилина В.С."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 1",
-            "room_d": "320.0",
+            "room_d": "320",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 1",
-            "room_a": "104.0",
+            "room_a": "104",
             "group_b": "None",
             "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 1",
-            "room_d": "322.0",
-            "group_e": "None",
-            "teacher_f": "None"
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_a": "106.0",
-            "group_b": "None",
-            "teacher_c": "None"
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_d": "323.0",
-            "group_e": "МТ-42",
-            "teacher_f": "Згонникова Т.Ф."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_a": "109.0",
-            "group_b": "КПК",
-            "teacher_c": "КПК"
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_d": "324.0",
-            "group_e": "СА-46",
-            "teacher_f": "Панасевич Д.Г."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_a": "110.0",
-            "group_b": "ИКС-31",
-            "teacher_c": "Комов Е.Ю."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_d": "325.0",
-            "group_e": "ИКС-13",
-            "teacher_f": "Швец Н.А."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_a": "110а",
-            "group_b": "None",
-            "teacher_c": "None"
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_d": "326.0",
-            "group_e": "ИС-17",
-            "teacher_f": "Зотов М.А."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_a": "111.0",
-            "group_b": "None",
-            "teacher_c": "None"
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_d": "401.0",
-            "group_e": "СА-44",
-            "teacher_f": "Дегтярев С.С."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_a": "114.0",
-            "group_b": "None",
-            "teacher_c": "None"
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_d": "404.0",
-            "group_e": "ИКС-11",
-            "teacher_f": "Пильгун И.С."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_a": "114а",
-            "group_b": "МТ-43",
-            "teacher_c": "Ермолина Л.В."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_d": "406.0",
+            "room_d": "322",
             "group_e": "ИС-13",
-            "teacher_f": "Смолянинова В.А."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_a": "118.0",
-            "group_b": "ИКС-12",
-            "teacher_c": "Кравченко И.Ю."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_d": "406а",
-            "group_e": "None",
-            "teacher_f": "None"
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_a": "121.0",
-            "group_b": "None",
-            "teacher_c": "None"
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_d": "408.0",
-            "group_e": "СА-16",
-            "teacher_f": "Небратенко Л.В."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_a": "122.0",
-            "group_b": "КПК",
-            "teacher_c": "КПК"
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_d": "410.0",
-            "group_e": "СА-15",
-            "teacher_f": "Упорова Л.В."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_a": "209а",
-            "group_b": "None",
-            "teacher_c": "None"
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_d": "411.0",
-            "group_e": "None",
-            "teacher_f": "None"
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_a": "210.0",
-            "group_b": "СА-17",
-            "teacher_c": "Марышева О.В."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_d": "412.0",
-            "group_e": "СА-13",
-            "teacher_f": "Грицай О.П."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_a": "210а",
-            "group_b": "None",
-            "teacher_c": "None"
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_d": "414.0",
-            "group_e": "None",
-            "teacher_f": "None"
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_a": "212.0",
-            "group_b": "None",
-            "teacher_c": "None"
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_d": "415.0",
-            "group_e": "ПИ-42",
-            "teacher_f": "Сулавко С.Н."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_a": "213.0",
-            "group_b": "ИС-14",
-            "teacher_c": "Рыбальченко Т.Б."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_d": "415.0",
-            "group_e": "ПИ-41",
-            "teacher_f": "Сулавко С.Н."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_a": "214.0",
-            "group_b": "СА-36",
-            "teacher_c": "Зурова А.Е."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_d": "415.0",
-            "group_e": "ПИ-43",
-            "teacher_f": "Сулавко С.Н."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_a": "216.0",
-            "group_b": "СА-12",
-            "teacher_c": "Путинцева Ю.М."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_d": "416.0",
-            "group_e": "ИС-11",
-            "teacher_f": "Хайлова Л.В."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_a": "216а",
-            "group_b": "ИКС-32",
-            "teacher_c": "Якубенко С.Я."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_d": "418.0",
-            "group_e": "None",
-            "teacher_f": "None"
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_a": "217.0",
-            "group_b": "СА-14",
-            "teacher_c": "Чепурная Е.Г."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_d": "420.0",
-            "group_e": "ПОКС-47b",
-            "teacher_f": "Бельчич Д.С."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_a": "220.0",
-            "group_b": "ИБА-31",
-            "teacher_c": "Кротенко Е.М."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_d": "420.0",
-            "group_e": "ПОКС-45w",
-            "teacher_f": "Бельчич Д.С."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_a": "303.0",
-            "group_b": "ПОКС-42b",
-            "teacher_c": "Дозорова Е.В."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_d": "422.0",
-            "group_e": "ПОКС-41b",
-            "teacher_f": "Пивнева М.А."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_a": "305.0",
-            "group_b": "ИС-18",
-            "teacher_c": "Видинеева Е.А."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_d": "с/з1",
-            "group_e": "None",
-            "teacher_f": "None"
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_a": "306.0",
-            "group_b": "None",
-            "teacher_c": "None"
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_d": "с/з2",
-            "group_e": "None",
-            "teacher_f": "None"
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_a": "307.0",
-            "group_b": "None",
-            "teacher_c": "None"
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_d": "с/з3",
-            "group_e": "None",
-            "teacher_f": "None"
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_a": "310.0",
-            "group_b": "ИС-12",
-            "teacher_c": "Гуденко О.Н."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_d": "с/з4",
-            "group_e": "None",
-            "teacher_f": "None"
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_a": "312.0",
-            "group_b": "СА-11",
-            "teacher_c": "Королькова О.В."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_d": "с/з5",
-            "group_e": "None",
-            "teacher_f": "None"
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_a": "314.0",
-            "group_b": "None",
-            "teacher_c": "None"
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_d": "с/з6",
-            "group_e": "None",
-            "teacher_f": "None"
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_a": "315а",
-            "group_b": "None",
-            "teacher_c": "None"
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_d": "с/з7",
-            "group_e": "None",
-            "teacher_f": "None"
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_a": "None",
-            "group_b": "None",
-            "teacher_c": "None"
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_d": "с/з8",
-            "group_e": "None",
-            "teacher_f": "None"
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_a": "None",
-            "group_b": "None",
-            "teacher_c": "None"
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_d": "с/з9",
-            "group_e": "None",
-            "teacher_f": "None"
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_a": "None",
-            "group_b": "None",
-            "teacher_c": "None"
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_d": "Общ1-3",
-            "group_e": "СА-38",
-            "teacher_f": "Згонников Е.Ф."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_a": "None",
-            "group_b": "None",
-            "teacher_c": "None"
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_d": "Общ1-1",
-            "group_e": "None",
-            "teacher_f": "None"
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_a": "None",
-            "group_b": "None",
-            "teacher_c": "None"
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_d": "Общ1",
-            "group_e": "2-ИС-З",
-            "teacher_f": "Кошкина А.А."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_a": "None",
-            "group_b": "None",
-            "teacher_c": "None"
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_d": "Общ1",
-            "group_e": "СА-33",
-            "teacher_f": "Голенко Д.А."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_a": "None",
-            "group_b": "None",
-            "teacher_c": "None"
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 1",
-            "room_d": "Общ1-2",
-            "group_e": "None",
-            "teacher_f": "None"
-        }
-    ],
-    "2 пара ": [
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 2",
-            "room_a": "5.0",
-            "group_b": "None",
-            "teacher_c": "None"
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 2",
-            "room_d": "316.0",
-            "group_e": "ИБТ-31",
-            "teacher_f": "Толкачев В.Н."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 2",
-            "room_a": "6.0",
-            "group_b": "None",
-            "teacher_c": "None"
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 2",
-            "room_d": "318.0",
-            "group_e": "ИС-15",
-            "teacher_f": "Дедова А.Д."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 2",
-            "room_a": "103.0",
-            "group_b": "ИС-13",
-            "teacher_c": "Троилина В.С."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 2",
-            "room_d": "320.0",
-            "group_e": "ПОКС-42b",
-            "teacher_f": "Прыгунова Т.А."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 2",
-            "room_a": "104.0",
-            "group_b": "СА-17",
-            "teacher_c": "Зотов М.А."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 2",
-            "room_d": "322.0",
-            "group_e": "ИС-14",
             "teacher_f": "Наливайко Е.П."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 2",
-            "room_a": "106.0",
-            "group_b": "СА-15",
-            "teacher_c": "Небратенко Л.В."
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
+            "room_a": "106",
+            "group_b": "None",
+            "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 2",
-            "room_d": "323.0",
-            "group_e": "ИС-11",
-            "teacher_f": "Джалагония М.Ш."
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
+            "room_d": "323",
+            "group_e": "СА-12",
+            "teacher_f": "Коханова Л.Н."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 2",
-            "room_a": "109.0",
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
+            "room_a": "109",
             "group_b": "КПК",
             "teacher_c": "КПК"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 2",
-            "room_d": "324.0",
-            "group_e": "СА-46",
-            "teacher_f": "Панасевич Д.Г."
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
+            "room_d": "324",
+            "group_e": "СА-16",
+            "teacher_f": "Зотов М.А."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 2",
-            "room_a": "110.0",
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
+            "room_a": "110",
             "group_b": "ИКС-31",
             "teacher_c": "Комов Е.Ю."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 2",
-            "room_d": "325.0",
-            "group_e": "ИКС-13",
-            "teacher_f": "Швец Н.А."
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
+            "room_d": "325",
+            "group_e": "СА-46",
+            "teacher_f": "Панасевич Д.Г."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 2",
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
             "room_a": "110а",
-            "group_b": "СА-26",
+            "group_b": "СА-23",
             "teacher_c": "Данилов А.В."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 2",
-            "room_d": "326.0",
-            "group_e": "ИБА-32",
-            "teacher_f": "Карачевцева Д.Г."
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
+            "room_d": "326",
+            "group_e": "ИКС-11",
+            "teacher_f": "Швец Н.А."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 2",
-            "room_a": "111.0",
-            "group_b": "РТ-31",
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
+            "room_a": "111",
+            "group_b": "None",
+            "teacher_c": "None"
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
+            "room_d": "401",
+            "group_e": "None",
+            "teacher_f": "None"
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
+            "room_a": "114",
+            "group_b": "ИС-18",
             "teacher_c": "Старых О.А."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 2",
-            "room_d": "401.0",
-            "group_e": "СА-44",
-            "teacher_f": "Дегтярев С.С."
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
+            "room_d": "404",
+            "group_e": "СА-14",
+            "teacher_f": "Грицай О.П."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 2",
-            "room_a": "114.0",
-            "group_b": "СА-13",
-            "teacher_c": "Рожченко Т.В."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 2",
-            "room_d": "404.0",
-            "group_e": "ИС-17",
-            "teacher_f": "Пильгун И.С."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 2",
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
             "room_a": "114а",
-            "group_b": "МТ-43",
-            "teacher_c": "Ермолина Л.В."
+            "group_b": "None",
+            "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 2",
-            "room_d": "406.0",
-            "group_e": "СА-16",
-            "teacher_f": "Смолянинова В.А."
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
+            "room_d": "406",
+            "group_e": "ИС-14",
+            "teacher_f": "Рожченко Т.В."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 2",
-            "room_a": "118.0",
-            "group_b": "ИКС-11/СА-14",
-            "teacher_c": "Кравченко И.Ю."
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
+            "room_a": "118",
+            "group_b": "None",
+            "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 2",
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
             "room_d": "406а",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 2",
-            "room_a": "121.0",
-            "group_b": "СА-31",
-            "teacher_c": "Алексеенко О.Н."
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
+            "room_a": "121",
+            "group_b": "None",
+            "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 2",
-            "room_d": "408.0",
-            "group_e": "СА-42",
-            "teacher_f": "Григорьева Л.Ф."
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
+            "room_d": "408",
+            "group_e": "ИКС-13",
+            "teacher_f": "Грицай О.П."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 2",
-            "room_a": "122.0",
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
+            "room_a": "122",
             "group_b": "КПК",
             "teacher_c": "КПК"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 2",
-            "room_d": "410.0",
-            "group_e": "СА-11",
-            "teacher_f": "Упорова Л.В."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 2",
-            "room_a": "209а",
-            "group_b": "РТ-31",
-            "teacher_c": "Новосельцева Е.Ф."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 2",
-            "room_d": "411.0",
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
+            "room_d": "410",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 2",
-            "room_a": "210.0",
-            "group_b": "ПОКС-42b",
-            "teacher_c": "Соколян В.В."
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
+            "room_a": "209а",
+            "group_b": "None",
+            "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 2",
-            "room_d": "412.0",
-            "group_e": "ИС-12",
-            "teacher_f": "Грицай О.П."
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
+            "room_d": "411",
+            "group_e": "СА-15",
+            "teacher_f": "Марышева О.В."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 2",
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
+            "room_a": "210",
+            "group_b": "None",
+            "teacher_c": "None"
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
+            "room_d": "412",
+            "group_e": "СА-11",
+            "teacher_f": "Путинцева Ю.М."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
             "room_a": "210а",
             "group_b": "None",
             "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 2",
-            "room_d": "414.0",
-            "group_e": "ИС-26",
-            "teacher_f": "Каламбет В.Б."
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
+            "room_d": "414",
+            "group_e": "None",
+            "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 2",
-            "room_a": "212.0",
-            "group_b": "МТ-41",
-            "teacher_c": "Рязанова Л.Е."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 2",
-            "room_d": "415.0",
-            "group_e": "ПИ-42",
-            "teacher_f": "Сулавко С.Н."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 2",
-            "room_a": "213.0",
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
+            "room_a": "212",
             "group_b": "None",
             "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 2",
-            "room_d": "415.0",
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
+            "room_d": "415",
+            "group_e": "ПИ-42",
+            "teacher_f": "Сулавко С.Н."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
+            "room_a": "213",
+            "group_b": "ИС-11",
+            "teacher_c": "Рыбальченко Т.Б."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
+            "room_d": "415",
             "group_e": "ПИ-41",
             "teacher_f": "Сулавко С.Н."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 2",
-            "room_a": "214.0",
-            "group_b": "СА-36",
-            "teacher_c": "Зурова А.Е."
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
+            "room_a": "214",
+            "group_b": "None",
+            "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 2",
-            "room_d": "415.0",
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
+            "room_d": "415",
             "group_e": "ПИ-43",
             "teacher_f": "Сулавко С.Н."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 2",
-            "room_a": "216.0",
-            "group_b": "СА-12",
-            "teacher_c": "Путинцева Ю.М."
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
+            "room_a": "216",
+            "group_b": "СА-17",
+            "teacher_c": "Хайлова Л.В."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 2",
-            "room_d": "416.0",
-            "group_e": "ИС-18",
-            "teacher_f": "Хайлова Л.В."
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
+            "room_d": "416",
+            "group_e": "None",
+            "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 2",
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
             "room_a": "216а",
             "group_b": "ИКС-32",
             "teacher_c": "Якубенко С.Я."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 2",
-            "room_d": "418.0",
-            "group_e": "ИКС-33",
-            "teacher_f": "Говорова О.А."
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
+            "room_d": "418",
+            "group_e": "РТ-31",
+            "teacher_f": "Зурова А.Е."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 2",
-            "room_a": "217.0",
-            "group_b": "КПК",
-            "teacher_c": "КПК"
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 2",
-            "room_d": "420.0",
-            "group_e": "ПОКС-47b",
-            "teacher_f": "Бельчич Д.С."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 2",
-            "room_a": "220.0",
-            "group_b": "ИБА-31",
-            "teacher_c": "Кротенко Е.М."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 2",
-            "room_d": "420.0",
-            "group_e": "ПОКС-45w",
-            "teacher_f": "Бельчич Д.С."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 2",
-            "room_a": "303.0",
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
+            "room_a": "217",
             "group_b": "None",
             "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 2",
-            "room_d": "422.0",
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
+            "room_d": "420",
+            "group_e": "ИС-16",
+            "teacher_f": "Мельникова М.В."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
+            "room_a": "220",
+            "group_b": "ИБА-31",
+            "teacher_c": "Кротенко Е.М."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
+            "room_d": "422",
             "group_e": "ПОКС-41b",
             "teacher_f": "Пивнева М.А."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 2",
-            "room_a": "305.0",
-            "group_b": "ИС-16",
-            "teacher_c": "Видинеева Е.А."
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
+            "room_a": "303",
+            "group_b": "ПОКС-47b",
+            "teacher_c": "Бельчич Д.С."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 2",
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
             "room_d": "с/з1",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 2",
-            "room_a": "306.0",
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
+            "room_a": "303",
+            "group_b": "ПОКС-45w",
+            "teacher_c": "Бельчич Д.С."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
+            "room_d": "с/з2",
+            "group_e": "СА-13",
+            "teacher_f": "Махаева П.А."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
+            "room_a": "305",
+            "group_b": "ИС-15",
+            "teacher_c": "Лютова Л.К."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
+            "room_d": "с/з3",
+            "group_e": "ИКС-12",
+            "teacher_f": "Корбан С.Н."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
+            "room_a": "306",
             "group_b": "ПОКС-46w",
             "teacher_c": "Демиденко А.В."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
+            "room_d": "с/з4",
+            "group_e": "None",
+            "teacher_f": "None"
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
+            "room_a": "307",
+            "group_b": "ИС-18",
+            "teacher_c": "Соколян В.В."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
+            "room_d": "с/з5",
+            "group_e": "None",
+            "teacher_f": "None"
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
+            "room_a": "310",
+            "group_b": "ИС-12",
+            "teacher_c": "Гуденко О.Н."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
+            "room_d": "с/з6",
+            "group_e": "None",
+            "teacher_f": "None"
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
+            "room_a": "312",
+            "group_b": "None",
+            "teacher_c": "None"
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
+            "room_d": "с/з7",
+            "group_e": "None",
+            "teacher_f": "None"
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
+            "room_a": "314",
+            "group_b": "None",
+            "teacher_c": "None"
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
+            "room_d": "с/з8",
+            "group_e": "None",
+            "teacher_f": "None"
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
+            "room_a": "315а",
+            "group_b": "None",
+            "teacher_c": "None"
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
+            "room_d": "с/з9",
+            "group_e": "None",
+            "teacher_f": "None"
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
+            "room_a": "None",
+            "group_b": "None",
+            "teacher_c": "None"
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
+            "room_d": "Общ1-3",
+            "group_e": "None",
+            "teacher_f": "None"
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
+            "room_a": "None",
+            "group_b": "None",
+            "teacher_c": "None"
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
+            "room_d": "Общ1-1",
+            "group_e": "None",
+            "teacher_f": "None"
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
+            "room_a": "None",
+            "group_b": "None",
+            "teacher_c": "None"
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
+            "room_d": "Общ1",
+            "group_e": "СА-33",
+            "teacher_f": "Голенко Д.А."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
+            "room_a": "None",
+            "group_b": "None",
+            "teacher_c": "None"
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
+            "room_d": "Общ1",
+            "group_e": "СА-38",
+            "teacher_f": "Голенко Д.А."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
+            "room_a": "None",
+            "group_b": "None",
+            "teacher_c": "None"
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
+            "room_d": "Общ1-2",
+            "group_e": "None",
+            "teacher_f": "None"
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
+            "room_a": "None",
+            "group_b": "None",
+            "teacher_c": "None"
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
+            "room_d": "None",
+            "group_e": "None",
+            "teacher_f": "None"
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
+            "room_a": "None",
+            "group_b": "None",
+            "teacher_c": "None"
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
+            "room_d": "None",
+            "group_e": "None",
+            "teacher_f": "None"
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
+            "room_a": "None",
+            "group_b": "None",
+            "teacher_c": "None"
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 1",
+            "room_d": "None",
+            "group_e": "None",
+            "teacher_f": "None"
+        }
+    ],
+    "2 пара": [
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 2",
+            "room_a": "5",
+            "group_b": "None",
+            "teacher_c": "None"
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 2",
+            "room_d": "316",
+            "group_e": "РТ-41",
+            "teacher_f": "Толкачев В.Н."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 2",
+            "room_a": "6",
+            "group_b": "None",
+            "teacher_c": "None"
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 2",
+            "room_d": "318",
+            "group_e": "ИС-17",
+            "teacher_f": "Нещадим К.С."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 2",
+            "room_a": "103",
+            "group_b": "ИС-13",
+            "teacher_c": "Троилина В.С."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 2",
+            "room_d": "320",
+            "group_e": "None",
+            "teacher_f": "None"
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 2",
+            "room_a": "104",
+            "group_b": "None",
+            "teacher_c": "None"
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 2",
+            "room_d": "322",
+            "group_e": "ИС-11",
+            "teacher_f": "Наливайко Е.П."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 2",
+            "room_a": "106",
+            "group_b": "None",
+            "teacher_c": "None"
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 2",
+            "room_d": "323",
+            "group_e": "ИС-12",
+            "teacher_f": "Джалагония М.Ш."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 2",
+            "room_a": "109",
+            "group_b": "КПК",
+            "teacher_c": "КПК"
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 2",
+            "room_d": "324",
+            "group_e": "СА-16",
+            "teacher_f": "Зотов М.А."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 2",
+            "room_a": "110",
+            "group_b": "ИКС-31",
+            "teacher_c": "Комов Е.Ю."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 2",
+            "room_d": "325",
+            "group_e": "СА-46",
+            "teacher_f": "Панасевич Д.Г."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 2",
+            "room_a": "110а",
+            "group_b": "СК-41",
+            "teacher_c": "Данилов А.В."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 2",
+            "room_d": "326",
+            "group_e": "ИКС-11",
+            "teacher_f": "Швец Н.А."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 2",
+            "room_a": "111",
+            "group_b": "None",
+            "teacher_c": "None"
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 2",
+            "room_d": "401",
+            "group_e": "СА-37",
+            "teacher_f": "Дегтярев С.С."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 2",
+            "room_a": "114",
+            "group_b": "ИКС-13",
+            "teacher_c": "Старых О.А."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 2",
+            "room_d": "404",
+            "group_e": "2-ИС-З",
+            "teacher_f": "Куракова Г.В."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 2",
+            "room_a": "114а",
+            "group_b": "ИБТ-32",
+            "teacher_c": "Ермолина Л.В."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 2",
+            "room_d": "406",
+            "group_e": "КПК",
+            "teacher_f": "КПК"
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 2",
+            "room_a": "118",
+            "group_b": "СА-15",
+            "teacher_c": "Кравченко И.Ю."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 2",
+            "room_d": "406а",
+            "group_e": "None",
+            "teacher_f": "None"
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 2",
+            "room_a": "121",
+            "group_b": "СА-31",
+            "teacher_c": "Алексеенко О.Н."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 2",
+            "room_d": "408",
+            "group_e": "СА-14",
+            "teacher_f": "Грицай О.П."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 2",
+            "room_a": "122",
+            "group_b": "КПК",
+            "teacher_c": "КПК"
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 2",
+            "room_d": "410",
+            "group_e": "ИС-18",
+            "teacher_f": "Мельникова М.В."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 2",
+            "room_a": "209а",
+            "group_b": "None",
+            "teacher_c": "None"
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 2",
+            "room_d": "411",
+            "group_e": "СА-23",
+            "teacher_f": "Марышева О.В."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 2",
+            "room_a": "210",
+            "group_b": "ИС-14",
+            "teacher_c": "Рожченко Т.В."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 2",
+            "room_d": "412",
+            "group_e": "СА-12",
+            "teacher_f": "Путинцева Ю.М."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 2",
+            "room_a": "210а",
+            "group_b": "None",
+            "teacher_c": "None"
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 2",
+            "room_d": "414",
+            "group_e": "СА-24",
+            "teacher_f": "Каламбет В.Б."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 2",
+            "room_a": "212",
+            "group_b": "None",
+            "teacher_c": "None"
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 2",
+            "room_d": "414",
+            "group_e": "СА-27",
+            "teacher_f": "Каламбет В.Б."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 2",
+            "room_a": "213",
+            "group_b": "СА-13",
+            "teacher_c": "Барна Н.В."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 2",
+            "room_d": "415",
+            "group_e": "ПИ-42",
+            "teacher_f": "Сулавко С.Н."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 2",
+            "room_a": "214",
+            "group_b": "ИБТ-31",
+            "teacher_c": "Студенникова Д.А."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 2",
+            "room_d": "415",
+            "group_e": "ПИ-41",
+            "teacher_f": "Сулавко С.Н."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 2",
+            "room_a": "216",
+            "group_b": "ИС-15",
+            "teacher_c": "Хайлова Л.В."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 2",
+            "room_d": "415",
+            "group_e": "ПИ-43",
+            "teacher_f": "Сулавко С.Н."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 2",
+            "room_a": "216а",
+            "group_b": "ИКС-32",
+            "teacher_c": "Якубенко С.Я."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 2",
+            "room_d": "416",
+            "group_e": "ИС-16",
+            "teacher_f": "Мельникова М.В."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 2",
+            "room_a": "217",
+            "group_b": "СА-25",
+            "teacher_c": "Небратенко Л.В."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 2",
+            "room_d": "418",
+            "group_e": "РТ-31",
+            "teacher_f": "Зурова А.Е."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 2",
+            "room_a": "220",
+            "group_b": "ИБА-31",
+            "teacher_c": "Кротенко Е.М."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 2",
+            "room_d": "420",
+            "group_e": "ПОКС-47b",
+            "teacher_f": "Бельчич Д.С."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 2",
+            "room_a": "303",
+            "group_b": "ИБТ-33",
+            "teacher_c": "Скороходов Г.Ю."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 2",
+            "room_d": "420",
+            "group_e": "ПОКС-45w",
+            "teacher_f": "Бельчич Д.С."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 2",
+            "room_a": "305",
+            "group_b": "СА-17",
+            "teacher_c": "Лютова Л.К."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 2",
+            "room_d": "422",
+            "group_e": "ПОКС-41b",
+            "teacher_f": "Пивнева М.А."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 2",
+            "room_a": "306",
+            "group_b": "ПОКС-46w",
+            "teacher_c": "Демиденко А.В."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 2",
+            "room_d": "с/з1",
+            "group_e": "СА-11",
+            "teacher_f": "Махаева П.А."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 2",
+            "room_a": "307",
+            "group_b": "ИКС-13",
+            "teacher_c": "Соколян В.В."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 2",
             "room_d": "с/з2",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 2",
-            "room_a": "307.0",
-            "group_b": "None",
-            "teacher_c": "None"
+            "room_a": "310",
+            "group_b": "ИКС-12",
+            "teacher_c": "Гуденко О.Н."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 2",
             "room_d": "с/з3",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 2",
-            "room_a": "310.0",
-            "group_b": "ИКС-12",
-            "teacher_c": "Гуденко О.Н."
+            "room_a": "312",
+            "group_b": "None",
+            "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 2",
             "room_d": "с/з4",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 2",
-            "room_a": "312.0",
-            "group_b": "МТ-42",
-            "teacher_c": "Згонникова Т.Ф."
+            "room_a": "314",
+            "group_b": "СА-34",
+            "teacher_c": "Пузыревский И.А."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 2",
             "room_d": "с/з5",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 2",
-            "room_a": "314.0",
-            "group_b": "СА-34",
-            "teacher_c": "Пузыревский И.А."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 2",
-            "room_d": "с/з6",
-            "group_e": "None",
-            "teacher_f": "None"
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 2",
             "room_a": "315а",
             "group_b": "None",
             "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 2",
+            "room_d": "с/з6",
+            "group_e": "None",
+            "teacher_f": "None"
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 2",
+            "room_a": "None",
+            "group_b": "None",
+            "teacher_c": "None"
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 2",
             "room_d": "с/з7",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 2",
             "room_a": "None",
             "group_b": "None",
             "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 2",
             "room_d": "с/з8",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 2",
             "room_a": "None",
             "group_b": "None",
-            "teacher_c": "None"
+            "teacher_c": ""
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 2",
             "room_d": "с/з9",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 2",
             "room_a": "None",
             "group_b": "None",
             "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 2",
             "room_d": "Общ1-3",
-            "group_e": "СА-38",
-            "teacher_f": "Згонников Е.Ф."
+            "group_e": "None",
+            "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 2",
             "room_a": "None",
             "group_b": "None",
             "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 2",
             "room_d": "Общ1-1",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 2",
             "room_a": "None",
             "group_b": "None",
             "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 2",
-            "room_d": "Общ1",
-            "group_e": "2-ИС-З",
-            "teacher_f": "Кошкина А.А."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 2",
-            "room_a": "None",
-            "group_b": "None",
-            "teacher_c": "None"
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 2",
             "room_d": "Общ1",
             "group_e": "СА-33",
             "teacher_f": "Голенко Д.А."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 2",
             "room_a": "None",
             "group_b": "None",
             "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 2",
+            "room_d": "Общ1",
+            "group_e": "СА-38",
+            "teacher_f": "Голенко Д.А."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 2",
+            "room_a": "None",
+            "group_b": "None",
+            "teacher_c": "None"
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 2",
             "room_d": "Общ1-2",
             "group_e": "None",
@@ -1097,546 +1139,560 @@
     ],
     "3 пара": [
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 3",
-            "room_a": "5.0",
+            "room_a": "5",
             "group_b": "None",
             "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 3",
-            "room_d": "316.0",
-            "group_e": "ИБТ-32",
+            "room_d": "316",
+            "group_e": "РТ-41",
             "teacher_f": "Толкачев В.Н."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 3",
-            "room_a": "6.0",
+            "room_a": "6",
             "group_b": "None",
             "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 3",
-            "room_d": "318.0",
-            "group_e": "СА-22",
-            "teacher_f": "Пустоветова С.Ю."
+            "room_d": "318",
+            "group_e": "СА-12",
+            "teacher_f": "Барна Н.В."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 3",
-            "room_a": "103.0",
-            "group_b": "None",
-            "teacher_c": "None"
+            "room_a": "103",
+            "group_b": "ИС-15",
+            "teacher_c": "Троилина В.С."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 3",
-            "room_d": "320.0",
-            "group_e": "СА-44",
+            "room_d": "320",
+            "group_e": "ИС-31",
             "teacher_f": "Прыгунова Т.А."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 3",
-            "room_a": "104.0",
-            "group_b": "РТ-31",
-            "teacher_c": "Зурова А.Е."
+            "room_a": "104",
+            "group_b": "None",
+            "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 3",
-            "room_d": "322.0",
-            "group_e": "ИС-24",
+            "room_d": "322",
+            "group_e": "ИС-13",
             "teacher_f": "Наливайко Е.П."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 3",
-            "room_a": "106.0",
-            "group_b": "ИС-31",
-            "teacher_c": "Чубарова А.Б."
+            "room_a": "106",
+            "group_b": "ПИ-42",
+            "teacher_c": "Лебедева М.В."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 3",
-            "room_d": "323.0",
-            "group_e": "СА-23",
+            "room_d": "323",
+            "group_e": "ИС-11",
             "teacher_f": "Джалагония М.Ш."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 3",
-            "room_a": "109.0",
+            "room_a": "109",
             "group_b": "КПК",
             "teacher_c": "КПК"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 3",
-            "room_d": "324.0",
+            "room_d": "324",
+            "group_e": "СА-17",
+            "teacher_f": "Зотов М.А."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 3",
+            "room_a": "110",
+            "group_b": "ИКС-31",
+            "teacher_c": "Комов Е.Ю."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 3",
+            "room_d": "325",
             "group_e": "СА-46",
             "teacher_f": "Панасевич Д.Г."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 3",
-            "room_a": "110.0",
-            "group_b": "СА-21",
-            "teacher_c": "Комов Е.Ю."
+            "room_a": "110а",
+            "group_b": "СК-41",
+            "teacher_c": "Данилов А.В."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 3",
-            "room_d": "325.0",
+            "room_d": "325",
+            "group_e": "СА-45",
+            "teacher_f": "Панасевич Д.Г."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 3",
+            "room_a": "111",
+            "group_b": "ИКС-33",
+            "teacher_c": "Старых О.А."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 3",
+            "room_d": "326",
             "group_e": "ИКС-12",
             "teacher_f": "Швец Н.А."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 3",
-            "room_a": "110а",
-            "group_b": "СА-26",
-            "teacher_c": "Данилов А.В."
+            "room_a": "114",
+            "group_b": "ИБТ-33",
+            "teacher_c": "Байбекова И.Г."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 3",
-            "room_d": "326.0",
-            "group_e": "ИБА-32",
-            "teacher_f": "Карачевцева Д.Г."
+            "room_d": "401",
+            "group_e": "СА-37",
+            "teacher_f": "Дегтярев С.С."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 3",
-            "room_a": "111.0",
-            "group_b": "СА-44",
-            "teacher_c": "Старых О.А."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 3",
-            "room_d": "401.0",
-            "group_e": "ИС-18",
-            "teacher_f": "Столярова Ю.Б."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 3",
-            "room_a": "114.0",
-            "group_b": "СА-15",
-            "teacher_c": "Рожченко Т.В."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 3",
-            "room_d": "404.0",
-            "group_e": "ИКС-11",
-            "teacher_f": "Пильгун И.С."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 3",
             "room_a": "114а",
-            "group_b": "МТ-43",
+            "group_b": "ИБТ-32",
             "teacher_c": "Ермолина Л.В."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 3",
-            "room_d": "406.0",
-            "group_e": "ИС-13",
-            "teacher_f": "Смолянинова В.А."
+            "room_d": "404",
+            "group_e": "2-ИС-З",
+            "teacher_f": "Куракова Г.В."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 3",
-            "room_a": "118.0",
-            "group_b": "СА-14",
+            "room_a": "118",
+            "group_b": "СА-13",
             "teacher_c": "Кравченко И.Ю."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 3",
+            "room_d": "406",
+            "group_e": "ИС-14",
+            "teacher_f": "Алябышева С.Н."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 3",
+            "room_a": "121",
+            "group_b": "СА-31",
+            "teacher_c": "Алексеенко О.Н."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 3",
             "room_d": "406а",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 3",
-            "room_a": "118.0",
-            "group_b": "ИС-14",
-            "teacher_c": "Троилина В.С."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 3",
-            "room_d": "408.0",
-            "group_e": "СА-42",
-            "teacher_f": "Григорьева Л.Ф."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 3",
-            "room_a": "121.0",
-            "group_b": "СА-31",
-            "teacher_c": "Алексеенко О.Н."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 3",
-            "room_d": "410.0",
-            "group_e": "ИС-12",
-            "teacher_f": "Видинеева Е.А."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 3",
-            "room_a": "122.0",
+            "room_a": "122",
             "group_b": "КПК",
             "teacher_c": "КПК"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 3",
-            "room_d": "411.0",
-            "group_e": "МТ-42",
-            "teacher_f": "Згонникова Т.Ф."
+            "room_d": "408",
+            "group_e": "ИС-16",
+            "teacher_f": "Грицай О.П."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 3",
             "room_a": "209а",
-            "group_b": "СА-12",
+            "group_b": "ПИ-42",
             "teacher_c": "Новосельцева Е.Ф."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 3",
-            "room_d": "412.0",
-            "group_e": "ИС-15",
-            "teacher_f": "Болховитина О.И."
+            "room_d": "410",
+            "group_e": "ИКС-23",
+            "teacher_f": "Рыбалка В.В."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 3",
-            "room_a": "210.0",
-            "group_b": "ИКС-13",
-            "teacher_c": "Грицай О.П."
+            "room_a": "210",
+            "group_b": "СА-15",
+            "teacher_c": "Рожченко Т.В."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 3",
-            "room_d": "414.0",
-            "group_e": "ИС-25",
-            "teacher_f": "Каламбет В.Б."
+            "room_d": "411",
+            "group_e": "ИС-18",
+            "teacher_f": "Мельникова М.В."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 3",
             "room_a": "210а",
-            "group_b": "ИС-17",
-            "teacher_c": "Зотов М.А."
+            "group_b": "None",
+            "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 3",
-            "room_d": "415.0",
-            "group_e": "ПИ-42",
-            "teacher_f": "Сулавко С.Н."
+            "room_d": "412",
+            "group_e": "СА-11",
+            "teacher_f": "Путинцева Ю.М."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 3",
-            "room_a": "212.0",
+            "room_a": "212",
             "group_b": "МТ-41",
             "teacher_c": "Рязанова Л.Е."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 3",
-            "room_d": "415.0",
+            "room_d": "414",
+            "group_e": "СА-24",
+            "teacher_f": "Каламбет В.Б."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 3",
+            "room_a": "213",
+            "group_b": "СА-14",
+            "teacher_c": "Рыбальченко Т.Б."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 3",
+            "room_d": "414",
+            "group_e": "СА-27",
+            "teacher_f": "Каламбет В.Б."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 3",
+            "room_a": "214",
+            "group_b": "None",
+            "teacher_c": "None"
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 3",
+            "room_d": "415",
             "group_e": "ПИ-41",
-            "teacher_f": "Сулавко С.Н."
+            "teacher_f": "Сулавко А.С."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 3",
-            "room_a": "213.0",
-            "group_b": "ИКС-21",
-            "teacher_c": "Жарехина И.М."
+            "room_a": "216",
+            "group_b": "ИС-17",
+            "teacher_c": "Хайлова Л.В."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 3",
-            "room_d": "415.0",
+            "room_d": "415",
             "group_e": "ПИ-43",
-            "teacher_f": "Сулавко С.Н."
+            "teacher_f": "Сулавко А.С."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 3",
-            "room_a": "214.0",
-            "group_b": "ИБТ-31",
-            "teacher_c": "Студенникова Д.А."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 3",
-            "room_d": "416.0",
-            "group_e": "ИС-16",
-            "teacher_f": "Хайлова Л.В."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 3",
-            "room_a": "216.0",
-            "group_b": "СА-13",
-            "teacher_c": "Путинцева Ю.М."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 3",
-            "room_d": "418.0",
-            "group_e": "ИКС-33",
-            "teacher_f": "Говорова О.А."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 3",
             "room_a": "216а",
             "group_b": "ИКС-32",
             "teacher_c": "Якубенко С.Я."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 3",
-            "room_d": "420.0",
-            "group_e": "ПОКС-47b",
-            "teacher_f": "Бельчич Д.С."
+            "room_d": "416",
+            "group_e": "СА-23",
+            "teacher_f": "Мельникова М.В."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 3",
-            "room_a": "217.0",
+            "room_a": "217",
             "group_b": "СА-16",
             "teacher_c": "Небратенко Л.В."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 3",
-            "room_d": "420.0",
-            "group_e": "ПОКС-45w",
-            "teacher_f": "Бельчич Д.С."
+            "room_d": "418",
+            "group_e": "РТ-31",
+            "teacher_f": "Зурова А.Е."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 3",
-            "room_a": "220.0",
-            "group_b": "ИБА-33",
+            "room_a": "220",
+            "group_b": "ИБА-31",
             "teacher_c": "Кротенко Е.М."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 3",
-            "room_d": "422.0",
+            "room_d": "420",
+            "group_e": "ИС-32",
+            "teacher_f": "Холодов Д.С."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 3",
+            "room_a": "303",
+            "group_b": "ИБТ-31",
+            "teacher_c": "Скороходов Г.Ю."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 3",
+            "room_d": "420",
+            "group_e": "ИС-41",
+            "teacher_f": "Бельчич Д.С."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 3",
+            "room_a": "305",
+            "group_b": "СА-25",
+            "teacher_c": "Нещадим К.С."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 3",
+            "room_d": "422",
             "group_e": "ПОКС-41b",
             "teacher_f": "Пивнева М.А."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 3",
-            "room_a": "303.0",
-            "group_b": "ИС-41",
-            "teacher_c": "Мельникова М.В."
+            "room_a": "306",
+            "group_b": "ПОКС-46w",
+            "teacher_c": "Демиденко А.В."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 3",
             "room_d": "с/з1",
-            "group_e": "СК-41",
-            "teacher_f": "Махаева П.А."
+            "group_e": "None",
+            "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 3",
-            "room_a": "305.0",
-            "group_b": "СА-11",
-            "teacher_c": "Коханова Л.Н."
+            "room_a": "307",
+            "group_b": "ИКС-33",
+            "teacher_c": "Соколян В.В."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 3",
             "room_d": "с/з2",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 3",
-            "room_a": "306.0",
-            "group_b": "ПОКС-46w",
-            "teacher_c": "Демиденко А.В."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 3",
-            "room_d": "с/з3",
-            "group_e": "None",
-            "teacher_f": "None"
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 3",
-            "room_a": "307.0",
-            "group_b": "СА-12",
-            "teacher_c": "Ужегова Е.А."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 3",
-            "room_d": "с/з4",
-            "group_e": "ИС-26",
-            "teacher_f": "Гузов А.В."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 3",
-            "room_a": "310.0",
-            "group_b": "ИС-11",
+            "room_a": "310",
+            "group_b": "ИКС-11",
             "teacher_c": "Гуденко О.Н."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 3",
-            "room_d": "с/з5",
-            "group_e": "СА-17",
-            "teacher_f": "Турянский И.П."
+            "room_d": "с/з3",
+            "group_e": "ИКС-13",
+            "teacher_f": "Махаева П.А."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 3",
-            "room_a": "312.0",
-            "group_b": "ПОКС-42b",
-            "teacher_c": "Дозорова Е.В."
+            "room_a": "312",
+            "group_b": "ИС-33",
+            "teacher_c": "Сулавко С.Н."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 3",
-            "room_d": "с/з6",
-            "group_e": "None",
-            "teacher_f": "None"
+            "room_d": "с/з4",
+            "group_e": "ИС-12",
+            "teacher_f": "Корбан С.Н."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 3",
-            "room_a": "314.0",
+            "room_a": "314",
             "group_b": "СА-34",
             "teacher_c": "Пузыревский И.А."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 3",
-            "room_d": "с/з7",
-            "group_e": "None",
-            "teacher_f": "None"
+            "room_d": "с/з5",
+            "group_e": "СА-44",
+            "teacher_f": "Турянский И.П."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 3",
             "room_a": "315а",
             "group_b": "None",
             "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 3",
+            "room_d": "с/з6",
+            "group_e": "СА-35",
+            "teacher_f": "Швачич Д.С."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 3",
+            "room_a": "None",
+            "group_b": "None",
+            "teacher_c": "None"
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 3",
+            "room_d": "с/з7",
+            "group_e": "ИС-36",
+            "teacher_f": "Гузов А.В."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 3",
+            "room_a": "None",
+            "group_b": "None",
+            "teacher_c": "None"
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 3",
             "room_d": "с/з8",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 3",
             "room_a": "None",
             "group_b": "None",
             "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 3",
             "room_d": "с/з9",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 3",
             "room_a": "None",
             "group_b": "None",
             "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 3",
             "room_d": "Общ1-3",
-            "group_e": "СА-38",
-            "teacher_f": "Згонников Е.Ф."
+            "group_e": "None",
+            "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 3",
             "room_a": "None",
             "group_b": "None",
             "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 3",
             "room_d": "Общ1-1",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 3",
             "room_a": "None",
             "group_b": "None",
             "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 3",
-            "room_d": "Общ1",
-            "group_e": "2-ИС-З",
-            "teacher_f": "Кошкина А.А."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 3",
-            "room_a": "None",
-            "group_b": "None",
-            "teacher_c": "None"
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 3",
             "room_d": "Общ1",
             "group_e": "СА-33",
             "teacher_f": "Голенко Д.А."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 3",
             "room_a": "None",
             "group_b": "None",
             "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 3",
+            "room_d": "Общ1",
+            "group_e": "СА-38",
+            "teacher_f": "Голенко Д.А."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 3",
+            "room_a": "None",
+            "group_b": "None",
+            "teacher_c": "None"
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 3",
             "room_d": "Общ1-2",
             "group_e": "None",
@@ -1645,1080 +1701,1094 @@
     ],
     "4 пара": [
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 4",
-            "room_a": "5.0",
+            "room_a": "5",
             "group_b": "None",
             "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 4",
-            "room_d": "316.0",
-            "group_e": "ИБТ-32",
+            "room_d": "316",
+            "group_e": "РТ-41",
             "teacher_f": "Толкачев В.Н."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 4",
-            "room_a": "6.0",
+            "room_a": "6",
             "group_b": "None",
             "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 4",
-            "room_d": "318.0",
-            "group_e": "РТ-31",
-            "teacher_f": "Зурова А.Е."
+            "room_d": "318",
+            "group_e": "None",
+            "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 4",
-            "room_a": "103.0",
-            "group_b": "None",
-            "teacher_c": "None"
+            "room_a": "103",
+            "group_b": "ИС-23",
+            "teacher_c": "Лебедева М.В."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 4",
-            "room_d": "320.0",
-            "group_e": "ИС-36",
+            "room_d": "320",
+            "group_e": "ИС-23",
             "teacher_f": "Прыгунова Т.А."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 4",
-            "room_a": "104.0",
-            "group_b": "СА-21",
-            "teacher_c": "Пустоветова С.Ю."
+            "room_a": "104",
+            "group_b": "None",
+            "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 4",
-            "room_d": "322.0",
-            "group_e": "ИС-24",
+            "room_d": "322",
+            "group_e": "ИС-12",
             "teacher_f": "Наливайко Е.П."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 4",
-            "room_a": "106.0",
-            "group_b": "ИС-36",
-            "teacher_c": "Чубарова А.Б."
+            "room_a": "106",
+            "group_b": "None",
+            "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 4",
-            "room_d": "323.0",
-            "group_e": "ИС-17",
-            "teacher_f": "Джалагония М.Ш."
+            "room_d": "322",
+            "group_e": "ИС-14",
+            "teacher_f": "Наливайко Е.П."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 4",
-            "room_a": "109.0",
+            "room_a": "109",
             "group_b": "КПК",
             "teacher_c": "КПК"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 4",
-            "room_d": "324.0",
-            "group_e": "ИС-32",
-            "teacher_f": "Бельчич Д.С."
+            "room_d": "323",
+            "group_e": "ИС-17",
+            "teacher_f": "Джалагония М.Ш."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 4",
-            "room_a": "110.0",
-            "group_b": "СА-43",
-            "teacher_c": "Бурлуцкая А.В."
+            "room_a": "110",
+            "group_b": "ИКС-31",
+            "teacher_c": "Комов Е.Ю."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 4",
-            "room_d": "324.0",
-            "group_e": "ИС-31",
-            "teacher_f": "Холодов Д.С."
+            "room_d": "324",
+            "group_e": "СА-24",
+            "teacher_f": "Иванов В.С."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 4",
             "room_a": "110а",
             "group_b": "СК-41",
             "teacher_c": "Данилов А.В."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 4",
-            "room_d": "325.0",
-            "group_e": "ПОКС-45w",
-            "teacher_f": "Алешина В.В."
+            "room_d": "325",
+            "group_e": "ИС-26",
+            "teacher_f": "Арутюнян М.М."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 4",
-            "room_a": "111.0",
-            "group_b": "МТ-43",
+            "room_a": "111",
+            "group_b": "ИС-38",
             "teacher_c": "Старых О.А."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 4",
-            "room_d": "325.0",
-            "group_e": "2-ИС-З",
-            "teacher_f": "Дозорова Е.В."
+            "room_d": "326",
+            "group_e": "СА-36",
+            "teacher_f": "Зурова А.Е."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 4",
-            "room_a": "114.0",
-            "group_b": "None",
-            "teacher_c": "None"
+            "room_a": "114",
+            "group_b": "ИБТ-33",
+            "teacher_c": "Байбекова И.Г."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 4",
-            "room_d": "326.0",
-            "group_e": "СА-31",
-            "teacher_f": "Алексеенко О.Н."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 4",
-            "room_a": "114а",
-            "group_b": "None",
-            "teacher_c": "None"
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 4",
-            "room_d": "401.0",
+            "room_d": "401",
             "group_e": "ИС-18",
             "teacher_f": "Дегтярев С.С."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 4",
-            "room_a": "118.0",
-            "group_b": "СА-37",
-            "teacher_c": "Ягелович Е.В."
+            "room_a": "114а",
+            "group_b": "ИБТ-31",
+            "teacher_c": "Ермолина Л.В."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 4",
-            "room_d": "404.0",
-            "group_e": "ИКС-22",
-            "teacher_f": "Столярова Ю.Б."
+            "room_d": "404",
+            "group_e": "СА-44",
+            "teacher_f": "Куракова Г.В."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 4",
-            "room_a": "121.0",
-            "group_b": "СА-46",
-            "teacher_c": "Панасевич Д.Г."
+            "room_a": "118",
+            "group_b": "СА-15",
+            "teacher_c": "Небратенко Л.В."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 4",
-            "room_d": "406.0",
-            "group_e": "ИС-22",
-            "teacher_f": "Марышева О.В."
+            "room_d": "406",
+            "group_e": "None",
+            "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 4",
-            "room_a": "121.0",
-            "group_b": "СА-45",
-            "teacher_c": "Панасевич Д.Г."
+            "room_a": "118",
+            "group_b": "СА-25",
+            "teacher_c": "Небратенко Л.В."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 4",
             "room_d": "406а",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 4",
-            "room_a": "122.0",
+            "room_a": "121",
+            "group_b": "СА-46",
+            "teacher_c": "Панасевич Д.Г."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 4",
+            "room_d": "408",
+            "group_e": "СА-42",
+            "teacher_f": "Заводнов Н.А."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 4",
+            "room_a": "121",
+            "group_b": "СА-45",
+            "teacher_c": "Панасевич Д.Г."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 4",
+            "room_d": "410",
+            "group_e": "СА-22",
+            "teacher_f": "Путинцева Ю.М."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 4",
+            "room_a": "122",
             "group_b": "КПК",
             "teacher_c": "КПК"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 4",
-            "room_d": "408.0",
-            "group_e": "СА-42",
-            "teacher_f": "Григорьева Л.Ф."
+            "room_d": "411",
+            "group_e": "None",
+            "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 4",
             "room_a": "209а",
-            "group_b": "МТ-43",
+            "group_b": "ПИ-43",
             "teacher_c": "Новосельцева Е.Ф."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 4",
-            "room_d": "410.0",
-            "group_e": "СА-23",
-            "teacher_f": "Упорова Л.В."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 4",
-            "room_a": "210.0",
-            "group_b": "ИКС-21",
-            "teacher_c": "Грицай О.П."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 4",
-            "room_d": "411.0",
-            "group_e": "ИКС-23",
-            "teacher_f": "Рыбалка В.В."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 4",
-            "room_a": "210а",
-            "group_b": "None",
-            "teacher_c": "None"
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 4",
-            "room_d": "412.0",
-            "group_e": "ИС-23",
+            "room_d": "412",
+            "group_e": "СА-17",
             "teacher_f": "Болховитина О.И."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 4",
-            "room_a": "212.0",
-            "group_b": "СА-32",
-            "teacher_c": "Рязанова Л.Е."
+            "room_a": "210",
+            "group_b": "ИКС-22",
+            "teacher_c": "Рыбалка В.В."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 4",
-            "room_d": "414.0",
-            "group_e": "ИС-21",
+            "room_d": "414",
+            "group_e": "ИС-22",
             "teacher_f": "Каламбет В.Б."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 4",
-            "room_a": "213.0",
-            "group_b": "ИС-25",
-            "teacher_c": "Соколян В.В."
+            "room_a": "210а",
+            "group_b": "ИКС-33",
+            "teacher_c": "Голиченко П.С."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 4",
-            "room_d": "415.0",
-            "group_e": "ИС-37",
-            "teacher_f": "Сулавко С.Н."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 4",
-            "room_a": "214.0",
-            "group_b": "ИБТ-31",
-            "teacher_c": "Студенникова Д.А."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 4",
-            "room_d": "415.0",
+            "room_d": "415",
             "group_e": "ПИ-42",
             "teacher_f": "Сулавко А.С."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 4",
-            "room_a": "216.0",
-            "group_b": "СА-11",
-            "teacher_c": "Путинцева Ю.М."
+            "room_a": "212",
+            "group_b": "МТ-41",
+            "teacher_c": "Рязанова Л.Е."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 4",
-            "room_d": "416.0",
-            "group_e": "СА-22",
+            "room_d": "416",
+            "group_e": "СА-23",
             "teacher_f": "Мельникова М.В."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 4",
+            "room_a": "213",
+            "group_b": "ИКС-23",
+            "teacher_c": "Жарехина И.М."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 4",
+            "room_d": "418",
+            "group_e": "СА-26",
+            "teacher_f": "Романенко Е.Л."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 4",
+            "room_a": "214",
+            "group_b": "ИБА-23",
+            "teacher_c": "Столярова Ю.Б."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 4",
+            "room_d": "420",
+            "group_e": "ИС-15",
+            "teacher_f": "Мельникова"
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 4",
+            "room_a": "216",
+            "group_b": "СА-35",
+            "teacher_c": "Згонников Е.Ф."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 4",
+            "room_d": "422",
+            "group_e": "ПОКС-44w",
+            "teacher_f": "Пивнева М.А."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 4",
             "room_a": "216а",
             "group_b": "ИКС-32",
             "teacher_c": "Якубенко С.Я."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 4",
-            "room_d": "418.0",
-            "group_e": "СА-27",
-            "teacher_f": "Мельникова М.В."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 4",
-            "room_a": "217.0",
-            "group_b": "СА-15",
-            "teacher_c": "Небратенко Л.В."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 4",
-            "room_d": "420.0",
-            "group_e": "ПОКС-42b",
-            "teacher_f": "Петрова М.Е."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 4",
-            "room_a": "220.0",
-            "group_b": "ИБА-33",
-            "teacher_c": "Кротенко Е.М."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 4",
-            "room_d": "422.0",
-            "group_e": "ПОКС-44w",
+            "room_d": "422",
+            "group_e": "ПОКС-41b",
             "teacher_f": "Пивнева М.А."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 4",
-            "room_a": "303.0",
-            "group_b": "ИБТ-22",
-            "teacher_c": "Скороходов Г.Ю."
+            "room_a": "217",
+            "group_b": "СА-21",
+            "teacher_c": "Пустоветова С.Ю."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 4",
             "room_d": "с/з1",
-            "group_e": "None",
-            "teacher_f": "None"
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 4",
-            "room_a": "305.0",
-            "group_b": "СА-26",
-            "teacher_c": "Видинеева Е.А."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 4",
-            "room_d": "с/з2",
             "group_e": "ПИ-41",
             "teacher_f": "Махаева П.А."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 4",
-            "room_a": "306.0",
-            "group_b": "ПОКС-46w",
-            "teacher_c": "Демиденко А.В."
+            "room_a": "220",
+            "group_b": "ИС-21",
+            "teacher_c": "Кротенко Е.М."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 4",
-            "room_d": "с/з3",
-            "group_e": "ПИ-43",
+            "room_d": "с/з2",
+            "group_e": "СА-27",
             "teacher_f": "Корбан С.Н."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 4",
-            "room_a": "307.0",
-            "group_b": "ИС-25",
-            "teacher_c": "Ужегова Е.А."
+            "room_a": "303",
+            "group_b": "ИБТ-32",
+            "teacher_c": "Скороходов Г.Ю."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 4",
+            "room_d": "с/з3",
+            "group_e": "РТ-31",
+            "teacher_f": "Гузов А.В."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 4",
+            "room_a": "305",
+            "group_b": "ИС-36",
+            "teacher_c": "Петрова М.Е."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 4",
             "room_d": "с/з4",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 4",
-            "room_a": "310.0",
-            "group_b": "None",
-            "teacher_c": "классный час"
+            "room_a": "306",
+            "group_b": "ПОКС-46w",
+            "teacher_c": "Демиденко А.В."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 4",
             "room_d": "с/з5",
-            "group_e": "None",
-            "teacher_f": "None"
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 4",
-            "room_a": "312.0",
-            "group_b": "ИС-26",
-            "teacher_c": "Бурда Е.Г."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 4",
-            "room_d": "с/з6",
-            "group_e": "ИС-41",
+            "group_e": "ИС-25",
             "teacher_f": "Турянский И.П."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 4",
-            "room_a": "314.0",
-            "group_b": "СА-34",
-            "teacher_c": "Пузыревский И.А."
+            "room_a": "307",
+            "group_b": "ИС-38",
+            "teacher_c": "Соколян В.В."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 4",
+            "room_d": "с/з6",
+            "group_e": "ИС-27",
+            "teacher_f": "Швачич Д.С."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 4",
+            "room_a": "310",
+            "group_b": "ИКС-21",
+            "teacher_c": "Гуденко О.Н."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 4",
             "room_d": "с/з7",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 4",
+            "room_a": "312",
+            "group_b": "ИС-33",
+            "teacher_c": "Сулавко С.Н."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 4",
+            "room_d": "с/з8",
+            "group_e": "СА-12",
+            "teacher_f": "Войнова Е.С."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 4",
+            "room_a": "314",
+            "group_b": "СА-34",
+            "teacher_c": "Пузыревский И.А."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 4",
+            "room_d": "с/з9",
+            "group_e": "СА-14",
+            "teacher_f": "Войнова Е.С."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 4",
             "room_a": "315а",
             "group_b": "None",
             "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 4",
-            "room_d": "с/з8",
-            "group_e": "None",
-            "teacher_f": "None"
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 4",
-            "room_a": "None",
-            "group_b": "None",
-            "teacher_c": "None"
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 4",
-            "room_d": "с/з9",
-            "group_e": "None",
-            "teacher_f": "None"
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 4",
-            "room_a": "None",
-            "group_b": "None",
-            "teacher_c": "None"
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 4",
             "room_d": "Общ1-3",
-            "group_e": "None",
-            "teacher_f": "None"
+            "group_e": "2-ИС-З",
+            "teacher_f": "Задорожный К.А."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 4",
             "room_a": "None",
             "group_b": "None",
             "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 4",
             "room_d": "Общ1-1",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 4",
             "room_a": "None",
-            "group_b": "None",
-            "teacher_c": "None"
+            "group_b": "ИС-41",
+            "teacher_c": "Бельчич Д.С."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 4",
             "room_d": "Общ1",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 4",
             "room_a": "None",
-            "group_b": "None",
-            "teacher_c": "None"
+            "group_b": "ИС-32",
+            "teacher_c": "Холодов Д.С."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 4",
-            "room_d": "Общ1",
-            "group_e": "None",
-            "teacher_f": "None"
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 4",
-            "room_a": "None",
-            "group_b": "None",
-            "teacher_c": "None"
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 4",
             "room_d": "Общ1-2",
-            "group_e": "ИС-38",
+            "group_e": "ИС-31",
             "teacher_f": "Кошкина А.А."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 4",
             "room_a": "None",
             "group_b": "None",
             "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 4",
+            "room_d": "None",
+            "group_e": "None",
+            "teacher_f": "None"
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 4",
+            "room_a": "None",
+            "group_b": "None",
+            "teacher_c": "None"
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 4",
+            "room_d": "None",
+            "group_e": "None",
+            "teacher_f": "None"
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 4",
+            "room_a": "None",
+            "group_b": "None",
+            "teacher_c": "None"
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 4",
+            "room_d": "None",
+            "group_e": "None",
+            "teacher_f": "None"
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 4",
+            "room_a": "None",
+            "group_b": "None",
+            "teacher_c": "None"
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 4",
             "room_d": "None",
             "group_e": "None",
             "teacher_f": "None"
         }
     ],
-    "5 пара ": [
+    "5 пара": [
         {
-            "header_date": "тен",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 5",
-            "room_a": "5.0",
+            "room_a": "5",
             "group_b": "None",
             "teacher_c": "None"
         },
         {
-            "header_date": "тен",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 5",
-            "room_d": "316.0",
+            "room_d": "316",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "тен",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 5",
-            "room_a": "6.0",
+            "room_a": "6",
             "group_b": "None",
             "teacher_c": "None"
         },
         {
-            "header_date": "тен",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 5",
-            "room_d": "318.0",
+            "room_d": "318",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "тен",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 5",
-            "room_a": "103.0",
-            "group_b": "ИС-21",
+            "room_a": "103",
+            "group_b": "ИС-27",
             "teacher_c": "Лебедева М.В."
         },
         {
-            "header_date": "тен",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 5",
-            "room_d": "320.0",
-            "group_e": "СА-42",
+            "room_d": "320",
+            "group_e": "ИС-27",
             "teacher_f": "Прыгунова Т.А."
         },
         {
-            "header_date": "тен",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 5",
-            "room_a": "104.0",
-            "group_b": "СА-27",
-            "teacher_c": "Пустоветова С.Ю."
+            "room_a": "104",
+            "group_b": "ПОКС-42b",
+            "teacher_c": "Дозорова Е.В."
         },
         {
-            "header_date": "тен",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 5",
-            "room_d": "322.0",
-            "group_e": "ИС-27",
-            "teacher_f": "Наливайко Е.П."
+            "room_d": "322",
+            "group_e": "ИБТ-21",
+            "teacher_f": "Пустоветова С.Ю."
         },
         {
-            "header_date": "тен",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 5",
-            "room_a": "106.0",
-            "group_b": "ИС-21",
-            "teacher_c": "Чубарова А.Б."
+            "room_a": "106",
+            "group_b": "None",
+            "teacher_c": "None"
         },
         {
-            "header_date": "тен",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 5",
-            "room_d": "323.0",
-            "group_e": "ИС-26",
+            "room_d": "323",
+            "group_e": "ИКС-23",
             "teacher_f": "Джалагония М.Ш."
         },
         {
-            "header_date": "тен",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 5",
-            "room_a": "109.0",
+            "room_a": "109",
             "group_b": "КПК",
             "teacher_c": "КПК"
         },
         {
-            "header_date": "тен",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 5",
-            "room_d": "324.0",
-            "group_e": "ИС-25",
-            "teacher_f": "Дозорова Е.В."
+            "room_d": "324",
+            "group_e": "СА-26",
+            "teacher_f": "Иванов В.С."
         },
         {
-            "header_date": "тен",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 5",
-            "room_a": "110.0",
+            "room_a": "110",
             "group_b": "СА-43",
             "teacher_c": "Бурлуцкая А.В."
         },
         {
-            "header_date": "тен",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 5",
-            "room_d": "325.0",
-            "group_e": "ИС-36",
-            "teacher_f": "Петрова М.Е."
+            "room_d": "325",
+            "group_e": "ИС-26",
+            "teacher_f": "Арутюнян М.М."
         },
         {
-            "header_date": "тен",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 5",
             "room_a": "110а",
-            "group_b": "СК-41",
+            "group_b": "СА-25",
             "teacher_c": "Данилов А.В."
         },
         {
-            "header_date": "тен",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 5",
-            "room_d": "326.0",
-            "group_e": "ИКС-21",
-            "teacher_f": "Рыбалка В.В."
+            "room_d": "326",
+            "group_e": "СА-36",
+            "teacher_f": "Зурова А.Е."
         },
         {
-            "header_date": "тен",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 5",
-            "room_a": "111.0",
-            "group_b": "СА-45",
-            "teacher_c": "Панасевич Д.Г."
+            "room_a": "111",
+            "group_b": "СК-41",
+            "teacher_c": "Старых О.А."
         },
         {
-            "header_date": "тен",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 5",
-            "room_d": "401.0",
+            "room_d": "401",
             "group_e": "СА-32",
             "teacher_f": "Дегтярев С.С."
         },
         {
-            "header_date": "тен",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 5",
-            "room_a": "114.0",
-            "group_b": "None",
-            "teacher_c": "None"
+            "room_a": "114",
+            "group_b": "ИБТ-33",
+            "teacher_c": "Байбекова И.Г."
         },
         {
-            "header_date": "тен",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 5",
-            "room_d": "404.0",
-            "group_e": "None",
-            "teacher_f": "None"
+            "room_d": "404",
+            "group_e": "СА-44",
+            "teacher_f": "Куракова Г.В."
         },
         {
-            "header_date": "тен",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 5",
             "room_a": "114а",
-            "group_b": "None",
-            "teacher_c": "None"
+            "group_b": "ИБТ-31",
+            "teacher_c": "Ермолина Л.В."
         },
         {
-            "header_date": "тен",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 5",
-            "room_d": "406.0",
+            "room_d": "406",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "тен",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 5",
-            "room_a": "118.0",
-            "group_b": "ИКС-23",
-            "teacher_c": "Жарехина И.М."
+            "room_a": "118",
+            "group_b": "СА-24",
+            "teacher_c": "Небратенко Л.В."
         },
         {
-            "header_date": "тен",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 5",
             "room_d": "406а",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "тен",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 5",
-            "room_a": "121.0",
+            "room_a": "121",
             "group_b": "СА-41",
             "teacher_c": "Попова А.Ю."
         },
         {
-            "header_date": "тен",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 5",
-            "room_d": "408.0",
-            "group_e": "None",
-            "teacher_f": "None"
+            "room_d": "408",
+            "group_e": "СА-42",
+            "teacher_f": "Заводнов Н.А."
         },
         {
-            "header_date": "тен",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 5",
-            "room_a": "122.0",
+            "room_a": "122",
             "group_b": "КПК",
             "teacher_c": "КПК"
         },
         {
-            "header_date": "тен",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 5",
-            "room_d": "410.0",
+            "room_d": "410",
+            "group_e": "СА-21",
+            "teacher_f": "Путинцева Ю.М."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 5",
+            "room_a": "209а",
+            "group_b": "СА-35",
+            "teacher_c": "Згонников Е.Ф."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 5",
+            "room_d": "411",
+            "group_e": "ИС-34",
+            "teacher_f": "Петрова М.Е."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 5",
+            "room_a": "210",
+            "group_b": "ИС-22",
+            "teacher_c": "Мальцева И.Е."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 5",
+            "room_d": "412",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "тен",
-            "header_pair": "Пара 5",
-            "room_a": "209а",
-            "group_b": "СА-42",
-            "teacher_c": "Новосельцева Е.Ф."
-        },
-        {
-            "header_date": "тен",
-            "header_pair": "Пара 5",
-            "room_d": "411.0",
-            "group_e": "СА-35",
-            "teacher_f": "Ващенко В.А."
-        },
-        {
-            "header_date": "тен",
-            "header_pair": "Пара 5",
-            "room_a": "210.0",
-            "group_b": "СА-23",
-            "teacher_c": "Соколян В.В."
-        },
-        {
-            "header_date": "тен",
-            "header_pair": "Пара 5",
-            "room_d": "412.0",
-            "group_e": "ИС-23",
-            "teacher_f": "Болховитина О.И."
-        },
-        {
-            "header_date": "тен",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 5",
             "room_a": "210а",
-            "group_b": "None",
-            "teacher_c": "None"
+            "group_b": "ИКС-33",
+            "teacher_c": "Голиченко П.С."
         },
         {
-            "header_date": "тен",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 5",
-            "room_d": "414.0",
-            "group_e": "ИС-22",
+            "room_d": "414",
+            "group_e": "ИС-41",
             "teacher_f": "Каламбет В.Б."
         },
         {
-            "header_date": "тен",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 5",
-            "room_a": "212.0",
-            "group_b": "СА-31",
-            "teacher_c": "Алексеенко О.Н."
-        },
-        {
-            "header_date": "тен",
-            "header_pair": "Пара 5",
-            "room_d": "415.0",
-            "group_e": "ИС-34",
-            "teacher_f": "Сулавко С.Н."
-        },
-        {
-            "header_date": "тен",
-            "header_pair": "Пара 5",
-            "room_a": "213.0",
-            "group_b": "ИС-28",
-            "teacher_c": "Нещадим К.С."
-        },
-        {
-            "header_date": "тен",
-            "header_pair": "Пара 5",
-            "room_d": "416.0",
-            "group_e": "СА-21",
-            "teacher_f": "Мельникова М.В."
-        },
-        {
-            "header_date": "тен",
-            "header_pair": "Пара 5",
-            "room_a": "214.0",
-            "group_b": "ИКС-22",
-            "teacher_c": "Столярова Ю.Б."
-        },
-        {
-            "header_date": "тен",
-            "header_pair": "Пара 5",
-            "room_d": "418.0",
-            "group_e": "СА-22",
-            "teacher_f": "Мельникова М.В."
-        },
-        {
-            "header_date": "тен",
-            "header_pair": "Пара 5",
-            "room_a": "216.0",
+            "room_a": "212",
             "group_b": "None",
             "teacher_c": "None"
         },
         {
-            "header_date": "тен",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 5",
-            "room_d": "420.0",
-            "group_e": "ИС-37",
+            "room_d": "415",
+            "group_e": "ИС-36",
+            "teacher_f": "Сулавко С.Н."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 5",
+            "room_a": "213",
+            "group_b": "ИКС-22",
+            "teacher_c": "Жарехина И.М."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 5",
+            "room_d": "416",
+            "group_e": "СА-45",
+            "teacher_f": "Панасевич Д.Г."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 5",
+            "room_a": "214",
+            "group_b": "ИБА-23",
+            "teacher_c": "Столярова Ю.Б."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 5",
+            "room_d": "418",
+            "group_e": "СА-22",
+            "teacher_f": "Романенко Е.Л."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 5",
+            "room_a": "216",
+            "group_b": "ИКС-21",
+            "teacher_c": "Студенникова Д.А."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 5",
+            "room_d": "420",
+            "group_e": "ИС-31",
             "teacher_f": "Холодов Д.С."
         },
         {
-            "header_date": "тен",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 5",
             "room_a": "216а",
             "group_b": "None",
             "teacher_c": "None"
         },
         {
-            "header_date": "тен",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 5",
-            "room_d": "420.0",
-            "group_e": "ИС-41",
+            "room_d": "420",
+            "group_e": "ИС-32",
             "teacher_f": "Бельчич Д.С."
         },
         {
-            "header_date": "тен",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 5",
-            "room_a": "217.0",
-            "group_b": "СА-25/СА-24",
-            "teacher_c": "Небратенко Л.В."
+            "room_a": "217",
+            "group_b": "ИС-35",
+            "teacher_c": "Задорожный К.А."
         },
         {
-            "header_date": "тен",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 5",
-            "room_d": "422.0",
+            "room_d": "422",
             "group_e": "ПОКС-44w",
             "teacher_f": "Пивнева М.А."
         },
         {
-            "header_date": "тен",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 5",
-            "room_a": "220.0",
-            "group_b": "ИБА-33",
+            "room_a": "220",
+            "group_b": "ИС-21",
             "teacher_c": "Кротенко Е.М."
         },
         {
-            "header_date": "тен",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 5",
             "room_d": "с/з1",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "тен",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 5",
-            "room_a": "303.0",
-            "group_b": "ИБТ-22",
+            "room_a": "303",
+            "group_b": "ИБТ-32",
             "teacher_c": "Скороходов Г.Ю."
         },
         {
-            "header_date": "тен",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 5",
             "room_d": "с/з2",
-            "group_e": "ИС-31",
+            "group_e": "МТ-41",
             "teacher_f": "Корбан С.Н."
         },
         {
-            "header_date": "тен",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 5",
-            "room_a": "305.0",
+            "room_a": "305",
             "group_b": "None",
             "teacher_c": "None"
         },
         {
-            "header_date": "тен",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 5",
             "room_d": "с/з3",
-            "group_e": "ИС-35",
-            "teacher_f": "Гузов А.В."
+            "group_e": "None",
+            "teacher_f": "None"
         },
         {
-            "header_date": "тен",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 5",
-            "room_a": "306.0",
-            "group_b": "ИС-32",
-            "teacher_c": "Демиденко А.В."
+            "room_a": "306",
+            "group_b": "None",
+            "teacher_c": "None"
         },
         {
-            "header_date": "тен",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 5",
             "room_d": "с/з4",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "тен",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 5",
-            "room_a": "307.0",
-            "group_b": "СА-23",
-            "teacher_c": "Ужегова Е.А."
+            "room_a": "307",
+            "group_b": "СК-41",
+            "teacher_c": "Соколян В.В."
         },
         {
-            "header_date": "тен",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 5",
             "room_d": "с/з5",
-            "group_e": "СА-37",
+            "group_e": "ИС-24",
             "teacher_f": "Турянский И.П."
         },
         {
-            "header_date": "тен",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 5",
-            "room_a": "310.0",
+            "room_a": "310",
             "group_b": "None",
-            "teacher_c": "Родченко Т.В."
+            "teacher_c": "None"
         },
         {
-            "header_date": "тен",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 5",
             "room_d": "с/з6",
-            "group_e": "None",
-            "teacher_f": "None"
+            "group_e": "ИС-28",
+            "teacher_f": "Швачич Д.С."
         },
         {
-            "header_date": "тен",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 5",
-            "room_a": "312.0",
-            "group_b": "ИС-24",
+            "room_a": "312",
+            "group_b": "ИС-23",
             "teacher_c": "Бурда Е.Г."
         },
         {
-            "header_date": "тен",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 5",
             "room_d": "с/з7",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "тен",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 5",
-            "room_a": "314.0",
+            "room_a": "314",
             "group_b": "СА-34",
             "teacher_c": "Пузыревский И.А."
         },
         {
-            "header_date": "тен",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 5",
             "room_d": "с/з8",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "тен",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 5",
             "room_a": "315а",
             "group_b": "None",
             "teacher_c": "None"
         },
         {
-            "header_date": "тен",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 5",
             "room_d": "с/з9",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "тен",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 5",
             "room_a": "None",
-            "group_b": "None",
-            "teacher_c": "None"
+            "group_b": "ИС-25",
+            "teacher_c": "Рыбалка В.В."
         },
         {
-            "header_date": "тен",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 5",
             "room_d": "Общ1-3",
+            "group_e": "2-ИС-З",
+            "teacher_f": "Задорожный К.А."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 5",
+            "room_a": "None",
+            "group_b": "СА-27",
+            "teacher_c": "Войнова Е.С."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 5",
+            "room_d": "Общ1-1",
             "group_e": "ИС-38",
             "teacher_f": "Кошкина А.А."
         },
         {
-            "header_date": "тен",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 5",
             "room_a": "None",
-            "group_b": "None",
-            "teacher_c": "None"
+            "group_b": "СА-23",
+            "teacher_c": "Мельникова М.В."
         },
         {
-            "header_date": "тен",
-            "header_pair": "Пара 5",
-            "room_d": "Общ1-1",
-            "group_e": "None",
-            "teacher_f": "None"
-        },
-        {
-            "header_date": "тен",
-            "header_pair": "Пара 5",
-            "room_a": "None",
-            "group_b": "None",
-            "teacher_c": "None"
-        },
-        {
-            "header_date": "тен",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 5",
             "room_d": "Общ1",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "тен",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 5",
             "room_a": "None",
             "group_b": "None",
             "teacher_c": "None"
         },
         {
-            "header_date": "тен",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 5",
             "room_d": "Общ1-2",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "тен",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 5",
             "room_a": "None",
             "group_b": "None",
             "teacher_c": "None"
         },
         {
-            "header_date": "тен",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 5",
             "room_d": "None",
             "group_e": "None",
@@ -2727,504 +2797,518 @@
     ],
     "6 пара": [
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 6",
-            "room_a": "5.0",
+            "room_a": "5",
             "group_b": "None",
             "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 6",
-            "room_d": "316.0",
+            "room_d": "316",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 6",
-            "room_a": "6.0",
+            "room_a": "6",
             "group_b": "None",
             "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 6",
-            "room_d": "318.0",
+            "room_d": "318",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 6",
-            "room_a": "103.0",
-            "group_b": "СА-24",
-            "teacher_c": "Лебедева М.В."
+            "room_a": "103",
+            "group_b": "None",
+            "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 6",
-            "room_d": "320.0",
+            "room_d": "320",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 6",
-            "room_a": "104.0",
-            "group_b": "ИБТ-23",
-            "teacher_c": "Пустоветова С.Ю."
+            "room_a": "104",
+            "group_b": "ПОКС-42b",
+            "teacher_c": "Дозорова Е.В."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 6",
-            "room_d": "322.0",
-            "group_e": "ИС-24",
-            "teacher_f": "Наливайко Е.П."
+            "room_d": "322",
+            "group_e": "ИБТ-21",
+            "teacher_f": "Пустоветова С.Ю."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 6",
-            "room_a": "106.0",
-            "group_b": "СА-24",
-            "teacher_c": "Чубарова А.Б."
+            "room_a": "106",
+            "group_b": "None",
+            "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 6",
-            "room_d": "323.0",
-            "group_e": "ИС-21",
+            "room_d": "323",
+            "group_e": "ИС-26",
             "teacher_f": "Джалагония М.Ш."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 6",
-            "room_a": "109.0",
+            "room_a": "109",
             "group_b": "КПК",
             "teacher_c": "КПК"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 6",
-            "room_d": "324.0",
-            "group_e": "ИС-23",
-            "teacher_f": "Дозорова Е.В."
+            "room_d": "324",
+            "group_e": "ИС-27",
+            "teacher_f": "Серов А.О."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 6",
-            "room_a": "110.0",
-            "group_b": "СА-22",
-            "teacher_c": "Комов Е.Ю."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 6",
-            "room_d": "325.0",
-            "group_e": "ИС-34",
-            "teacher_f": "Петрова М.Е."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 6",
-            "room_a": "110а",
+            "room_a": "110",
             "group_b": "СА-43",
             "teacher_c": "Бурлуцкая А.В."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 6",
-            "room_d": "326.0",
-            "group_e": "ИКС-21",
-            "teacher_f": "Рыбалка В.В."
+            "room_d": "325",
+            "group_e": "ИС-24",
+            "teacher_f": "Арутюнян М.М."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 6",
-            "room_a": "111.0",
+            "room_a": "110а",
             "group_b": "None",
             "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 6",
-            "room_d": "401.0",
+            "room_d": "326",
+            "group_e": "СА-36",
+            "teacher_f": "Зурова А.Е."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 6",
+            "room_a": "111",
+            "group_b": "None",
+            "teacher_c": "None"
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 6",
+            "room_d": "401",
             "group_e": "СА-32",
             "teacher_f": "Дегтярев С.С."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 6",
-            "room_a": "114.0",
+            "room_a": "114",
             "group_b": "None",
             "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 6",
-            "room_d": "404.0",
-            "group_e": "None",
-            "teacher_f": "None"
+            "room_d": "404",
+            "group_e": "СА-44",
+            "teacher_f": "Куракова Г.В."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 6",
             "room_a": "114а",
             "group_b": "None",
             "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 6",
-            "room_d": "406.0",
-            "group_e": "СА-21",
-            "teacher_f": "Марышева О.В."
+            "room_d": "406",
+            "group_e": "None",
+            "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 6",
-            "room_a": "118.0",
+            "room_a": "118",
             "group_b": "None",
             "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 6",
             "room_d": "406а",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 6",
-            "room_a": "121.0",
+            "room_a": "121",
             "group_b": "СА-41",
             "teacher_c": "Попова А.Ю."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 6",
-            "room_d": "408.0",
+            "room_d": "408",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 6",
-            "room_a": "122.0",
-            "group_b": "КПК",
-            "teacher_c": "КПК"
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 6",
-            "room_d": "410.0",
-            "group_e": "None",
-            "teacher_f": "None"
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 6",
-            "room_a": "209а",
-            "group_b": "СА-45",
-            "teacher_c": "Панасевич Д.Г."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 6",
-            "room_d": "411.0",
-            "group_e": "СА-23",
-            "teacher_f": "Мельникова М.В."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 6",
-            "room_a": "210.0",
+            "room_a": "122",
             "group_b": "None",
             "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 6",
-            "room_d": "412.0",
+            "room_d": "410",
             "group_e": "None",
-            "teacher_f": "Болховитина О.И."
+            "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 6",
+            "room_a": "209а",
+            "group_b": "None",
+            "teacher_c": "None"
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 6",
+            "room_d": "411",
+            "group_e": "СА-26",
+            "teacher_f": "Войнова Е.С."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 6",
+            "room_a": "210",
+            "group_b": "ИС-22",
+            "teacher_c": "Мальцева И.Е."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 6",
+            "room_d": "412",
+            "group_e": "СА-21",
+            "teacher_f": "Мельникова М.В."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 6",
             "room_a": "210а",
             "group_b": "None",
             "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 6",
-            "room_d": "414.0",
-            "group_e": "ИС-28",
-            "teacher_f": "Трищук С.А."
+            "room_d": "414",
+            "group_e": "ИС-34",
+            "teacher_f": "Петрова М.Е."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 6",
-            "room_a": "212.0",
+            "room_a": "212",
             "group_b": "None",
             "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 6",
-            "room_d": "415.0",
-            "group_e": "ИС-36",
+            "room_d": "415",
+            "group_e": "ИС-37",
             "teacher_f": "Сулавко С.Н."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 6",
-            "room_a": "213.0",
-            "group_b": "ИКС-23",
-            "teacher_c": "Столярова Ю.Б."
+            "room_a": "213",
+            "group_b": "None",
+            "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 6",
-            "room_d": "416.0",
-            "group_e": "СА-27",
-            "teacher_f": "Мельникова М.В."
+            "room_d": "416",
+            "group_e": "СА-45",
+            "teacher_f": "Панасевич Д.Г."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 6",
-            "room_a": "214.0",
+            "room_a": "214",
             "group_b": "ИКС-22",
             "teacher_c": "Студенникова Д.А."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 6",
-            "room_d": "418.0",
+            "room_d": "418",
             "group_e": "ИС-35",
-            "teacher_f": "Алешина В.В."
+            "teacher_f": "Холодов Д.С."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 6",
-            "room_a": "216.0",
-            "group_b": "None",
-            "teacher_c": "None"
+            "room_a": "216",
+            "group_b": "ИКС-21",
+            "teacher_c": "Столярова Ю.Б."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 6",
-            "room_d": "420.0",
-            "group_e": "ИС-41",
+            "room_d": "420",
+            "group_e": "ИС-31",
             "teacher_f": "Бельчич Д.С."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 6",
             "room_a": "216а",
             "group_b": "None",
             "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 6",
-            "room_d": "422.0",
+            "room_d": "420",
+            "group_e": "ИС-38",
+            "teacher_f": "Бельчич Д.С."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 6",
+            "room_a": "217",
+            "group_b": "None",
+            "teacher_c": "None"
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 6",
+            "room_d": "422",
             "group_e": "ПОКС-44w",
             "teacher_f": "Пивнева М.А."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 6",
-            "room_a": "217.0",
-            "group_b": "СА-25",
-            "teacher_c": "Нещадим К.С."
+            "room_a": "220",
+            "group_b": "ИС-21",
+            "teacher_c": "Кротенко Е.М."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 6",
             "room_d": "с/з1",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 6",
-            "room_a": "220.0",
-            "group_b": "ИС-22",
-            "teacher_c": "Кротенко Е.М."
+            "room_a": "303",
+            "group_b": "ИС-25",
+            "teacher_c": "Рыбалка В.В."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 6",
             "room_d": "с/з2",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 6",
-            "room_a": "303.0",
-            "group_b": "ИБТ-22",
-            "teacher_c": "Скороходов Г.Ю."
+            "room_a": "305",
+            "group_b": "None",
+            "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 6",
             "room_d": "с/з3",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 6",
-            "room_a": "305.0",
+            "room_a": "306",
             "group_b": "None",
             "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 6",
             "room_d": "с/з4",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 6",
-            "room_a": "306.0",
-            "group_b": "ИС-33",
-            "teacher_c": "Холодов Д.С."
+            "room_a": "307",
+            "group_b": "None",
+            "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 6",
             "room_d": "с/з5",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 6",
-            "room_a": "307.0",
+            "room_a": "310",
             "group_b": "None",
             "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 6",
             "room_d": "с/з6",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 6",
-            "room_a": "310.0",
-            "group_b": "None",
-            "teacher_c": "Родченко Т.В."
+            "room_a": "312",
+            "group_b": "ИС-28",
+            "teacher_c": "Бурда Е.Г."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 6",
             "room_d": "с/з7",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 6",
-            "room_a": "312.0",
-            "group_b": "ИС-27",
-            "teacher_c": "Бурда Е.Г."
+            "room_a": "314",
+            "group_b": "None",
+            "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 6",
             "room_d": "с/з8",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 6",
-            "room_a": "314.0",
-            "group_b": "СА-35",
-            "teacher_c": "Ващенко В.А."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 6",
-            "room_d": "с/з9",
-            "group_e": "None",
-            "teacher_f": "None"
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 6",
             "room_a": "315а",
             "group_b": "None",
             "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 6",
-            "room_d": "Общ1-3",
-            "group_e": "ИС-38",
-            "teacher_f": "Кошкина А.А."
+            "room_d": "с/з9",
+            "group_e": "None",
+            "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 6",
             "room_a": "None",
             "group_b": "None",
             "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 6",
+            "room_d": "Общ1-3",
+            "group_e": "None",
+            "teacher_f": "None"
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 6",
+            "room_a": "None",
+            "group_b": "None",
+            "teacher_c": "None"
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 6",
             "room_d": "Общ1-1",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 6",
             "room_a": "None",
             "group_b": "None",
             "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 6",
             "room_d": "Общ1",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 6",
             "room_a": "None",
             "group_b": "None",
             "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 6",
             "room_d": "Общ1-2",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 6",
             "room_a": "None",
             "group_b": "None",
             "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 6",
             "room_d": "None",
             "group_e": "None",
@@ -3233,490 +3317,490 @@
     ],
     "7 пара": [
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 7",
-            "room_a": "5.0",
+            "room_a": "5",
             "group_b": "None",
             "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 7",
-            "room_d": "316.0",
+            "room_d": "316",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 7",
-            "room_a": "6.0",
+            "room_a": "6",
             "group_b": "None",
             "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 7",
-            "room_d": "318.0",
+            "room_d": "318",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 7",
-            "room_a": "103.0",
-            "group_b": "СА-27",
-            "teacher_c": "Лебедева М.В."
+            "room_a": "103",
+            "group_b": "None",
+            "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 7",
-            "room_d": "320.0",
+            "room_d": "320",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 7",
-            "room_a": "104.0",
-            "group_b": "ИБТ-22",
-            "teacher_c": "Пустоветова С.Ю."
+            "room_a": "104",
+            "group_b": "None",
+            "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 7",
-            "room_d": "322.0",
-            "group_e": "ИС-28",
+            "room_d": "322",
+            "group_e": "None",
+            "teacher_f": "None"
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 7",
+            "room_a": "106",
+            "group_b": "None",
+            "teacher_c": "None"
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 7",
+            "room_d": "323",
+            "group_e": "None",
+            "teacher_f": "None"
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 7",
+            "room_a": "109",
+            "group_b": "КПК",
+            "teacher_c": "КПК"
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 7",
+            "room_d": "324",
+            "group_e": "ИС-27",
             "teacher_f": "Серов А.О."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 7",
-            "room_a": "106.0",
-            "group_b": "СА-27",
-            "teacher_c": "Чубарова А.Б."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 7",
-            "room_d": "323.0",
-            "group_e": "ИКС-23",
-            "teacher_f": "Джалагония М.Ш."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 7",
-            "room_a": "109.0",
+            "room_a": "110",
             "group_b": "КПК",
             "teacher_c": "КПК"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 7",
-            "room_d": "324.0",
-            "group_e": "ИС-33",
-            "teacher_f": "Холодов Д.С."
+            "room_d": "325",
+            "group_e": "ИС-28",
+            "teacher_f": "Арутюнян М.М."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 7",
-            "room_a": "110.0",
-            "group_b": "КПК",
-            "teacher_c": "КПК"
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 7",
-            "room_d": "325.0",
-            "group_e": "ИС-34",
-            "teacher_f": "Петрова М.Е."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 7",
             "room_a": "110а",
             "group_b": "СА-43",
             "teacher_c": "Бурлуцкая А.В."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 7",
-            "room_d": "326.0",
-            "group_e": "СА-25",
-            "teacher_f": "Трищук С.А."
+            "room_d": "326",
+            "group_e": "СА-36",
+            "teacher_f": "Зурова"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 7",
-            "room_a": "111.0",
+            "room_a": "111",
             "group_b": "None",
             "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 7",
-            "room_d": "401.0",
+            "room_d": "401",
             "group_e": "СА-32",
             "teacher_f": "Дегтярев С.С."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 7",
-            "room_a": "114.0",
+            "room_a": "114",
             "group_b": "None",
             "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 7",
-            "room_d": "404.0",
+            "room_d": "404",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 7",
             "room_a": "114а",
             "group_b": "None",
             "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 7",
-            "room_d": "406.0",
+            "room_d": "406",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 7",
-            "room_a": "118.0",
+            "room_a": "118",
             "group_b": "СА-41",
             "teacher_c": "Попова А.Ю."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 7",
             "room_d": "406а",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 7",
-            "room_a": "121.0",
+            "room_a": "121",
             "group_b": "КПК",
             "teacher_c": "КПК"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 7",
-            "room_d": "408.0",
+            "room_d": "408",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 7",
-            "room_a": "122.0",
-            "group_b": "КПК",
-            "teacher_c": "КПК"
+            "room_a": "122",
+            "group_b": "None",
+            "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 7",
-            "room_d": "410.0",
+            "room_d": "410",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 7",
             "room_a": "209а",
             "group_b": "None",
             "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 7",
-            "room_d": "411.0",
+            "room_d": "411",
+            "group_e": "СА-26",
+            "teacher_f": "Войнова Е.С."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 7",
+            "room_a": "210",
+            "group_b": "ИКС-22",
+            "teacher_c": "Мальцева И.Е."
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 7",
+            "room_d": "412",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 7",
-            "room_a": "210.0",
-            "group_b": "None",
-            "teacher_c": "None"
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 7",
-            "room_d": "412.0",
-            "group_e": "None",
-            "teacher_f": "Болховитина О.И."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 7",
             "room_a": "210а",
             "group_b": "None",
             "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 7",
-            "room_d": "414.0",
-            "group_e": "СА-35",
-            "teacher_f": "Бельчич Д.С."
+            "room_d": "414",
+            "group_e": "ИС-34",
+            "teacher_f": "Петрова М.Е."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 7",
-            "room_a": "212.0",
+            "room_a": "212",
             "group_b": "КПК",
             "teacher_c": "КПК"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 7",
-            "room_d": "415.0",
-            "group_e": "СА-24",
-            "teacher_f": "Ващенко В.А."
+            "room_d": "415",
+            "group_e": "ИС-37",
+            "teacher_f": "Сулавко С.Н."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 7",
-            "room_a": "213.0",
+            "room_a": "213",
             "group_b": "None",
             "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 7",
-            "room_d": "416.0",
-            "group_e": "ИС-23",
-            "teacher_f": "Арутюнян А.Э."
+            "room_d": "416",
+            "group_e": "None",
+            "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 7",
-            "room_a": "214.0",
-            "group_b": "ИКС-22",
-            "teacher_c": "Рыбалка В.В."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 7",
-            "room_d": "418.0",
-            "group_e": "ИС-35",
-            "teacher_f": "Алешина В.В."
-        },
-        {
-            "header_date": "2023-11-15 00:00:00",
-            "header_pair": "Пара 7",
-            "room_a": "216.0",
+            "room_a": "214",
             "group_b": "None",
             "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 7",
-            "room_d": "420.0",
-            "group_e": "ИС-27",
+            "room_d": "418",
+            "group_e": "None",
+            "teacher_f": "None"
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 7",
+            "room_a": "216",
+            "group_b": "None",
+            "teacher_c": "None"
+        },
+        {
+            "header_date": "2023-11-17 00:00:00",
+            "header_pair": "Пара 7",
+            "room_d": "420",
+            "group_e": "ИС-22",
             "teacher_f": "Манакова О.П."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 7",
             "room_a": "216а",
             "group_b": "None",
             "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 7",
-            "room_d": "422.0",
+            "room_d": "422",
             "group_e": "ПОКС-44w",
             "teacher_f": "Пивнева М.А."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 7",
-            "room_a": "217.0",
+            "room_a": "217",
             "group_b": "None",
             "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 7",
             "room_d": "с/з1",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 7",
-            "room_a": "220.0",
-            "group_b": "ИС-22",
-            "teacher_c": "Щипанкина А.А."
+            "room_a": "220",
+            "group_b": "ИС-24",
+            "teacher_c": "Кротенко Е.М."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 7",
             "room_d": "с/з2",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 7",
-            "room_a": "303.0",
-            "group_b": "ИБТ-23",
-            "teacher_c": "Скороходов Г.Ю."
+            "room_a": "303",
+            "group_b": "ИС-21",
+            "teacher_c": "Щипанкина А.А."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 7",
             "room_d": "с/з3",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 7",
-            "room_a": "305.0",
+            "room_a": "305",
             "group_b": "None",
             "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 7",
             "room_d": "с/з4",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 7",
-            "room_a": "306.0",
-            "group_b": "СА-45",
-            "teacher_c": "Панасевич Д.Г."
+            "room_a": "306",
+            "group_b": "ПОКС-42b",
+            "teacher_c": "Дозорова Е.В."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 7",
             "room_d": "с/з5",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 7",
-            "room_a": "307.0",
+            "room_a": "307",
             "group_b": "None",
             "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 7",
             "room_d": "с/з6",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 7",
-            "room_a": "310.0",
+            "room_a": "310",
             "group_b": "None",
-            "teacher_c": "Родченко Т.В."
+            "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 7",
             "room_d": "с/з7",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 7",
-            "room_a": "312.0",
-            "group_b": "ИС-21",
+            "room_a": "312",
+            "group_b": "ИС-26",
             "teacher_c": "Бурда Е.Г."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 7",
             "room_d": "с/з8",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 7",
-            "room_a": "314.0",
-            "group_b": "ИС-36",
-            "teacher_c": "Паюсов П.С."
+            "room_a": "314",
+            "group_b": "None",
+            "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 7",
             "room_d": "с/з9",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 7",
             "room_a": "315а",
             "group_b": "None",
             "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 7",
             "room_d": "Общ1-3",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 7",
             "room_a": "None",
-            "group_b": "None",
-            "teacher_c": "None"
+            "group_b": "ИС-25",
+            "teacher_c": "Рыбалка В.В."
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 7",
             "room_d": "Общ1-1",
-            "group_e": "ИС-38",
-            "teacher_f": "Кошкина А.А."
+            "group_e": "None",
+            "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 7",
             "room_a": "None",
             "group_b": "None",
             "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 7",
             "room_d": "Общ1",
             "group_e": "None",
             "teacher_f": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 7",
             "room_a": "None",
             "group_b": "None",
             "teacher_c": "None"
         },
         {
-            "header_date": "2023-11-15 00:00:00",
+            "header_date": "2023-11-17 00:00:00",
             "header_pair": "Пара 7",
             "room_d": "Общ1-2",
             "group_e": "None",
