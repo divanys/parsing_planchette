@@ -32,18 +32,39 @@ class DateState(StatesGroup):
 
 @router.message(Command("start"))
 async def cmd_start(message: types.Message):
-    kb = [
-        [KeyboardButton(text="Дата")]
-    ]
-    keyboard = types.ReplyKeyboardMarkup(keyboard=kb)
-
     await message.answer("Привет. Я помогу посмотреть планшетку РКСИ.\n"
-                         "Для навигации используй кнопки ниже.\n\n"
+                         "Для навигации используй кнопки.\n\n"
                          "Для справки:\n"
                          "  1. Группу вводить вида 'ИС-33' или '2-ИС-3'\n"
                          "  2. Преподавателя вводить вида 'Галушкина Д.Е.'\n"
                          "  3. Кабинет вводить вида '306' или 'Общ1-3'\n\n"
-                         "Для помощи /help", reply_markup=keyboard)
+                         "Для поиска /search, для помощи /help, для отмены операции /cancel")
+
+
+@router.message(Command("search"))
+async def cmd_search(message: types.Message):
+    kb = [
+        [KeyboardButton(text="Дата")]
+    ]
+    keyboard = types.ReplyKeyboardMarkup(keyboard=kb, input_field_placeholder="нажми кнопку внизу")
+    await message.answer("Для навигации используй кнопки ниже.\n\n"
+                         "Для справки:\n"
+                         "  1. Группу вводить вида 'ИС-33' или '2-ИС-3'\n"
+                         "  2. Преподавателя вводить вида 'Галушкина Д.Е.'\n"
+                         "  3. Кабинет вводить вида '306' или 'Общ1-3'\n\n",
+                         reply_markup=keyboard)
+
+
+@router.message(Command("help"))
+async def help_cmd(message: types.Message, state: FSMContext):
+    await message.answer("Напишите на +79895099849", reply_markup=ReplyKeyboardRemove())
+    await state.clear()
+
+
+@router.message(Command("cancel"))
+async def help_cmd(message: types.Message, state: FSMContext):
+    await message.answer("Операция отмена, закругляемся...", reply_markup=ReplyKeyboardRemove())
+    await state.clear()
 
 
 @router.message(F.text.lower() == "дата")
@@ -57,7 +78,7 @@ async def date_command(message: types.Message, state: FSMContext) -> None:
         button = [KeyboardButton(text=key)]
         keyboard.append(button)
 
-    keyboard = types.ReplyKeyboardMarkup(keyboard=keyboard)
+    keyboard = types.ReplyKeyboardMarkup(keyboard=keyboard, input_field_placeholder="выбери кнопку внизу")
 
     await message.answer("Выберите дату:", reply_markup=keyboard)
     await state.set_state(DateState.waiting_for_date)
@@ -75,7 +96,7 @@ async def handle_date_choice(message: types.Message, state: FSMContext):
         keyboard = types.ReplyKeyboardMarkup(keyboard=[
             [KeyboardButton(text="Кабинет"), KeyboardButton(text='Группа'),
              KeyboardButton(text='Преподаватель')]
-        ])
+        ], input_field_placeholder="выбери кнопку внизу")
         await message.answer("Выберите тип данных для поиска:", reply_markup=keyboard)
         await state.set_state(DateState.waiting_for_data_type)
     else:
@@ -96,7 +117,7 @@ async def handle_value_input(message: types.Message, state: FSMContext):
     await state.update_data(value=value)
     keyboard = types.ReplyKeyboardMarkup(keyboard=[
         [KeyboardButton(text='Все пары'), KeyboardButton(text='Конкретная')]
-    ])
+    ],  input_field_placeholder="выбери кнопку внизу")
     await message.answer("Выберите 'Все пары' или 'Конкретная':", reply_markup=keyboard)
     await state.set_state(DateState.waiting_for_action)
 
@@ -151,6 +172,7 @@ async def handle_all_classes_choice(message: types.Message, state: FSMContext):
 
     await message.answer("Все пары обработаны", reply_markup=ReplyKeyboardRemove())
 
+
 @router.message(DateState.waiting_for_action, F.text.lower() == 'конкретная')
 async def handle_concrete_choice(message: types.Message, state: FSMContext):
     data = await state.get_data()
@@ -163,7 +185,7 @@ async def handle_concrete_choice(message: types.Message, state: FSMContext):
         button = [KeyboardButton(text=item)]
         keyboard.append(button)
 
-    keyboard = types.ReplyKeyboardMarkup(keyboard=keyboard)
+    keyboard = types.ReplyKeyboardMarkup(keyboard=keyboard,  input_field_placeholder="выбери кнопку внизу")
 
     await message.answer("Выберите конкретную пару:", reply_markup=keyboard)
     await state.set_state(DateState.waiting_for_concrete)
@@ -227,10 +249,10 @@ async def handle_group_item(data, message, item, lst_group, lst_room, lst_teache
     for group_key in lst_group:
         if item.get(group_key) is not None and item.get(group_key) == data['value']:
             await message.answer(
-                f"Вы выбрали {data['data_type']} {data['value']} за {data['selected_date']} и {data['num_para']}.\n"
-                f"{item.get(lst_room[lst_group.index(group_key)])}\n"
-                f"{item.get(group_key)}\n"
-                f"{item.get(lst_teacher[lst_group.index(group_key)])}\n",
+                f"Вы выбрали {data['data_type']} {data['value']} за {data['selected_date']} и {data['num_para']}.\n\n"
+                f"Кабинет: {item.get(lst_room[lst_group.index(group_key)])}\n"
+                f"Группа: {item.get(group_key)}\n"
+                f"Преподаватель: {item.get(lst_teacher[lst_group.index(group_key)])}\n",
                 reply_markup=ReplyKeyboardRemove())
             found = True
 
@@ -260,10 +282,10 @@ async def handle_room_item(data, message, item, lst_group, lst_room, lst_teacher
     for room_key in lst_room:
         if item.get(room_key) is not None and item.get(room_key) == data['value']:
             await message.answer(
-                f"Вы выбрали {data['data_type']} {data['value']} за {data['selected_date']} и {data['num_para']}.\n"
-                f"{item.get(room_key)}\n"
-                f"{item.get(lst_group[lst_room.index(room_key)])}\n"
-                f"{item.get(lst_teacher[lst_room.index(room_key)])}\n",
+                f"Вы выбрали {data['data_type']} {data['value']} за {data['selected_date']} и {data['num_para']}.\n\n"
+                f"Кабинет: {item.get(room_key)}\n"
+                f"Группа: {item.get(lst_group[lst_room.index(room_key)])}\n"
+                f"Преподаватель: {item.get(lst_teacher[lst_room.index(room_key)])}\n",
                 reply_markup=ReplyKeyboardRemove())
             found_items.append(True)
 
@@ -287,24 +309,20 @@ async def handle_teacher_type(data, message, json_file, lst_group, lst_room, lst
             f"Выбранный {data['data_type']} {data['value']} не найден на {data['num_para']} паре.",
             reply_markup=ReplyKeyboardRemove())
 
+
 async def handle_teacher_item(data, message, item, lst_group, lst_room, lst_teacher):
     found_items = []
     for teacher_key in lst_teacher:
         if item.get(teacher_key) is not None and item.get(teacher_key) == data['value']:
             await message.answer(
-                f"Вы выбрали {data['data_type']} {data['value']} за {data['selected_date']} и {data['num_para']}.\n"
-                f"{item.get(lst_room[lst_teacher.index(teacher_key)])}\n"
-                f"{item.get(lst_group[lst_teacher.index(teacher_key)])}\n"
-                f"{item.get(teacher_key)}\n",
+                f"Вы выбрали {data['data_type']} {data['value']} за {data['selected_date']} и {data['num_para']}.\n\n"
+                f"Кабинет: {item.get(lst_room[lst_teacher.index(teacher_key)])}\n"
+                f"Группа: {item.get(lst_group[lst_teacher.index(teacher_key)])}\n"
+                f"Преподаватель: {item.get(teacher_key)}\n",
                 reply_markup=ReplyKeyboardRemove())
             found_items.append(True)
 
     return found_items
-
-
-@router.message(Command("help"))
-async def help_cmd(message: types.Message):
-    await message.answer("Напиши на +79895099849", reply_markup=ReplyKeyboardRemove())
 
 
 async def main() -> None:
