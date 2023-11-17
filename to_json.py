@@ -38,11 +38,21 @@ def parse_xlsx_and_convert_to_json(file_path, output_directory, filename, data_c
             teacher_f = str(sheet.cell(row=row, column=6).value).rstrip()
 
             if room_a:
+                if group_b == None or group_b == "None":
+                    group_b = "Отсутствует"
+                if teacher_c == None or teacher_c == "None":
+                    teacher_c = "Отсутствует"
+
                 entry = {"header_date": data_entry["header_date"], "header_pair": data_entry["header_pair"],
                          "room_a": room_a, "group_b": group_b, "teacher_c": teacher_c}
                 json_data[sheet_name.rstrip()].append(entry)
 
             if room_d:
+                if group_e == None or group_e == "None":
+                    group_e = "Отсутствует"
+                if teacher_f == None or teacher_f == "None":
+                    teacher_f = "Отсутствует"
+
                 entry = {"header_date": data_entry["header_date"], "header_pair": data_entry["header_pair"],
                          "room_d": room_d, "group_e": group_e, "teacher_f": teacher_f}
                 json_data[sheet_name.rstrip()].append(entry)

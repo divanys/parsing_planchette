@@ -115,4 +115,4 @@ if __name__ == '__main__':
 
         print(f'Files downloaded to {DOWNLOAD_DIR}')
         to_json.parse_and_convert_to_json(DOWNLOAD_DIR)
-        time.sleep(101)  # Пауза в 10 cek
+        time.sleep(180)  # Пауза в 10 cek
