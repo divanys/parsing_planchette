@@ -33,7 +33,7 @@ class DateState(StatesGroup):
 @router.message(Command("start"))
 async def cmd_start(message: types.Message):
     await message.answer("Привет. Я помогу посмотреть планшетку РКСИ.\n"
-                         "Для поиска /search, для помощи /help, для отмены операции /cancel")
+                         "Для поиска /search\nДля отмены операции /cancel\nДля помощи /help")
 
 
 @router.message(Command("search"))
@@ -48,7 +48,8 @@ async def cmd_search(message: types.Message):
 
 @router.message(Command("help"))
 async def help_cmd(message: types.Message, state: FSMContext):
-    await message.answer("Напишите на +79895099849", reply_markup=ReplyKeyboardRemove())
+    await message.answer("Напишите на +79895099849\n"
+                         "Для поиска /search и дальше по кнопочкам)", reply_markup=ReplyKeyboardRemove())
     await state.clear()
 
 
@@ -109,7 +110,7 @@ async def handle_data_type_choice(message: types.Message, state: FSMContext):
 @router.message(DateState.waiting_for_value)
 async def handle_value_input(message: types.Message, state: FSMContext):
     value = message.text
-    await state.update_data(value=value)
+    await state.update_data(value=str(value).lower())
     keyboard = types.ReplyKeyboardMarkup(keyboard=[
         [KeyboardButton(text='Все пары'), KeyboardButton(text='Конкретная')]
     ],  input_field_placeholder="выбери кнопку внизу")
@@ -139,7 +140,7 @@ async def handle_all_classes_choice(message: types.Message, state: FSMContext):
             json_file = json.load(f)
 
         await message.answer(
-            f"Вы выбрали {data['data_type']} {data['value']} за {str(data['selected_date']).replace('.xlsx', '')} и все пары.",
+            f"Вы выбрали {str(data['data_type']).lower().replace('ппа', 'ппу').replace('атель',  'ателя')} {str(data['value']).title()} за {str(data['selected_date']).replace('.xlsx', '')} и все пары.",
             reply_markup=ReplyKeyboardRemove())
 
         for num_para, items in json_file.items():
@@ -164,6 +165,7 @@ async def handle_all_classes_choice(message: types.Message, state: FSMContext):
         await message.answer(f"Ошибка при чтении файла")
     finally:
         await state.clear()
+    await message.answer("Для поиска /search")
 
 
 
@@ -216,6 +218,8 @@ async def handle_concrete_choice_is(message: types.Message, state: FSMContext):
         await message.answer(f"Файл не найден")
     finally:
         await state.clear()
+    await message.answer("Для поиска /search")
+
 
 
 async def handle_group_type(data, message, json_file, lst_group, lst_room, lst_teacher):
@@ -232,7 +236,7 @@ async def handle_group_type(data, message, json_file, lst_group, lst_room, lst_t
 
     if not found_items:
         await message.answer(
-            f"❌ Выбранная {data['data_type']} {data['value']} не найдена на {str(data['num_para']).replace('пара', 'паре')}.",
+            f"❌ Выбранная {str(data['data_type']).lower()} {str(data['value']).upper()} не найдена на {str(data['num_para']).replace('пара', 'паре')}.",
             reply_markup=ReplyKeyboardRemove())
 
 
@@ -241,10 +245,10 @@ async def handle_group_item(data, message, item, lst_group, lst_room, lst_teache
     for group_key in lst_group:
         if item.get(group_key) is not None and item.get(group_key) == data['value']:
             await message.answer(
-                f"✅ {data['data_type']} {data['value']} за {str(data['selected_date']).replace('.xlsx', '')} и {data['num_para']}.\n\n"
+                f"✅ {data['data_type']} {str(data['value']).upper()} за {str(data['selected_date']).replace('.xlsx', '')} и {data['num_para']}.\n\n"
                 f"  Кабинет: {item.get(lst_room[lst_group.index(group_key)])}\n"
-                f"  Группа: {item.get(group_key)}\n"
-                f"  Преподаватель: {item.get(lst_teacher[lst_group.index(group_key)])}\n",
+                f"  Группа: {str(item.get(group_key)).upper()}\n"
+                f"  Преподаватель: {str(item.get(lst_teacher[lst_group.index(group_key)])).title()}\n",
                 reply_markup=ReplyKeyboardRemove())
             found = True
 
@@ -265,7 +269,7 @@ async def handle_room_type(data, message, json_file, lst_group, lst_room, lst_te
 
     if not found_items:
         await message.answer(
-            f"❌ Выбранный {data['data_type']} {data['value']} не найден на {str(data['num_para']).replace('пара', 'паре')}.",
+            f"❌ Выбранный {str(data['data_type']).lower()} {data['value']} не найден на {str(data['num_para']).replace('пара', 'паре')}.",
             reply_markup=ReplyKeyboardRemove())
 
 
@@ -276,8 +280,8 @@ async def handle_room_item(data, message, item, lst_group, lst_room, lst_teacher
             await message.answer(
                 f"✅ {data['data_type']} {data['value']} за {str(data['selected_date']).replace('.xlsx', '')} и {data['num_para']}.\n\n"
                 f"  Кабинет: {item.get(room_key)}\n"
-                f"  Группа: {item.get(lst_group[lst_room.index(room_key)])}\n"
-                f"  Преподаватель: {item.get(lst_teacher[lst_room.index(room_key)])}\n",
+                f"  Группа: {str(item.get(lst_group[lst_room.index(room_key)])).upper()}\n"
+                f"  Преподаватель: {str(item.get(lst_teacher[lst_room.index(room_key)])).title()}\n",
                 reply_markup=ReplyKeyboardRemove())
             found_items.append(True)
 
@@ -298,7 +302,7 @@ async def handle_teacher_type(data, message, json_file, lst_group, lst_room, lst
 
     if not found_items:
         await message.answer(
-            f"❌ Выбранный {data['data_type']} {data['value']} не найден на {str(data['num_para']).replace('пара', 'паре')}.",
+            f"❌ Выбранный {str(data['data_type']).lower()} {str(data['value']).title()} не найден на {str(data['num_para']).replace('пара', 'паре')}.",
             reply_markup=ReplyKeyboardRemove())
 
 
@@ -307,10 +311,10 @@ async def handle_teacher_item(data, message, item, lst_group, lst_room, lst_teac
     for teacher_key in lst_teacher:
         if item.get(teacher_key) is not None and item.get(teacher_key) == data['value']:
             await message.answer(
-                f"✅ {data['data_type']} {data['value']} за {str(data['selected_date']).replace('.xlsx', '')} и {data['num_para']}.\n\n"
+                f"✅ {str(data['data_type'])} {str(data['value']).title()} за {str(data['selected_date']).replace('.xlsx', '')} и {data['num_para']}.\n\n"
                 f"  Кабинет: {item.get(lst_room[lst_teacher.index(teacher_key)])}\n"
-                f"  Группа: {item.get(lst_group[lst_teacher.index(teacher_key)])}\n"
-                f"  Преподаватель: {item.get(teacher_key)}\n",
+                f"  Группа: {str(item.get(lst_group[lst_teacher.index(teacher_key)])).upper()}\n"
+                f"  Преподаватель: {str(item.get(teacher_key)).title()}\n",
                 reply_markup=ReplyKeyboardRemove())
             found_items.append(True)
 

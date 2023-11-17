@@ -32,10 +32,10 @@ def parse_xlsx_and_convert_to_json(file_path, output_directory, filename, data_c
 
             room_a = str(sheet.cell(row=row, column=1).value).replace(".0", "")
             room_d = str(sheet.cell(row=row, column=4).value).replace(".0", "")
-            group_b = str(sheet.cell(row=row, column=2).value).rstrip()
-            group_e = str(sheet.cell(row=row, column=5).value).rstrip()
-            teacher_c = str(sheet.cell(row=row, column=3).value).rstrip()
-            teacher_f = str(sheet.cell(row=row, column=6).value).rstrip()
+            group_b = str(sheet.cell(row=row, column=2).value).rstrip().lower()
+            group_e = str(sheet.cell(row=row, column=5).value).rstrip().lower()
+            teacher_c = str(sheet.cell(row=row, column=3).value).rstrip().lower()
+            teacher_f = str(sheet.cell(row=row, column=6).value).rstrip().lower()
 
             if room_a:
                 if group_b == None or group_b == "None":
