@@ -33,7 +33,7 @@ class DateState(StatesGroup):
 @router.message(Command("start"))
 async def cmd_start(message: types.Message):
     await message.answer("Привет. Я помогу посмотреть планшетку РКСИ.\n"
-                         "Для поиска /search\nДля отмены операции /cancel\nДля помощи /help")
+                         "🔎 Для поиска /search\nДля отмены операции /cancel\nДля помощи /help")
 
 
 @router.message(Command("search"))
@@ -49,7 +49,7 @@ async def cmd_search(message: types.Message):
 @router.message(Command("help"))
 async def help_cmd(message: types.Message, state: FSMContext):
     await message.answer("Напишите на +79895099849\n"
-                         "Для поиска /search и дальше по кнопочкам)", reply_markup=ReplyKeyboardRemove())
+                         "🔎 Для поиска /search и дальше по кнопочкам)", reply_markup=ReplyKeyboardRemove())
     await state.clear()
 
 
@@ -165,7 +165,7 @@ async def handle_all_classes_choice(message: types.Message, state: FSMContext):
         await message.answer(f"Ошибка при чтении файла")
     finally:
         await state.clear()
-    await message.answer("Для поиска /search")
+    await message.answer("🔎 Для поиска /search")
 
 
 
@@ -218,7 +218,7 @@ async def handle_concrete_choice_is(message: types.Message, state: FSMContext):
         await message.answer(f"Файл не найден")
     finally:
         await state.clear()
-    await message.answer("Для поиска /search")
+    await message.answer("🔎 Для поиска /search")
 
 
 
