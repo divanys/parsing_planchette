@@ -43,9 +43,7 @@ async def cmd_search(message: types.Message):
     ]
     keyboard = types.ReplyKeyboardMarkup(keyboard=kb, input_field_placeholder="нажми кнопку внизу")
     await message.answer(
-        "Для навигации используй кнопки ниже.\n\n"
-        "(Классные часы сейчас в разработке, "
-        "для поиска кабинета на классный час используйте поиск по фио своего куратора)",
+        "Для навигации используй кнопки ниже.",
         reply_markup=keyboard)
 
 
@@ -257,7 +255,7 @@ async def handle_group_type(data, json_file, lst_group, lst_room, lst_teacher):
 async def handle_group_item(data, item, lst_group, lst_room, lst_teacher):
     message_all = ""
     for group_key in lst_group:
-        if item.get(group_key) is not None and item.get(group_key) == data['value']:
+        if item.get(group_key) is not None and data['value'] in item.get(group_key):
             message_all += \
                 f"✅ {data['num_para']}.\n" \
                 f"  Кабинет: {item.get(lst_room[lst_group.index(group_key)])}\n" \
@@ -327,10 +325,11 @@ async def handle_teacher_type(data, json_file, lst_group, lst_room, lst_teacher)
 
     return message_all
 
+
 async def handle_teacher_item(data, item, lst_group, lst_room, lst_teacher):
     message_all = ""
     for teacher_key in lst_teacher:
-        if item.get(teacher_key) is not None and item.get(teacher_key) == data['value']:
+        if item.get(teacher_key) is not None and str(data['value']).replace('. ', '.') in item.get(teacher_key):
             message_all += \
                 f"✅ {data['num_para']}.\n" \
                 f"  Кабинет: {item.get(lst_room[lst_teacher.index(teacher_key)])}\n" \
