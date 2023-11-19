@@ -9,7 +9,4 @@ def download_file_from_google_drive(file_id, destination):
         with open(destination, "wb") as f:
             for chunk in response.iter_content(1024):
                 f.write(chunk)
-        print(f"Файл успешно скачан и сохранен по пути: {destination}")
-    else:
-        print(f"Не удалось скачать файл. Проверьте вашу ссылку. {response.status_code}")
 

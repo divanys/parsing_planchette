@@ -62,7 +62,7 @@ async def help_cmd(message: types.Message, state: FSMContext):
 
 @router.message(F.text.lower() == "дата")
 async def date_command(message: types.Message, state: FSMContext) -> None:
-    with open('../files_data.json', 'r') as f:
+    with open('/home/divan/гетБрейнсИТолькоУдалиЯТебzУдалюСЛицаЗемли/parsing_planchette/files_data.json', 'r') as f:
         data = json.load(f)
 
     keyboard = []
@@ -81,7 +81,7 @@ async def date_command(message: types.Message, state: FSMContext) -> None:
 async def handle_date_choice(message: types.Message, state: FSMContext):
     selected_date = message.text
 
-    with open('../files_data.json', 'r') as f:
+    with open('/home/divan/гетБрейнсИТолькоУдалиЯТебzУдалюСЛицаЗемли/parsing_planchette/files_data.json', 'r') as f:
         dates_data = json.load(f)
 
     if (str(selected_date) + ".xlsx") in dates_data:
@@ -176,7 +176,7 @@ async def handle_all_classes_choice(message: types.Message, state: FSMContext):
 @router.message(DateState.waiting_for_action, F.text.lower() == 'конкретная')
 async def handle_concrete_choice(message: types.Message, state: FSMContext):
     data = await state.get_data()
-    with open('../data_concretn.json', 'r') as f:
+    with open('/home/divan/гетБрейнсИТолькоУдалиЯТебzУдалюСЛицаЗемли/parsing_planchette/data_concretn.json', 'r') as f:
         data_concretn = json.load(f)
 
     keyboard = []
@@ -338,7 +338,10 @@ async def handle_teacher_item(data, item, lst_group, lst_room, lst_teacher):
 
     return message_all
 
-
+@router.message(F.text.lower())
+async def another_data_command(message: types.Message) -> None:
+    await message.answer("Я так не понимаю\n"
+                         "🔎 Для поиска /search")
 async def main() -> None:
     # Initialize Bot instance with a default parse mode which will be passed to all API calls
     bot = Bot(token=Links_tg.api_tg, parse_mode=ParseMode.HTML)
@@ -353,3 +356,4 @@ async def main() -> None:
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO, stream=sys.stdout)
     asyncio.run(main())
+

@@ -9,7 +9,6 @@ def parse_and_convert_to_json(directory):
     for filename in os.listdir(directory):
         if filename.endswith(".xlsx"):
             file_path = os.path.join(directory, filename)
-            print("Обрабатываем файл:", file_path)
             parse_xlsx_and_convert_to_json(file_path, directory, filename, data_concretn)
 
     # Создаем JSON-файл для data_concretn

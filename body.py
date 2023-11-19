@@ -55,9 +55,6 @@ def delete_old_files(directory):
         days_difference = (current_date - file_date).days
         if days_difference > 2:
             os.remove(file_path)
-            print(f"Файл {file} удален.")
-        else:
-            print(f"Файл {file} не удален.")
 
 
 def list_files_in_folder(service, folder_id):
@@ -68,13 +65,10 @@ def list_files_in_folder(service, folder_id):
     items = results.get('files', [])
 
     all_items = {}
-    if not items:
-        print('No files found in the specified folder.')
-    else:
-        for item in items:
-            file_name = item["name"]
-            file_id = item["id"]
-            all_items[file_name] = file_id
+    for item in items:
+        file_name = item["name"]
+        file_id = item["id"]
+        all_items[file_name] = file_id
 
     return all_items
 
@@ -85,17 +79,14 @@ def download_files_from_json(json_file_path, download_dir):
 
     for file_name, file_url in files_data.items():
         download_file_from_google_drive(file_url, os.path.join(download_dir, file_name))
-        print(f'File {file_name} downloaded to {download_dir}')
 
 
 def download_and_process_updates(updated_files):
     for file_name, file_id in updated_files.items():
         download_path = os.path.join(DOWNLOAD_DIR, file_name)
         download_file_from_google_drive(file_id, download_path)
-        print(f'File {file_name} downloaded to {download_path}')
 
         to_json.parse_and_convert_to_json(download_path)
-        print(f'File {file_name} processed and converted to JSON')
 
 
 if __name__ == '__main__':
@@ -113,6 +104,5 @@ if __name__ == '__main__':
 
         download_files_from_json(OUTPUT_JSON_FILE, DOWNLOAD_DIR)
 
-        print(f'Files downloaded to {DOWNLOAD_DIR}')
         to_json.parse_and_convert_to_json(DOWNLOAD_DIR)
-        time.sleep(180)  # Пауза в 10 cek
+        time.sleep(180)  # Пауза в 3 минуты
