@@ -100,7 +100,7 @@ async def handle_date_choice(message: types.Message, state: FSMContext):
 async def handle_data_type_choice(message: types.Message, state: FSMContext):
     data_type = message.text
     await state.update_data(data_type=data_type)
-    await message.answer(f"Введите {data_type.lower()}:\n\n"
+    await message.answer(f"Введите {str(data_type.lower()).replace('ппа', 'ппу').replace('атель', 'ателя')}:\n\n"
                          f"Для справки:\n"
                          "   1. Группу вводить вида ИС-33, 2-ИС-3, ПОКС-45w\n"
                          "   2. Преподавателя вводить вида Галушкина Д.Е.\n"
