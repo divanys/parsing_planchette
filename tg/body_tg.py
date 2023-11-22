@@ -293,7 +293,7 @@ async def handle_room_item(data, item, lst_group, lst_room, lst_teacher):
     message_all = ""
 
     for room_key in lst_room:
-        if item.get(room_key) is not None and item.get(room_key) == data['value']:
+        if item.get(room_key) is not None and data['value'] in str(item.get(room_key)).lower():
             message_all += \
                 f"✅ {data['num_para']}.\n" \
                 f"  Кабинет: {item.get(room_key)}\n" \
