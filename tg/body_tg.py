@@ -44,7 +44,8 @@ async def cmd_start(message: types.Message):
                          "Использование шаблона: \n"
                          "Ввести команду /search -> Нажать кнопку 'Использовать шаблон' ->"
                          " Зарегистрировать шаблон, если таковой отсутствует: -> Выбрать 'да' -> Выбрать тип поиска -> Ввести значение\n\n"
-                         "⚠ Шаблон выводит все пары за сегодняшнюю дату.\nУдалить шаблон /remove_pattern; вы можете создать новый после удаления)", reply_markup=ReplyKeyboardRemove())
+                         "⚠ Шаблон выводит все пары за сегодняшнюю дату.\nУдалить шаблон /remove_pattern; вы можете создать новый после удаления)",
+                         reply_markup=ReplyKeyboardRemove())
 
 
 @router.message(Command("search"))
@@ -115,9 +116,10 @@ async def handle_data_type_choice(message: types.Message, state: FSMContext):
     await state.update_data(data_type=data_type)
     await message.answer(f"Введите {str(data_type.lower()).replace('ппа', 'ппу').replace('атель', 'ателя')}:\n\n"
                          f"Для справки:\n"
-                         "   1. Группу вводить вида ИС-33, 2-ИС-3, ПОКС-45w\n"
-                         "   2. Преподавателя вводить вида Галушкина Д.Е.\n"
-                         "   3. Кабинет вводить вида 306, 110а, Общ1-3\n\n", reply_markup=ReplyKeyboardRemove())
+                         "   1. Если выбрали группу, вводить её вида ИС-33 или 2-ИС-3 или ПОКС-45w\n"
+                         "   2. Если выбрали преподавателя, вводить его вида Галушкина Д.Е.\n"
+                         "   3. Если выбрали кабинет, вводить его вида 306 или 110а или Общ1-3\n\n"
+                         "⚠ Вводите данные только для выбранного значения! ", reply_markup=ReplyKeyboardRemove())
     await state.set_state(DateState.waiting_for_value)
 
 
@@ -422,7 +424,13 @@ async def pattern_reg_or_print(message: types.Message, state: FSMContext) -> Non
                             else:
                                 await message.answer("Неизвестный тип данных")
 
-            await message.answer(message_all, reply_markup=ReplyKeyboardRemove())
+            if message_all != "":
+                await message.answer(message_all, reply_markup=ReplyKeyboardRemove())
+            else:
+                await message.answer("Вы либо допустили ошибку в написании шаблона, либо пар действительно нет."
+                                     "\nУдалить шаблон /remove_pattern\n",
+                                     reply_markup=ReplyKeyboardRemove())
+
             await message.answer("🔎 Для поиска /search")
 
         else:
@@ -458,9 +466,10 @@ async def handle_data_type_choice_const(message: types.Message, state: FSMContex
     await state.update_data(type_value=type_value)
     await message.answer(f"Введите {str(type_value.lower()).replace('ппа', 'ппу').replace('атель', 'ателя')}:\n\n"
                          f"Для справки:\n"
-                         "   1. Группу вводить вида ИС-33, 2-ИС-3, ПОКС-45w\n"
-                         "   2. Преподавателя вводить вида Галушкина Д.Е.\n"
-                         "   3. Кабинет вводить вида 306, 110а, Общ1-3\n\n", reply_markup=ReplyKeyboardRemove())
+                         "   1. Если выбрали группу, вводить её вида ИС-33 или 2-ИС-3 или ПОКС-45w\n"
+                         "   2. Если выбрали преподавателя, вводить его вида Галушкина Д.Е.\n"
+                         "   3. Если выбрали кабинет, вводить его вида 306 или 110а или Общ1-3\n\n"
+                         "⚠ Вводите данные только для выбранного значения! ", reply_markup=ReplyKeyboardRemove())
     await state.set_state(DataStateConst.waiting_for_value_const)
 
 
@@ -558,7 +567,13 @@ async def final_reg_const(message: types.Message, state: FSMContext):
                             else:
                                 await message.answer("Неизвестный тип данных")
 
-            await message.answer(message_all, reply_markup=ReplyKeyboardRemove())
+            if message_all != "":
+                await message.answer(message_all, reply_markup=ReplyKeyboardRemove())
+            else:
+                await message.answer("Вы либо допустили ошибку в написании шаблона, либо пар действительно нет."
+                                     "\nУдалить шаблон /remove_pattern\n",
+                                     reply_markup=ReplyKeyboardRemove())
+
     except FileNotFoundError:
         await message.answer(f"Файл не найден")
     except json.JSONDecodeError:
@@ -600,7 +615,8 @@ async def print_rules(message: types.Message):
                          "Использование шаблона: \n"
                          "Ввести команду /search -> Нажать кнопку 'Использовать шаблон' ->"
                          " Зарегистрировать шаблон, если таковой отсутствует: -> Выбрать 'да' -> Выбрать тип поиска -> Ввести значение\n\n"
-                         "⚠ Шаблон выводит все пары за сегодняшнюю дату.\nУдалить шаблон /remove_pattern; вы можете создать новый после удаления)", reply_markup=ReplyKeyboardRemove())
+                         "⚠ Шаблон выводит все пары за сегодняшнюю дату.\nУдалить шаблон /remove_pattern; вы можете создать новый после удаления)",
+                         reply_markup=ReplyKeyboardRemove())
 
 
 @router.message(DataStateConst.waiting_for_reg_pattern, F.text.lower() == 'нет')
