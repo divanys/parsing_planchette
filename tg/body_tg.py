@@ -2,26 +2,24 @@ import asyncio
 import json
 import logging
 import sys
-from datetime import datetime
+from datetime import datetime, timedelta
 
-from aiogram import Router
-
-from aiogram import Bot, Dispatcher, types, F
+from aiogram import Router, Bot, Dispatcher, types, F
 from aiogram.enums import ParseMode
 from aiogram.filters.command import Command
 from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import StatesGroup, State
 from aiogram.types import ReplyKeyboardRemove, KeyboardButton
+
 import Links_tg
 
-# Включаем логирование, чтобы не пропустить важные сообщения
+# включаем логирование, чтобы не пропустить важные сообщения
 logging.basicConfig(level=logging.INFO)
-# Объект бота
-
+# объект бота
 router = Router(name=__name__)
 
 
-class DateState(StatesGroup):
+class DateState(StatesGroup):  # для общения пользователя в процессе "Искать вручную"
     waiting_for_date = State()
     waiting_for_data_type = State()
     waiting_for_value = State()
@@ -31,20 +29,12 @@ class DateState(StatesGroup):
 
 @router.message(Command("start"))
 async def cmd_start(message: types.Message):
-    await message.answer("Привет. Я помогу посмотреть планшетку РКСИ.\n\n"
-                         "🔎 Для поиска /search\n"
+    await message.answer("Здравствуй. Я помогу посмотреть планшеточку РКСИ.\n\n"
+                         "🔎 <b>Для поиска</b> /search\n\n"
                          "Для отмены операции /cancel\n"
                          "Для помощи /help\n"
-                         "Для удаления шаблона /remove_pattern\n"
-                         "Для просмотра правил /rules\n\n"
-                         "Использование вручную: \n"
-                         "Ввести команду /search -> Нажать кнопку 'Искать вручную' -> Выбрать интересующую дату ->"
-                         " Выбрать интересующий тип для поиска -> Ввести значени -> "
-                         "Выбрать конкретную пару/все пары.\n\n"
-                         "Использование шаблона: \n"
-                         "Ввести команду /search -> Нажать кнопку 'Использовать шаблон' ->"
-                         " Зарегистрировать шаблон, если таковой отсутствует: -> Выбрать 'да' -> Выбрать тип поиска -> Ввести значение\n\n"
-                         "⚠ Шаблон выводит все пары за сегодняшнюю дату.\nУдалить шаблон /remove_pattern; вы можете создать новый после удаления)",
+                         "Для удаления шаблона /remove_pattern\n\n"
+                         "⚠ <b>Для просмотра правил</b> /rules\n\n",
                          reply_markup=ReplyKeyboardRemove())
 
 
@@ -54,23 +44,25 @@ async def cmd_search(message: types.Message):
         [KeyboardButton(text="Искать вручную"),
          KeyboardButton(text="Использовать шаблон")]
     ]
+
     keyboard = types.ReplyKeyboardMarkup(keyboard=kb, input_field_placeholder="нажми кнопку внизу")
     await message.answer(
-        "Для навигации используй кнопки ниже.\n\n"
-        "🍙 Объявление: Кнопка 'Использовать шаблон' готова! юзайте и наслаждайтесь)\nПочитать правила использования для кнопок можно /rules",
+        "⚠ Почитать правила использования для кнопок можно /rules\n\n"
+        "Для навигации используй кнопки ниже.\n",
         reply_markup=keyboard)
 
 
 @router.message(Command("help"))
-async def help_cmd(message: types.Message, state: FSMContext):
+async def help_cmd(message: types.Message):
     await message.answer("Напишите на +79895099849\n"
-                         "🔎 Для поиска /search и дальше по кнопочкам)", reply_markup=ReplyKeyboardRemove())
-    await state.clear()
+                         "🔎 Для поиска /search и дальше по кнопочкам)\n"
+                         "Принимаю и требую обратной связи!", reply_markup=ReplyKeyboardRemove())
 
 
 @router.message(Command("cancel"))
 async def help_cmd(message: types.Message, state: FSMContext):
-    await message.answer("Операция отмена, закругляемся...", reply_markup=ReplyKeyboardRemove())
+    await message.answer("Операция отмена, закругляемся...\n"
+                         "🔎 Для поиска /search", reply_markup=ReplyKeyboardRemove())
     await state.clear()
 
 
@@ -79,13 +71,10 @@ async def date_command(message: types.Message, state: FSMContext) -> None:
     with open('/home/divan/гетБрейнсИТолькоУдалиЯТебzУдалюСЛицаЗемли/parsing_planchette/files_data.json', 'r') as f:
         data = json.load(f)
 
-    keyboard = []
+    # просим пользователя выбрать дату, выводя из имеющихся
+    keyboard = [[KeyboardButton(text=str(key).replace(".xlsx", ""))] for key in data.keys()]
 
-    for key in data.keys():
-        button = [KeyboardButton(text=str(key).replace(".xlsx", ""))]
-        keyboard.append(button)
-
-    keyboard = types.ReplyKeyboardMarkup(keyboard=keyboard, input_field_placeholder="выбери кнопку внизу")
+    keyboard = types.ReplyKeyboardMarkup(keyboard=keyboard, input_field_placeholder="выберите кнопку внизу")
 
     await message.answer("Выберите дату:", reply_markup=keyboard)
     await state.set_state(DateState.waiting_for_date)
@@ -138,9 +127,10 @@ async def handle_value_input(message: types.Message, state: FSMContext):
 async def handle_all_classes_choice(message: types.Message, state: FSMContext):
     data = await state.get_data()
 
-    lst_room = ["room_a", "room_d"]
-    lst_group = ["group_b", 'group_e']
-    lst_teacher = ["teacher_c", "teacher_f"]
+    # удалила везде эту залупу. под чем был автор, когда писал такую хуету??????????????????????????????????
+    # lst_room = ["room_a", "room_d"]
+    # lst_group = ["group_b", 'group_e']
+    # lst_teacher = ["teacher_c", "teacher_f"]
 
     file_path = f'/home/divan/гетБрейнсИТолькоУдалиЯТебzУдалюСЛицаЗемли/parsing_planchette/all_planchette/{str(data["selected_date"]).replace(".xlsx", "")}.json'
     try:
@@ -158,14 +148,10 @@ async def handle_all_classes_choice(message: types.Message, state: FSMContext):
             data = await state.get_data()
 
             if str(data['num_para']) in json_file:
-                if data['data_type'] == "Группа":
-                    message_all += await handle_group_type(data, json_file, lst_group, lst_room, lst_teacher)
-                elif data['data_type'] == "Кабинет":
-                    message_all += await handle_room_type(data, json_file, lst_group, lst_room, lst_teacher)
-                elif data['data_type'] == "Преподаватель":
-                    message_all += await handle_teacher_type(data, json_file, lst_group, lst_room, lst_teacher)
+                if data['data_type'].lower():
+                    message_all += await handle_type(data, json_file)
                 else:
-                    await message.answer("Неизвестный тип данных")
+                    message_all = "Неизвестный тип данных. Введите всё заново)\n"
 
             await state.update_data(num_para=None)  # Сброс данных о паре
         await message.answer(message_all, reply_markup=ReplyKeyboardRemove())
@@ -201,9 +187,6 @@ async def handle_concrete_choice(message: types.Message, state: FSMContext):
 @router.message(DateState.waiting_for_concrete)
 async def handle_concrete_choice_is(message: types.Message, state: FSMContext):
     num_para = message.text
-    lst_room = ["room_a", "room_d"]
-    lst_group = ["group_b", 'group_e']
-    lst_teacher = ["teacher_c", "teacher_f"]
 
     await state.update_data(num_para=num_para)
     data = await state.get_data()
@@ -215,39 +198,36 @@ async def handle_concrete_choice_is(message: types.Message, state: FSMContext):
             json_file = json.load(f)
 
         if str(data['num_para']) in json_file:
-            if data['data_type'] == "Группа":
-                messages = await handle_group_type(data, json_file, lst_group, lst_room, lst_teacher)
-                await message.answer(messages, reply_markup=ReplyKeyboardRemove())
-            elif data['data_type'] == "Кабинет":
-                messages = await handle_room_type(data, json_file, lst_group, lst_room, lst_teacher)
-                await message.answer(messages, reply_markup=ReplyKeyboardRemove())
-            elif data['data_type'] == "Преподаватель":
-                messages = await handle_teacher_type(data, json_file, lst_group, lst_room, lst_teacher)
+            if data['data_type'].lower():
+                messages = await handle_type(data, json_file)
                 await message.answer(messages, reply_markup=ReplyKeyboardRemove())
             else:
                 await message.answer("Неизвестный тип данных")
         else:
             await message.answer("Данные для выбранной пары не найдены")
+
     except FileNotFoundError:
         await message.answer(f"Файл не найден")
+    except json.JSONDecodeError:
+        await message.answer(f"Ошибка при чтении файла")
     finally:
         await state.clear()
     await message.answer("🔎 Для поиска /search")
 
 
-async def handle_group_type(data, json_file, lst_group, lst_room, lst_teacher):
+async def handle_type(data, json_file):
     found_items = []
     message_all = ""
 
     if isinstance(json_file[data['num_para']], list):
         for item in json_file[data['num_para']]:
-            found = await handle_group_item(data, item, lst_group, lst_room, lst_teacher)
+            found = await handle_item(data, item)
             if found:
                 found_items.append(found)
                 message_all += found
 
     else:
-        found = await handle_group_item(data, json_file[data['num_para']], lst_group, lst_room, lst_teacher)
+        found = await handle_item(data, json_file[data['num_para']])
         if found:
             found_items.append(found)
             message_all += found
@@ -259,15 +239,43 @@ async def handle_group_type(data, json_file, lst_group, lst_room, lst_teacher):
     return message_all
 
 
-async def handle_group_item(data, item, lst_group, lst_room, lst_teacher):
+async def handle_item(data, file):
     message_all = ""
-    for group_key in lst_group:
-        if item.get(group_key) is not None and data['value'] in item.get(group_key):
+    data_type = data['data_type'].lower()
+    key_lst = ['room', 'group', 'teacher']
+
+    if data_type == 'кабинет':
+        key = key_lst[0]
+        if file.get(key) is not None and str(data['value']) == str(file.get(key)):
+            if str(file.get(key_lst[1])).upper() != 'ОТСУТСТВУЕТ' and str(file.get(key_lst[2])).title() != 'ОТСУТСТВУЕТ':
+                message_all += \
+                    f"✅ {data['num_para']}.\n" \
+                    f"  Кабинет: {file.get(key)}\n" \
+                    f"  Группа: {str(file.get(key_lst[1])).upper()}\n" \
+                    f"  Преподаватель: {str(file.get(key_lst[2])).title()}\n\n"
+            else:
+                message_all += \
+                    f"❌ {data['num_para']}.\n" \
+                    f"  Кабинет пуст!\n\n"
+
+
+    if data_type == 'группа':
+        key = key_lst[1]
+        if file.get(key) is not None and data['value'] in file.get(key):
             message_all += \
                 f"✅ {data['num_para']}.\n" \
-                f"  Кабинет: {item.get(lst_room[lst_group.index(group_key)])}\n" \
-                f"  Группа: {str(item.get(group_key)).upper()}\n" \
-                f"  Преподаватель: {str(item.get(lst_teacher[lst_group.index(group_key)])).title()}\n\n"
+                f"  Кабинет: {file.get(key_lst[0])}\n" \
+                f"  Группа: {str(file.get(key)).upper()}\n" \
+                f"  Преподаватель: {str(file.get(key_lst[2])).title()}\n\n"
+
+    if data_type == 'преподаватель':
+        key = key_lst[2]
+        if file.get(key) is not None and data['value'] in file.get(key):
+            message_all += \
+                f"✅ {data['num_para']}.\n" \
+                f"  Кабинет: {file.get(key_lst[0])}\n" \
+                f"  Группа: {str(file.get(key_lst[1])).upper() if str(file.get(key_lst[1])).upper() != 'ОТСУТСТВУЕТ' else 'Отсутствует'}\n" \
+                f"  Преподаватель: {str(file.get(key)).title()}\n\n"
 
     return message_all
 
@@ -363,8 +371,20 @@ async def pattern_reg_or_print(message: types.Message, state: FSMContext) -> Non
     lst_group = ["group_b", 'group_e']
     lst_teacher = ["teacher_c", "teacher_f"]
 
+    # Получаем текущую дату
+    current_date = datetime.now()
+
+    # Получаем номер дня недели (0 - понедельник, 1 - вторник, ..., 6 - воскресенье)
+    weekday = current_date.weekday()
+
+    # Если сегодня воскресенье (weekday == 6), добавляем один день
+    if weekday == 6:
+        current_date += timedelta(days=1)
+
+    # Форматируем дату для использования в пути к файлу
     file_path = f'/home/divan/гетБрейнсИТолькоУдалиЯТебzУдалюСЛицаЗемли/parsing_planchette/all_planchette/' \
-                f'{datetime.now().strftime("%d.%m.%Y")}.json'
+                f'{current_date.strftime("%d.%m.%Y")}.json'
+
     user_id_for_pattern = str(message.from_user.id)
 
     try:
@@ -385,11 +405,12 @@ async def pattern_reg_or_print(message: types.Message, state: FSMContext) -> Non
                         f"Дата: {datetime.now().strftime('%d.%m.%Y')}\nВы выбрали {type_for_search.lower().replace('ппа', 'ппу').replace('атель', 'ателя')} {value_for_search.title()}")
                     for num_para, items in json_file.items():
                         if str(num_para) in json_file:
-                            if type_for_search == "Группа":
+                            if type_for_search.lower() == "группа":
                                 for group_key in lst_group:
                                     for item1 in json_file[str(num_para)]:
-                                        if item1.get(group_key) is not None and value_for_search in item1.get(
-                                                group_key):
+                                        if item1.get(group_key) is not None and value_for_search.replace(' ',
+                                                                                                         '') in item1.get(
+                                            group_key):
                                             message_all += \
                                                 f"✅ {num_para}.\n" \
                                                 f"  Кабинет: {item1.get(lst_room[lst_group.index(group_key)])}\n" \
@@ -397,7 +418,7 @@ async def pattern_reg_or_print(message: types.Message, state: FSMContext) -> Non
                                                 f"  Преподаватель: {str(item1.get(lst_teacher[lst_group.index(group_key)])).title()}\n\n"
 
 
-                            elif type_for_search == "Кабинет":
+                            elif type_for_search.lower() == "кабинет":
                                 for room_key in lst_room:
                                     for item1 in json_file[str(num_para)]:
                                         if item1.get(room_key) is not None and value_for_search in str(
@@ -410,7 +431,7 @@ async def pattern_reg_or_print(message: types.Message, state: FSMContext) -> Non
                                                 f"  Группа: {str(item1.get(lst_group[lst_room.index(room_key)])).title()}\n" \
                                                 f"  Преподаватель: {str(item1.get(lst_teacher[lst_room.index(room_key)])).title()}\n\n"
 
-                            elif type_for_search == "Преподаватель":
+                            elif type_for_search.lower() == "преподаватель":
                                 for teacher_key in lst_teacher:
                                     for item1 in json_file[str(num_para)]:
                                         if item1.get(teacher_key) is not None and value_for_search.replace('. ',
@@ -427,8 +448,7 @@ async def pattern_reg_or_print(message: types.Message, state: FSMContext) -> Non
             if message_all != "":
                 await message.answer(message_all, reply_markup=ReplyKeyboardRemove())
             else:
-                await message.answer("Вы либо допустили ошибку в написании шаблона, либо пар действительно нет."
-                                     "\nУдалить шаблон /remove_pattern\n",
+                await message.answer("Вы либо допустили ошибку в написании шаблона, либо пар действительно нет.",
                                      reply_markup=ReplyKeyboardRemove())
 
             await message.answer("🔎 Для поиска /search")
@@ -507,8 +527,20 @@ async def final_reg_const(message: types.Message, state: FSMContext):
     lst_group = ["group_b", 'group_e']
     lst_teacher = ["teacher_c", "teacher_f"]
 
+    # Получаем текущую дату
+    current_date = datetime.now()
+
+    # Получаем номер дня недели (0 - понедельник, 1 - вторник, ..., 6 - воскресенье)
+    weekday = current_date.weekday()
+
+    # Если сегодня воскресенье (weekday == 6), добавляем один день
+    if weekday == 6:
+        current_date += timedelta(days=1)
+
+    # Форматируем дату для использования в пути к файлу
     file_path = f'/home/divan/гетБрейнсИТолькоУдалиЯТебzУдалюСЛицаЗемли/parsing_planchette/all_planchette/' \
-                f'{datetime.now().strftime("%d.%m.%Y")}.json'
+                f'{current_date.strftime("%d.%m.%Y")}.json'
+
     user_id_for_pattern = id_value
 
     try:
@@ -529,7 +561,7 @@ async def final_reg_const(message: types.Message, state: FSMContext):
                         f"Дата: {datetime.now().strftime('%d.%m.%Y')}\nВы выбрали {type_for_search.lower().replace('ппа', 'ппу').replace('атель', 'ателя')} {value_for_search.title()}")
                     for num_para, items in json_file.items():
                         if str(num_para) in json_file:
-                            if type_for_search == "Группа":
+                            if type_for_search.lower() == "группа":
                                 for group_key in lst_group:
                                     for item1 in json_file[str(num_para)]:
                                         if item1.get(group_key) is not None and value_for_search in item1.get(
@@ -540,7 +572,7 @@ async def final_reg_const(message: types.Message, state: FSMContext):
                                                 f"  Группа: {str(item1.get(group_key)).upper()}\n" \
                                                 f"  Преподаватель: {str(item1.get(lst_teacher[lst_group.index(group_key)])).title()}\n\n"
 
-                            elif type_for_search == "Кабинет":
+                            elif type_for_search.lower() == "кабинет":
                                 for room_key in lst_room:
                                     for item1 in json_file[str(num_para)]:
                                         if item1.get(room_key) is not None and value_for_search in str(
@@ -553,12 +585,11 @@ async def final_reg_const(message: types.Message, state: FSMContext):
                                                 f"  Группа: {str(item1.get(lst_group[lst_room.index(room_key)])).title()}\n" \
                                                 f"  Преподаватель: {str(item1.get(lst_teacher[lst_room.index(room_key)])).title()}\n\n"
 
-                            elif type_for_search == "Преподаватель":
+                            elif type_for_search.lower() == "преподаватель":
                                 for teacher_key in lst_teacher:
                                     for item1 in json_file[str(num_para)]:
-                                        if item1.get(teacher_key) is not None and value_for_search.replace('. ',
-                                                                                                           '.') in item1.get(
-                                            teacher_key):
+                                        if item1.get(teacher_key) is not None and value_for_search.replace('. ', '.') \
+                                                in item1.get(teacher_key):
                                             message_all += \
                                                 f"✅ {num_para}.\n" \
                                                 f"  Кабинет: {item1.get(lst_room[lst_teacher.index(teacher_key)])}\n" \
@@ -570,8 +601,7 @@ async def final_reg_const(message: types.Message, state: FSMContext):
             if message_all != "":
                 await message.answer(message_all, reply_markup=ReplyKeyboardRemove())
             else:
-                await message.answer("Вы либо допустили ошибку в написании шаблона, либо пар действительно нет."
-                                     "\nУдалить шаблон /remove_pattern\n",
+                await message.answer("Вы либо допустили ошибку в написании шаблона, либо пар действительно нет.",
                                      reply_markup=ReplyKeyboardRemove())
 
     except FileNotFoundError:
@@ -581,7 +611,7 @@ async def final_reg_const(message: types.Message, state: FSMContext):
     finally:
         await state.clear()
 
-    await message.answer("🔎 Для поиска /search")
+    await message.answer("🔎 Для поиска /search\n\nУдалить шаблон /remove_pattern\n")
 
 
 @router.message(Command('remove_pattern'))
@@ -608,15 +638,113 @@ async def remove_pattern(message: types.Message):
 
 @router.message(Command('rules'))
 async def print_rules(message: types.Message):
-    await message.answer("Использование вручную: \n"
-                         "Ввести команду /search -> Нажать кнопку 'Искать вручную' -> Выбрать интересующую дату ->"
-                         " Выбрать интересующий тип для поиска -> Ввести значени -> "
-                         "Выбрать конкретную пару/все пары.\n\n"
-                         "Использование шаблона: \n"
-                         "Ввести команду /search -> Нажать кнопку 'Использовать шаблон' ->"
-                         " Зарегистрировать шаблон, если таковой отсутствует: -> Выбрать 'да' -> Выбрать тип поиска -> Ввести значение\n\n"
-                         "⚠ Шаблон выводит все пары за сегодняшнюю дату.\nУдалить шаблон /remove_pattern; вы можете создать новый после удаления)",
+    await message.answer("<b>Использование вручную:</b>"
+                         "\n1. Ввести команду /search"
+                         "\n2. Нажать кнопку <b>'Искать вручную'</b>"
+                         "\n3. Выбрать интересующую <b>дату</b>"
+                         "\n4. Выбрать интересующий <b>тип поиска</b> (Кабинет/Группа/Преподаватель)"
+                         "\n5. Ввести <b>значение</b> (только одно!)"
+                         "\n6. Выбрать конкретную <b>пару/все пары</b>.\n\n"
+                         "<b>Использование шаблона:</b>"
+                         "\n1. Ввести команду /search"
+                         "\n2. Нажать кнопку <b>'Использовать шаблон'</b>"
+                         "\n3. <b>Зарегистрировать</b> шаблон, если таковой отсутствует: "
+                         "\n      а) Выбрать <b>'да'</b>"
+                         "\n      б) Выбрать интересующий <b>тип поиска</b> (Кабинет/Группа/Преподаватель)"
+                         "\n      в) Ввести <b>значение</b> (только одно!)"
+                         "\n4. Если у вас уже <b>зарегистрирован</b> шаблон, то просто нажмите <b>'Использовать шаблон'</b>\n"
+                         "\nИспользуя шаблон, вы сможете просматривать расписание за <b>весь текущий день</b> (или <b>понедельник</b>, если используете воскресенье).\n\n"
+                         "Удалить шаблон /remove_pattern"
+                         "\nВы можете <b>создать новый</b> шаблон после удаления)",
                          reply_markup=ReplyKeyboardRemove())
+
+
+# спешл фор зе бьютифул вумэн, вхич ис бэст оф зе бэст
+@router.message(Command('boolean_balagan_today'))
+async def print_boolean_balagan(message: types.Message):
+    # получаем текущую дату
+    current_date = datetime.now()
+
+    # номер дня недели (где 0 - понедельник, 1 - вторник, ..., 6 - воскресенье)
+    weekday = current_date.weekday()
+
+    # если сегодня воскресенье (weekday == 6), добавляем один день
+    if weekday == 6:
+        current_date += timedelta(days=1)
+
+    file_path = f'/home/divan/гетБрейнсИТолькоУдалиЯТебzУдалюСЛицаЗемли/parsing_planchette/all_planchette/' \
+                f'{current_date.strftime("%d.%m.%Y")}.json'
+
+    message_all = ""
+    message_all = await boolean_balagan(message_all, file_path)
+
+    if message_all != "":
+        await message.answer("Балаган будэ\n\n" + str(message_all), reply_markup=ReplyKeyboardRemove())
+    else:
+        await message.answer("Балагана не будэ",
+                             reply_markup=ReplyKeyboardRemove())
+
+    await message.answer("🔎 Для поиска /search\n")
+
+
+@router.message(Command('boolean_balagan_tomorrow'))
+async def print_boolean_balagan(message: types.Message):
+    # получаем текущую дату и прибавляем ещё один день, потому что... томорров)
+    current_date = datetime.now()
+    current_date += timedelta(days=1)
+
+    # номер дня недели (где 0 - понедельник, 1 - вторник, ..., 6 - воскресенье)
+    weekday = current_date.weekday()
+
+    # если сегодня воскресенье (weekday == 6), добавляем один день
+    if weekday == 6:
+        current_date += timedelta(days=1)
+
+    file_path = f'/home/divan/гетБрейнсИТолькоУдалиЯТебzУдалюСЛицаЗемли/parsing_planchette/all_planchette/' \
+                f'{current_date.strftime("%d.%m.%Y")}.json'
+
+    message_all = ""
+    message_all = await boolean_balagan(message_all, file_path)
+
+    if message_all != "":
+        await message.answer("Балаган будэ\n\n" + str(message_all), reply_markup=ReplyKeyboardRemove())
+    else:
+        await message.answer("Балагана не будэ",
+                             reply_markup=ReplyKeyboardRemove())
+
+    await message.answer("🔎 Для поиска /search\n")
+
+
+async def boolean_balagan(message_all, file_path):
+    lst_room = ["room_a", "room_d"]
+    lst_group = ["group_b", 'group_e']
+    lst_teacher = ["teacher_c", "teacher_f"]
+
+    with open(file_path, 'r') as f:
+        json_file = json.load(f)
+        type_for_search = "Кабинет"
+        value_for_search = "общ"
+        if type_for_search and value_for_search:
+            for num_para, items in json_file.items():
+                for teacher_key in lst_teacher:
+                    if str(num_para) in json_file:
+                        for item1 in json_file[str(num_para)]:
+                            if item1.get(teacher_key) is not None and "кошкина" in item1.get(teacher_key):
+                                nums_par = str(num_para)
+                                if nums_par in json_file:
+                                    for item2 in json_file[nums_par]:
+                                        for room_key in lst_room:
+                                            if item2.get(room_key) is not None and value_for_search in str(
+                                                    item2.get(room_key)).lower() and str(
+                                                item2.get(
+                                                    lst_group[
+                                                        lst_room.index(room_key)])).title() != "Отсутствует" and str(
+                                                item2.get(
+                                                    lst_teacher[lst_room.index(room_key)])) != "кошкина а.а.":
+                                                message_all += \
+                                                    f"✅ {nums_par}.\n" \
+                                                    f"  Преподаватель: {str(item2.get(lst_teacher[lst_room.index(room_key)])).title()}\n\n"
+    return message_all
 
 
 @router.message(DataStateConst.waiting_for_reg_pattern, F.text.lower() == 'нет')
