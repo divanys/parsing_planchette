@@ -11,6 +11,7 @@ import to_json
 from download_file import download_file_from_google_drive
 
 import Links
+from re_for_date import replace_date_delete_all_invalid_chars
 
 SCOPES = ['https://www.googleapis.com/auth/drive.metadata.readonly']
 TOKEN_PICKLE_FILE = Links.TOKEN_PICKLE_FILE
@@ -66,7 +67,7 @@ def list_files_in_folder(service, folder_id):
 
     all_items = {}
     for item in items:
-        file_name = item["name"]
+        file_name = replace_date_delete_all_invalid_chars(item["name"])
         file_id = item["id"]
         all_items[file_name] = file_id
 
@@ -74,13 +75,11 @@ def list_files_in_folder(service, folder_id):
 
 
 def download_files_from_json(json_file_path, download_dir):
-    with open(json_file_path, 'r') as json_file:
+    with open(json_file_path, 'r', encoding='utf-8') as json_file:
         files_data = json.load(json_file)
 
     for file_name, file_url in files_data.items():
-        download_file_from_google_drive(file_url, os.path.join(download_dir, file_name))
-
-
+        download_file_from_google_drive(file_url, os.path.join(download_dir, replace_date_delete_all_invalid_chars(file_name)))
 
 
 if __name__ == '__main__':
@@ -93,10 +92,10 @@ if __name__ == '__main__':
 
         files_data = list_files_in_folder(service, folder_id)
 
-        with open(OUTPUT_JSON_FILE, 'w') as json_file:
+        with open(OUTPUT_JSON_FILE, 'w', encoding='utf-8') as json_file:
             json.dump(files_data, json_file, indent=2)
 
         download_files_from_json(OUTPUT_JSON_FILE, DOWNLOAD_DIR)
 
         to_json.parse_and_convert_to_json(DOWNLOAD_DIR)
-        time.sleep(180)  # Пауза в 3 минуты
+        time.sleep(80)  # Пауза в 3 минуты

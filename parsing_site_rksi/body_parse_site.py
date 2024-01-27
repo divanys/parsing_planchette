@@ -231,14 +231,14 @@ def parse_schedule_entry(entry_all):
 # create_subject_teacher_group()
 def get_schedule_from_teacher_teg_p1(teacher):
     params = {
-            'teacher': teacher,
-            'stp': 'Показать!'
+        'teacher': teacher,
+        'stp': 'Показать!'
     }
 
     response = requests.post(url_site, data=params)
     soup = BeautifulSoup(response.text, 'html.parser')
     schedule_data = soup.find_all(['b', 'p', 'hr'])  # Получаем все теги b, p, hr
-        # print(schedule_data)
+    # print(schedule_data)
 
     return schedule_data
 
@@ -285,11 +285,97 @@ def parse_schedule_entry1(schedule_data):
 
 
 # Пример использования
-teacher_name = "Кошкина А.А."
-schedule_data = get_schedule_from_teacher_teg_p1(teacher_name)
-schedule = parse_schedule_entry1(schedule_data)
+# teacher_name = "Кошкина А.А."
+# schedule_data = get_schedule_from_teacher_teg_p1(teacher_name)
+# schedule = parse_schedule_entry1(schedule_data)
 
-import json
+
+# import json
 
 # Вывод расписания в формате JSON
-print(json.dumps(schedule, ensure_ascii=False, indent=2))
+# print(json.dumps(schedule, ensure_ascii=False, indent=2))
+
+
+def get_schedule_from_teacher_teg_p_all():
+    schedule_all = {}
+
+    for teacher in get_all_teacher():
+        params = {
+            'teacher': teacher,
+            'stp': 'Показать!'
+        }
+
+        response = requests.post(url_site, data=params)
+        soup = BeautifulSoup(response.text, 'html.parser')
+        schedule_data = soup.find_all(['b', 'p', 'hr'])  # Получаем все теги b, p, hr
+        schedule_all[teacher] = schedule_data
+
+    return schedule_all
+
+
+# f1 = open("res.txt", "w+")
+# res = get_schedule_from_teacher_teg_p_all()
+# f1.write(str(res))
+# f1.close()
+
+def is_entry_p(input_str):
+    # соответствует ли строка формату даты типа 23 января, понедельник
+    date_pattern = re.compile(r'<p>\w+<\\p>', re.UNICODE)
+    return bool(date_pattern.match(input_str))
+
+def is_entry_b(input_str):
+    # соответствует ли строка формату даты типа 23 января, понедельник
+    date_pattern = re.compile(r'<b>\w+<\\b>', re.UNICODE)
+    return bool(date_pattern.match(input_str))
+
+
+
+def parse_schedule_entry_all(schedule_data):  # мы принимаем словарь, делаем под него да
+    schedule_all = {}
+    added_dates = set()  # Множество для отслеживания уже добавленных дат
+
+    current_date = None
+    for name, entry in enumerate(schedule_data):
+        schedule = {}  # Словарь для хранения расписания преподавателя
+        if is_entry_b(name) and is_date_string(entry.strip()):  # Обработка даты
+            current_date = entry.text.strip()
+            if current_date not in added_dates:
+                schedule[current_date] = []
+                added_dates.add(current_date)
+                # print(added_dates)
+        elif is_entry_p(entry) and current_date is not None:  # Обработка информации о паре
+            if str(entry) != '<p><a href="/">На сайт</a></p>':
+                entry_parts = str(entry).split('<br/><b>')
+
+                num_para = entry_parts[0].strip('<p>')
+
+                subject_part = entry_parts[1].split('</b><br/>')
+                subject = subject_part[0].strip()
+
+                group_and_room_part = subject_part[1].strip().split(', ауд. ')
+                group = group_and_room_part[0]
+                room = group_and_room_part[1].strip('</p>')
+
+                pair_info = {
+                    "время пары": num_para,
+                    "предмет": subject,
+                    "группа": group,
+                    "аудитория": room
+                }
+
+
+                schedule[current_date] = name
+                schedule_all[schedule[current_date]] = pair_info
+
+
+    return schedule_all
+
+# import json
+# # Вывод расписания в формате JSON
+# schedule_data = get_schedule_from_teacher_teg_p_all()
+# schedule = parse_schedule_entry1(schedule_data)
+# print(json.dumps(schedule, ensure_ascii=False, indent=2))
+f2 = open("res_all.txt", "w+")
+res = parse_schedule_entry_all(get_schedule_from_teacher_teg_p_all())
+f2.write(str(res))
+f2.close()

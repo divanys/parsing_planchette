@@ -27,6 +27,11 @@ class DateState(StatesGroup):  # для общения пользователя 
     waiting_for_concrete = State()
 
 
+class DateStateMainBeach(StatesGroup):  # для общения с главным пляжем, ахвзахвза
+    waiting_for_first = State()
+    waiting_for_second = State()
+
+
 @router.message(Command("start"))
 async def cmd_start(message: types.Message):
     await message.answer("Здравствуй. Я помогу посмотреть планшеточку РКСИ.\n\n"
@@ -37,6 +42,100 @@ async def cmd_start(message: types.Message):
                          "⚠ <b>Для просмотра правил</b> /rules\n\n",
                          reply_markup=ReplyKeyboardRemove())
 
+
+@router.message(Command("gussi_pussi_i_am_very_glavnii"))
+async def cmd_main_beach(message: types.Message, state: FSMContext):
+    if message.from_user.id == Links_tg.main_beach:
+        kb = [
+            [
+                KeyboardButton(text="0"),
+                KeyboardButton(text="1"),
+                KeyboardButton(text="2"),
+                KeyboardButton(text="3"),
+                KeyboardButton(text="4")
+            ]
+        ]
+
+        keyboard = types.ReplyKeyboardMarkup(keyboard=kb, input_field_placeholder="ебанько, кнопки есть")
+
+        await message.answer(f'Привет, main beach ин этот телеграмм, ес.\n'
+                             f'Поиграем в бога РКСИ?)\n\n'
+                             f'0 - сводка на сегодня\n'
+                             f'1 - {"установить сокращёнку сегодня 🥳" if Links_tg.reduce_day == False else "убрать сокращёнку сегодня 👿"}\n'
+                             f'2 - {"установить сокращёнку завтра 🥳🥳" if Links_tg.reduce_day_tomorrow == False else "убрать сокращёнку завтра 👿"}\n'
+                             f'3 - разосласть всем/папищикам крутое сообщение\n'
+                             '4 - /cancel\n', reply_markup=keyboard)
+
+        await state.set_state(DateStateMainBeach.waiting_for_first)
+    else:
+        await message.answer("Я так не понимаю\n"
+                             "🔎 Для поиска /search")
+
+
+@router.message(DateStateMainBeach.waiting_for_first)
+async def cmd_main_func(message: types.Message, state: FSMContext):
+    what = ''
+
+    try:
+        if str(message.text) == '1':
+            await cmd_reduce_day_today()
+            what = 'cmd_reduce_day_today'
+        elif str(message.text) == '2':
+            await cmd_reduce_day_tomorrow()
+            what = 'cmd_reduce_day_tomorrow'
+        elif str(message.text) == '3':
+            await cmd_message()
+            what = 'cmd_message'
+        elif str(message.text) == '4':
+            await message.answer("Операция отмена, закругляемся...\n")
+            await state.clear()
+            what = 'cancel_cmd'
+
+        elif str(message.text) == '0':
+            what = 'сводка че'
+            await message.answer(f'Сокращёнка сегодня: {Links_tg.reduce_day}\n'
+                                 f'Сокращёнка завтра: {Links_tg.reduce_day_tomorrow}\n')
+
+        await message.answer(f'Была выполнена команда {what}\n'
+                             f'/gussi_pussi_i_am_very_glavnii\n'
+                             f'/search\n',
+                             reply_markup=ReplyKeyboardRemove())
+
+    except:
+        e = sys.exc_info()[1]
+        # print(e.args[0])
+        await message.answer(f'Была выполнена команда {what} и случилась ошибка {e.args[0]}\n'
+                             f'Планируешь делать чёт?)\n'
+                             f'/gussi_pussi_i_am_very_glavnii\n'
+                             f'/search\n',
+                             reply_markup=ReplyKeyboardRemove())
+    await state.clear()
+
+    # await state.set_state(DateStateMainBeach.waiting_for_second)
+
+
+# global reduce_day
+
+async def cmd_reduce_day_today():
+    if not Links_tg.reduce_day:
+        Links_tg.reduce_day = True
+    else:
+        Links_tg.reduce_day = False
+
+
+async def cmd_reduce_day_tomorrow():
+    if not Links_tg.reduce_day_tomorrow:
+        Links_tg.reduce_day_tomorrow = True
+    else:
+        Links_tg.reduce_day_tomorrow = False
+
+
+async def cmd_message():
+    pass
+
+
+# async def cmd_reduce_day_today(message: types.Message, state: FSMContext):
+#     pass
 
 @router.message(Command("search"))
 async def cmd_search(message: types.Message):
@@ -60,7 +159,7 @@ async def help_cmd(message: types.Message):
 
 
 @router.message(Command("cancel"))
-async def help_cmd(message: types.Message, state: FSMContext):
+async def cancel_cmd(message: types.Message, state: FSMContext):
     await message.answer("Операция отмена, закругляемся...\n"
                          "🔎 Для поиска /search", reply_markup=ReplyKeyboardRemove())
     await state.clear()
@@ -68,7 +167,7 @@ async def help_cmd(message: types.Message, state: FSMContext):
 
 @router.message(F.text.lower() == "искать вручную")
 async def date_command(message: types.Message, state: FSMContext) -> None:
-    with open('files_data.json', 'r') as f:
+    with open('files_data.json', 'r', encoding='utf-8') as f:
         data = json.load(f)
 
     # просим пользователя выбрать дату, выводя из имеющихся
@@ -84,7 +183,7 @@ async def date_command(message: types.Message, state: FSMContext) -> None:
 async def handle_date_choice(message: types.Message, state: FSMContext):
     selected_date = message.text
 
-    with open('files_data.json', 'r') as f:
+    with open('files_data.json', 'r', encoding='utf-8') as f:
         dates_data = json.load(f)
 
     if (str(selected_date) + ".xlsx") in dates_data:
@@ -141,7 +240,7 @@ async def handle_all_classes_choice(message: types.Message, state: FSMContext):
 
     file_path = f'all_planchette/{str(data["selected_date"]).replace(".xlsx", "")}.json'
     try:
-        with open(file_path, 'r') as f:
+        with open(file_path, 'r', encoding='utf-8') as f:
             json_file = json.load(f)
 
         message_all = ""
@@ -172,7 +271,7 @@ async def handle_all_classes_choice(message: types.Message, state: FSMContext):
 @router.message(DateState.waiting_for_action, F.text.lower() == 'конкретная')
 async def handle_concrete_choice(message: types.Message, state: FSMContext):
     data = await state.get_data()
-    with open('data_concretn.json', 'r') as f:
+    with open('data_concretn.json', 'r', encoding='utf-8') as f:
         data_concretn = json.load(f)
 
     keyboard = []
@@ -197,7 +296,7 @@ async def handle_concrete_choice_is(message: types.Message, state: FSMContext):
     file_path = f'all_planchette/{str(data["selected_date"]).replace(".xlsx", "")}.json'
 
     try:
-        with open(file_path, 'r') as f:
+        with open(file_path, 'r', encoding='utf-8') as f:
             json_file = json.load(f)
 
         if str(data['num_para']) in json_file:
@@ -241,19 +340,19 @@ async def handle_item(data, data_type, data_value, file, weekday):
     message_all = ""
     data_type = data_type.lower()
     key_lst = ['room', 'group', 'teacher']
-    reduce_day = False
 
-    if weekday == 0 or weekday == 6:
-        with open('shedule/monday.json', 'r') as f:
+    if ((Links_tg.reduce_day is True and weekday == datetime.now().date().weekday())
+            or (Links_tg.reduce_day_tomorrow is True and weekday == 6)):
+        with open('shedule/reduce_day.json', 'r', encoding='utf-8') as f:
+            what_day = json.load(f)
+    elif weekday == 0 or weekday == 6:
+        with open('shedule/monday.json', 'r', encoding='utf-8') as f:
             what_day = json.load(f)
     elif weekday == 3:
-        with open('shedule/thursday.json', 'r') as f:
+        with open('shedule/thursday.json', 'r', encoding='utf-8') as f:
             what_day = json.load(f)
     elif weekday != 3 and weekday != 0:
-        with open('shedule/ordinary_day.json', 'r') as f:
-            what_day = json.load(f)
-    elif reduce_day == True:
-        with open('shedule/monday.json', 'r') as f:
+        with open('shedule/ordinary_day.json', 'r', encoding='utf-8') as f:
             what_day = json.load(f)
 
     if data_type == 'кабинет':
@@ -304,7 +403,7 @@ class DataStateConst(StatesGroup):
 @router.message(F.text.lower() == "использовать шаблон")
 async def pattern_reg_or_print(message: types.Message, state: FSMContext) -> None:
     with open('tg/pattern_for_user.json',
-              'r') as f:
+              'r', encoding='utf-8') as f:
         data_user = json.load(f)
 
     current_date = datetime.now()
@@ -429,7 +528,7 @@ async def final_reg_const(message: types.Message, state: FSMContext):
 
     user_id_for_pattern = id_value
     try:
-        with open(file_path, 'r') as f:
+        with open(file_path, 'r', encoding='utf-8') as f:
             json_file = json.load(f)
 
         user_data = existing_data[user_id_for_pattern]

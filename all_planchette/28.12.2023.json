@@ -451,7 +451,7 @@
         {
             "header_date": "зо",
             "header_pair": "Пара 1",
-            "room": "None",
+            "room": "none",
             "group": "Отсутствует",
             "teacher": "Отсутствует"
         },
@@ -465,7 +465,7 @@
         {
             "header_date": "зо",
             "header_pair": "Пара 1",
-            "room": "None",
+            "room": "none",
             "group": "Отсутствует",
             "teacher": "Отсутствует"
         },
@@ -479,56 +479,56 @@
         {
             "header_date": "зо",
             "header_pair": "Пара 1",
-            "room": "None",
+            "room": "none",
             "group": "Отсутствует",
             "teacher": "Отсутствует"
         },
         {
             "header_date": "зо",
             "header_pair": "Пара 1",
-            "room": "Общ1-3",
+            "room": "общ1-3",
             "group": "Отсутствует",
             "teacher": "Отсутствует"
         },
         {
             "header_date": "зо",
             "header_pair": "Пара 1",
-            "room": "None",
+            "room": "none",
             "group": "Отсутствует",
             "teacher": "Отсутствует"
         },
         {
             "header_date": "зо",
             "header_pair": "Пара 1",
-            "room": "Общ1-1",
+            "room": "общ1-1",
             "group": "Отсутствует",
             "teacher": "Отсутствует"
         },
         {
             "header_date": "зо",
             "header_pair": "Пара 1",
-            "room": "None",
+            "room": "none",
             "group": "Отсутствует",
             "teacher": "Отсутствует"
         },
         {
             "header_date": "зо",
             "header_pair": "Пара 1",
-            "room": "Общ1",
+            "room": "общ1",
             "group": "Отсутствует",
             "teacher": "Отсутствует"
         },
         {
             "header_date": "зо",
             "header_pair": "Пара 1",
-            "room": "None",
+            "room": "none",
             "group": "Отсутствует",
             "teacher": "Отсутствует"
         },
         {
             "header_date": "зо",
             "header_pair": "Пара 1",
-            "room": "Общ1-2",
+            "room": "общ1-2",
             "group": "Отсутствует",
             "teacher": "Отсутствует"
         }
@@ -985,7 +985,7 @@
         {
             "header_date": "2023-12-28 00:00:00",
             "header_pair": "Пара 2",
-            "room": "None",
+            "room": "none",
             "group": "Отсутствует",
             "teacher": "Отсутствует"
         },
@@ -999,7 +999,7 @@
         {
             "header_date": "2023-12-28 00:00:00",
             "header_pair": "Пара 2",
-            "room": "None",
+            "room": "none",
             "group": "Отсутствует",
             "teacher": "Отсутствует"
         },
@@ -1013,56 +1013,56 @@
         {
             "header_date": "2023-12-28 00:00:00",
             "header_pair": "Пара 2",
-            "room": "None",
+            "room": "none",
             "group": "Отсутствует",
             "teacher": "Отсутствует"
         },
         {
             "header_date": "2023-12-28 00:00:00",
             "header_pair": "Пара 2",
-            "room": "Общ1-3",
+            "room": "общ1-3",
             "group": "Отсутствует",
             "teacher": "Отсутствует"
         },
         {
             "header_date": "2023-12-28 00:00:00",
             "header_pair": "Пара 2",
-            "room": "None",
+            "room": "none",
             "group": "Отсутствует",
             "teacher": "Отсутствует"
         },
         {
             "header_date": "2023-12-28 00:00:00",
             "header_pair": "Пара 2",
-            "room": "Общ1-1",
+            "room": "общ1-1",
             "group": "Отсутствует",
             "teacher": "Отсутствует"
         },
         {
             "header_date": "2023-12-28 00:00:00",
             "header_pair": "Пара 2",
-            "room": "None",
+            "room": "none",
             "group": "Отсутствует",
             "teacher": "Отсутствует"
         },
         {
             "header_date": "2023-12-28 00:00:00",
             "header_pair": "Пара 2",
-            "room": "Общ1",
+            "room": "общ1",
             "group": "Отсутствует",
             "teacher": "Отсутствует"
         },
         {
             "header_date": "2023-12-28 00:00:00",
             "header_pair": "Пара 2",
-            "room": "None",
+            "room": "none",
             "group": "Отсутствует",
             "teacher": "Отсутствует"
         },
         {
             "header_date": "2023-12-28 00:00:00",
             "header_pair": "Пара 2",
-            "room": "Общ1-2",
+            "room": "общ1-2",
             "group": "Отсутствует",
             "teacher": "Отсутствует"
         }
@@ -1519,7 +1519,7 @@
         {
             "header_date": "2023-12-28 00:00:00",
             "header_pair": "Пара 3",
-            "room": "None",
+            "room": "none",
             "group": "Отсутствует",
             "teacher": "Отсутствует"
         },
@@ -1533,7 +1533,7 @@
         {
             "header_date": "2023-12-28 00:00:00",
             "header_pair": "Пара 3",
-            "room": "None",
+            "room": "none",
             "group": "Отсутствует",
             "teacher": "Отсутствует"
         },
@@ -1547,56 +1547,56 @@
         {
             "header_date": "2023-12-28 00:00:00",
             "header_pair": "Пара 3",
-            "room": "None",
+            "room": "none",
             "group": "Отсутствует",
             "teacher": "Отсутствует"
         },
         {
             "header_date": "2023-12-28 00:00:00",
             "header_pair": "Пара 3",
-            "room": "Общ1-3",
+            "room": "общ1-3",
             "group": "Отсутствует",
             "teacher": "Отсутствует"
         },
         {
             "header_date": "2023-12-28 00:00:00",
             "header_pair": "Пара 3",
-            "room": "None",
+            "room": "none",
             "group": "Отсутствует",
             "teacher": "Отсутствует"
         },
         {
             "header_date": "2023-12-28 00:00:00",
             "header_pair": "Пара 3",
-            "room": "Общ1-1",
+            "room": "общ1-1",
             "group": "Отсутствует",
             "teacher": "Отсутствует"
         },
         {
             "header_date": "2023-12-28 00:00:00",
             "header_pair": "Пара 3",
-            "room": "None",
+            "room": "none",
             "group": "Отсутствует",
             "teacher": "Отсутствует"
         },
         {
             "header_date": "2023-12-28 00:00:00",
             "header_pair": "Пара 3",
-            "room": "Общ1",
+            "room": "общ1",
             "group": "Отсутствует",
             "teacher": "Отсутствует"
         },
         {
             "header_date": "2023-12-28 00:00:00",
             "header_pair": "Пара 3",
-            "room": "None",
+            "room": "none",
             "group": "Отсутствует",
             "teacher": "Отсутствует"
         },
         {
             "header_date": "2023-12-28 00:00:00",
             "header_pair": "Пара 3",
-            "room": "Общ1-2",
+            "room": "общ1-2",
             "group": "Отсутствует",
             "teacher": "Отсутствует"
         }
@@ -2046,49 +2046,49 @@
         {
             "header_date": "2023-12-28 00:00:00",
             "header_pair": "Пара 4",
-            "room": "Общ1-3",
+            "room": "общ1-3",
             "group": "са-38",
             "teacher": "згонников е.ф."
         },
         {
             "header_date": "2023-12-28 00:00:00",
             "header_pair": "Пара 4",
-            "room": "None",
+            "room": "none",
             "group": "Отсутствует",
             "teacher": "Отсутствует"
         },
         {
             "header_date": "2023-12-28 00:00:00",
             "header_pair": "Пара 4",
-            "room": "Общ1-1",
+            "room": "общ1-1",
             "group": "Отсутствует",
             "teacher": "Отсутствует"
         },
         {
             "header_date": "2023-12-28 00:00:00",
             "header_pair": "Пара 4",
-            "room": "None",
+            "room": "none",
             "group": "Отсутствует",
             "teacher": "Отсутствует"
         },
         {
             "header_date": "2023-12-28 00:00:00",
             "header_pair": "Пара 4",
-            "room": "Общ1",
+            "room": "общ1",
             "group": "Отсутствует",
             "teacher": "Отсутствует"
         },
         {
             "header_date": "2023-12-28 00:00:00",
             "header_pair": "Пара 4",
-            "room": "None",
+            "room": "none",
             "group": "Отсутствует",
             "teacher": "Отсутствует"
         },
         {
             "header_date": "2023-12-28 00:00:00",
             "header_pair": "Пара 4",
-            "room": "Общ1-2",
+            "room": "общ1-2",
             "group": "Отсутствует",
             "teacher": "Отсутствует"
         }
@@ -2559,56 +2559,56 @@
         {
             "header_date": "2023-12-28 00:00:00",
             "header_pair": "Пара 5",
-            "room": "None",
+            "room": "none",
             "group": "Отсутствует",
             "teacher": "Отсутствует"
         },
         {
             "header_date": "2023-12-28 00:00:00",
             "header_pair": "Пара 5",
-            "room": "Общ1-3",
+            "room": "общ1-3",
             "group": "Отсутствует",
             "teacher": "Отсутствует"
         },
         {
             "header_date": "2023-12-28 00:00:00",
             "header_pair": "Пара 5",
-            "room": "None",
+            "room": "none",
             "group": "Отсутствует",
             "teacher": "Отсутствует"
         },
         {
             "header_date": "2023-12-28 00:00:00",
             "header_pair": "Пара 5",
-            "room": "Общ1-1",
+            "room": "общ1-1",
             "group": "са-38",
             "teacher": "згонников е.ф."
         },
         {
             "header_date": "2023-12-28 00:00:00",
             "header_pair": "Пара 5",
-            "room": "None",
+            "room": "none",
             "group": "Отсутствует",
             "teacher": "Отсутствует"
         },
         {
             "header_date": "2023-12-28 00:00:00",
             "header_pair": "Пара 5",
-            "room": "Общ1",
+            "room": "общ1",
             "group": "Отсутствует",
             "teacher": "Отсутствует"
         },
         {
             "header_date": "2023-12-28 00:00:00",
             "header_pair": "Пара 5",
-            "room": "None",
+            "room": "none",
             "group": "Отсутствует",
             "teacher": "Отсутствует"
         },
         {
             "header_date": "2023-12-28 00:00:00",
             "header_pair": "Пара 5",
-            "room": "Общ1-2",
+            "room": "общ1-2",
             "group": "Отсутствует",
             "teacher": "Отсутствует"
         }
@@ -3079,56 +3079,56 @@
         {
             "header_date": "2023-12-28 00:00:00",
             "header_pair": "Пара 6",
-            "room": "None",
+            "room": "none",
             "group": "Отсутствует",
             "teacher": "Отсутствует"
         },
         {
             "header_date": "2023-12-28 00:00:00",
             "header_pair": "Пара 6",
-            "room": "Общ1-3",
+            "room": "общ1-3",
             "group": "Отсутствует",
             "teacher": "Отсутствует"
         },
         {
             "header_date": "2023-12-28 00:00:00",
             "header_pair": "Пара 6",
-            "room": "None",
+            "room": "none",
             "group": "Отсутствует",
             "teacher": "Отсутствует"
         },
         {
             "header_date": "2023-12-28 00:00:00",
             "header_pair": "Пара 6",
-            "room": "Общ1-1",
+            "room": "общ1-1",
             "group": "са-38",
             "teacher": "згонников е.ф."
         },
         {
             "header_date": "2023-12-28 00:00:00",
             "header_pair": "Пара 6",
-            "room": "None",
+            "room": "none",
             "group": "Отсутствует",
             "teacher": "Отсутствует"
         },
         {
             "header_date": "2023-12-28 00:00:00",
             "header_pair": "Пара 6",
-            "room": "Общ1",
+            "room": "общ1",
             "group": "Отсутствует",
             "teacher": "Отсутствует"
         },
         {
             "header_date": "2023-12-28 00:00:00",
             "header_pair": "Пара 6",
-            "room": "None",
+            "room": "none",
             "group": "Отсутствует",
             "teacher": "Отсутствует"
         },
         {
             "header_date": "2023-12-28 00:00:00",
             "header_pair": "Пара 6",
-            "room": "Общ1-2",
+            "room": "общ1-2",
             "group": "Отсутствует",
             "teacher": "Отсутствует"
         }
@@ -3599,56 +3599,56 @@
         {
             "header_date": "2023-12-28 00:00:00",
             "header_pair": "Пара 7",
-            "room": "None",
+            "room": "none",
             "group": "Отсутствует",
             "teacher": "Отсутствует"
         },
         {
             "header_date": "2023-12-28 00:00:00",
             "header_pair": "Пара 7",
-            "room": "Общ1-3",
+            "room": "общ1-3",
             "group": "Отсутствует",
             "teacher": "Отсутствует"
         },
         {
             "header_date": "2023-12-28 00:00:00",
             "header_pair": "Пара 7",
-            "room": "None",
+            "room": "none",
             "group": "Отсутствует",
             "teacher": "Отсутствует"
         },
         {
             "header_date": "2023-12-28 00:00:00",
             "header_pair": "Пара 7",
-            "room": "Общ1-1",
+            "room": "общ1-1",
             "group": "Отсутствует",
             "teacher": "Отсутствует"
         },
         {
             "header_date": "2023-12-28 00:00:00",
             "header_pair": "Пара 7",
-            "room": "None",
+            "room": "none",
             "group": "Отсутствует",
             "teacher": "Отсутствует"
         },
         {
             "header_date": "2023-12-28 00:00:00",
             "header_pair": "Пара 7",
-            "room": "Общ1",
+            "room": "общ1",
             "group": "Отсутствует",
             "teacher": "Отсутствует"
         },
         {
             "header_date": "2023-12-28 00:00:00",
             "header_pair": "Пара 7",
-            "room": "None",
+            "room": "none",
             "group": "Отсутствует",
             "teacher": "Отсутствует"
         },
         {
             "header_date": "2023-12-28 00:00:00",
             "header_pair": "Пара 7",
-            "room": "Общ1-2",
+            "room": "общ1-2",
             "group": "Отсутствует",
             "teacher": "Отсутствует"
         }
