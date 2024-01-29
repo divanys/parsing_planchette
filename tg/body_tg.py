@@ -68,7 +68,7 @@ async def help_cmd(message: types.Message, state: FSMContext):
 
 @router.message(F.text.lower() == "искать вручную")
 async def date_command(message: types.Message, state: FSMContext) -> None:
-    with open('/home/divan/гетБрейнсИТолькоУдалиЯТебzУдалюСЛицаЗемли/parsing_planchette/files_data.json', 'r') as f:
+    with open('files_data.json', 'r') as f:
         data = json.load(f)
 
     # просим пользователя выбрать дату, выводя из имеющихся
@@ -84,7 +84,7 @@ async def date_command(message: types.Message, state: FSMContext) -> None:
 async def handle_date_choice(message: types.Message, state: FSMContext):
     selected_date = message.text
 
-    with open('/home/divan/гетБрейнсИТолькоУдалиЯТебzУдалюСЛицаЗемли/parsing_planchette/files_data.json', 'r') as f:
+    with open('files_data.json', 'r') as f:
         dates_data = json.load(f)
 
     if (str(selected_date) + ".xlsx") in dates_data:
@@ -96,20 +96,27 @@ async def handle_date_choice(message: types.Message, state: FSMContext):
         await message.answer("Выберите тип данных для поиска:", reply_markup=keyboard)
         await state.set_state(DateState.waiting_for_data_type)
     else:
-        await message.answer("Неверная дата. Выберите дату из списка.")
+        await message.answer("⚠ Неверная дата. Выберите дату из кнопок ниже.")
 
 
 @router.message(DateState.waiting_for_data_type)
 async def handle_data_type_choice(message: types.Message, state: FSMContext):
     data_type = message.text
-    await state.update_data(data_type=data_type)
-    await message.answer(f"Введите {str(data_type.lower()).replace('ппа', 'ппу').replace('атель', 'ателя')}:\n\n"
-                         f"Для справки:\n"
-                         "   1. Если выбрали группу, вводить её вида ИС-33 или 2-ИС-3 или ПОКС-45w\n"
-                         "   2. Если выбрали преподавателя, вводить его вида Галушкина Д.Е.\n"
-                         "   3. Если выбрали кабинет, вводить его вида 306 или 110а или Общ1-3\n\n"
-                         "⚠ Вводите данные только для выбранного значения! ", reply_markup=ReplyKeyboardRemove())
-    await state.set_state(DateState.waiting_for_value)
+    if str(data_type).lower() in [
+        'кабинет',
+        'группа',
+        'преподаватель'
+    ]:
+        await state.update_data(data_type=data_type)
+        await message.answer(f"Введите {str(data_type.lower()).replace('ппа', 'ппу').replace('атель', 'ателя')}:\n\n"
+                             f"Для справки:\n"
+                             "   1. Если выбрали группу, вводить её вида ИС-33 или 2-ИС-3 или ПОКС-45w\n"
+                             "   2. Если выбрали преподавателя, вводить его вида Галушкина Д.Е.\n"
+                             "   3. Если выбрали кабинет, вводить его вида 306 или 110а или Общ1-3\n\n"
+                             "⚠ Вводите данные только для выбранного значения! ", reply_markup=ReplyKeyboardRemove())
+        await state.set_state(DateState.waiting_for_value)
+    else:
+        await message.answer("⚠ Неверный тип данных для поиска. Выберите вариант из кнопок ниже.")
 
 
 @router.message(DateState.waiting_for_value)
@@ -132,11 +139,10 @@ async def handle_all_classes_choice(message: types.Message, state: FSMContext):
     # lst_group = ["group_b", 'group_e']
     # lst_teacher = ["teacher_c", "teacher_f"]
 
-    file_path = f'/home/divan/гетБрейнсИТолькоУдалиЯТебzУдалюСЛицаЗемли/parsing_planchette/all_planchette/{str(data["selected_date"]).replace(".xlsx", "")}.json'
+    file_path = f'all_planchette/{str(data["selected_date"]).replace(".xlsx", "")}.json'
     try:
         with open(file_path, 'r') as f:
             json_file = json.load(f)
-
 
         message_all = ""
 
@@ -146,13 +152,13 @@ async def handle_all_classes_choice(message: types.Message, state: FSMContext):
 
             if str(data['num_para']) in json_file:
                 if data['data_type'].lower():
-                    message_all += await handle_type(data, data['data_type'], data['value'], json_file)
+                    weekday = datetime.strptime(str(data["selected_date"]).rsplit('.', 1)[0], "%d.%m.%Y").weekday()
+                    message_all += await handle_type(data, data['data_type'], data['value'], json_file, weekday)
                 else:
                     message_all = "Неизвестный тип данных. Введите всё заново)\n"
 
             await state.update_data(num_para=None)  # Сброс данных о паре
         await message.answer(message_all, reply_markup=ReplyKeyboardRemove())
-
 
     except FileNotFoundError:
         await message.answer(f"Файл не найден")
@@ -166,7 +172,7 @@ async def handle_all_classes_choice(message: types.Message, state: FSMContext):
 @router.message(DateState.waiting_for_action, F.text.lower() == 'конкретная')
 async def handle_concrete_choice(message: types.Message, state: FSMContext):
     data = await state.get_data()
-    with open('/home/divan/гетБрейнсИТолькоУдалиЯТебzУдалюСЛицаЗемли/parsing_planchette/data_concretn.json', 'r') as f:
+    with open('data_concretn.json', 'r') as f:
         data_concretn = json.load(f)
 
     keyboard = []
@@ -188,7 +194,7 @@ async def handle_concrete_choice_is(message: types.Message, state: FSMContext):
     await state.update_data(num_para=num_para)
     data = await state.get_data()
 
-    file_path = f'/home/divan/гетБрейнсИТолькоУдалиЯТебzУдалюСЛицаЗемли/parsing_planchette/all_planchette/{str(data["selected_date"]).replace(".xlsx", "")}.json'
+    file_path = f'all_planchette/{str(data["selected_date"]).replace(".xlsx", "")}.json'
 
     try:
         with open(file_path, 'r') as f:
@@ -196,7 +202,8 @@ async def handle_concrete_choice_is(message: types.Message, state: FSMContext):
 
         if str(data['num_para']) in json_file:
             if data['data_type'].lower():
-                messages = await handle_type(data, data['data_type'], data['value'], json_file)
+                weekday = datetime.strptime(str(data["selected_date"]).rsplit('.', 1)[0], "%d.%m.%Y").weekday()
+                messages = await handle_type(data, data['data_type'], data['value'], json_file, weekday)
                 await message.answer(messages, reply_markup=ReplyKeyboardRemove())
             else:
                 await message.answer("Неизвестный тип данных")
@@ -212,17 +219,16 @@ async def handle_concrete_choice_is(message: types.Message, state: FSMContext):
     await message.answer("🔎 Для поиска /search")
 
 
-async def handle_type(data, data_type, data_value, json_file):
+async def handle_type(data, data_type, data_value, json_file, weekday):
     found_items = []
     message_all = ""
 
     if isinstance(json_file[data['num_para']], list):
         for item in json_file[data['num_para']]:
-            found = await handle_item(data, data_type, data_value, item)
+            found = await handle_item(data, data_type, data_value, item, weekday)
             if found:
                 found_items.append(found)
                 message_all += found
-
 
     if not found_items:
         message_all += \
@@ -231,17 +237,33 @@ async def handle_type(data, data_type, data_value, json_file):
     return message_all
 
 
-async def handle_item(data, data_type, data_value, file):
+async def handle_item(data, data_type, data_value, file, weekday):
     message_all = ""
     data_type = data_type.lower()
     key_lst = ['room', 'group', 'teacher']
+    reduce_day = False
+
+    if weekday == 0 or weekday == 6:
+        with open('shedule/monday.json', 'r') as f:
+            what_day = json.load(f)
+    elif weekday == 3:
+        with open('shedule/thursday.json', 'r') as f:
+            what_day = json.load(f)
+    elif weekday != 3 and weekday != 0:
+        with open('shedule/ordinary_day.json', 'r') as f:
+            what_day = json.load(f)
+    elif reduce_day == True:
+        with open('shedule/monday.json', 'r') as f:
+            what_day = json.load(f)
 
     if data_type == 'кабинет':
         key = key_lst[0]
         if file.get(key) is not None and str(data_value) == str(file.get(key)):
-            if str(file.get(key_lst[1])).upper() != 'ОТСУТСТВУЕТ' and str(file.get(key_lst[2])).title() != 'ОТСУТСТВУЕТ':
+            if str(file.get(key_lst[1])).upper() != 'ОТСУТСТВУЕТ' and str(
+                    file.get(key_lst[2])).title() != 'ОТСУТСТВУЕТ':
                 message_all += \
                     f"✅ {data['num_para']}.\n" \
+                    f"  Время: {what_day[data['num_para']]}\n" \
                     f"  Кабинет: {file.get(key_lst[0])}\n" \
                     f"  Группа: {str(file.get(key_lst[1])).upper()}\n" \
                     f"  Преподаватель: {str(file.get(key_lst[2])).title()}\n\n"
@@ -255,6 +277,7 @@ async def handle_item(data, data_type, data_value, file):
         if file.get(key) is not None and str(data_value) in file.get(key):
             message_all += \
                 f"✅ {data['num_para']}.\n" \
+                f"  Время: {what_day[data['num_para']]}\n" \
                 f"  Кабинет: {file.get(key_lst[0])}\n" \
                 f"  Группа: {str(file.get(key_lst[1])).upper()}\n" \
                 f"  Преподаватель: {str(file.get(key_lst[2])).title()}\n\n"
@@ -264,6 +287,7 @@ async def handle_item(data, data_type, data_value, file):
         if file.get(key) is not None and str(data_value) in file.get(key):
             message_all += \
                 f"✅ {data['num_para']}.\n" \
+                f"  Время: {what_day[data['num_para']]}\n" \
                 f"  Кабинет: {file.get(key_lst[0])}\n" \
                 f"  Группа: {str(file.get(key_lst[1])).upper() if str(file.get(key_lst[1])).upper() != 'ОТСУТСТВУЕТ' else 'Отсутствует'}\n" \
                 f"  Преподаватель: {str(file.get(key_lst[2])).title()}\n\n"
@@ -279,21 +303,18 @@ class DataStateConst(StatesGroup):
 
 @router.message(F.text.lower() == "использовать шаблон")
 async def pattern_reg_or_print(message: types.Message, state: FSMContext) -> None:
-    data = await state.get_data()
-    with open('/home/divan/гетБрейнсИТолькоУдалиЯТебzУдалюСЛицаЗемли/parsing_planchette/tg/pattern_for_user.json',
+    with open('tg/pattern_for_user.json',
               'r') as f:
         data_user = json.load(f)
 
+    current_date = datetime.now()
+    weekday = current_date.weekday()
 
-    # current_date = datetime.now()
-    # weekday = current_date.weekday()
-    #
-    # if weekday == 6:
-    #     current_date += timedelta(days=1)
+    if weekday == 6:
+        current_date += timedelta(days=1)
+    #    current_date = date(2023, 1, 12)
 
-    current_date = date(2023, 12, 4)
-
-    file_path = f'/home/divan/гетБрейнсИТолькоУдалиЯТебzУдалюСЛицаЗемли/parsing_planchette/all_planchette/' \
+    file_path = f'all_planchette/' \
                 f'{current_date.strftime("%d.%m.%Y")}.json'
 
     user_id_for_pattern = str(message.from_user.id)
@@ -309,12 +330,13 @@ async def pattern_reg_or_print(message: types.Message, state: FSMContext) -> Non
                 await state.update_data(num_para=num_para)
                 data = await state.get_data()
                 for item in user_data:
-                        type_for_search = item.get("type")
-                        value_for_search = item.get("value")
+                    type_for_search = item.get("type")
+                    value_for_search = item.get("value")
 
-                        if str(data['num_para']) in json_file:
-                            if type_for_search.lower():
-                                message_all += await handle_type(data, type_for_search, value_for_search, json_file)
+                    if str(data['num_para']) in json_file:
+                        if type_for_search.lower():
+                            message_all += await handle_type(data, type_for_search, value_for_search, json_file,
+                                                             weekday)
 
             if message_all != "":
                 await message.answer(message_all, reply_markup=ReplyKeyboardRemove())
@@ -332,7 +354,6 @@ async def pattern_reg_or_print(message: types.Message, state: FSMContext) -> Non
 
             await state.update_data(id_user_const=user_id_for_pattern)
             await state.set_state(DataStateConst.waiting_for_reg_pattern)
-
 
     except FileNotFoundError:
         await message.answer(f"Файл не найден")
@@ -353,14 +374,21 @@ async def handle_date_choice_const(message: types.Message, state: FSMContext):
 @router.message(DataStateConst.waiting_for_data_type_const)
 async def handle_data_type_choice_const(message: types.Message, state: FSMContext):
     type_value = message.text
-    await state.update_data(type_value=type_value)
-    await message.answer(f"Введите {str(type_value.lower()).replace('ппа', 'ппу').replace('атель', 'ателя')}:\n\n"
-                         f"Для справки:\n"
-                         "   1. Если выбрали группу, вводить её вида ИС-33 или 2-ИС-3 или ПОКС-45w\n"
-                         "   2. Если выбрали преподавателя, вводить его вида Галушкина Д.Е.\n"
-                         "   3. Если выбрали кабинет, вводить его вида 306 или 110а или Общ1-3\n\n"
-                         "⚠ Вводите данные только для выбранного значения!", reply_markup=ReplyKeyboardRemove())
-    await state.set_state(DataStateConst.waiting_for_value_const)
+    if str(type_value).lower() in [
+        'кабинет',
+        'группа',
+        'преподаватель'
+    ]:
+        await state.update_data(type_value=type_value)
+        await message.answer(f"Введите {str(type_value.lower()).replace('ппа', 'ппу').replace('атель', 'ателя')}:\n\n"
+                             f"Для справки:\n"
+                             "   1. Если выбрали группу, вводить её вида ИС-33 или 2-ИС-3 или ПОКС-45w\n"
+                             "   2. Если выбрали преподавателя, вводить его вида Галушкина Д.Е.\n"
+                             "   3. Если выбрали кабинет, вводить его вида 306 или 110а или Общ1-3\n\n"
+                             "⚠ Вводите данные только для выбранного значения!", reply_markup=ReplyKeyboardRemove())
+        await state.set_state(DataStateConst.waiting_for_value_const)
+    else:
+        await message.answer("⚠ Неверный тип данных для поиска. Выберите вариант из кнопок ниже.")
 
 
 @router.message(DataStateConst.waiting_for_value_const)
@@ -371,7 +399,7 @@ async def final_reg_const(message: types.Message, state: FSMContext):
     type_value = data["type_value"]
     value_value = str(message.text).lower()
 
-    file_path1 = '/home/divan/гетБрейнсИТолькоУдалиЯТебzУдалюСЛицаЗемли/parsing_planchette/tg/pattern_for_user.json'
+    file_path1 = 'tg/pattern_for_user.json'
 
     try:
         with open(file_path1, 'r', encoding='utf-8') as file:
@@ -385,19 +413,18 @@ async def final_reg_const(message: types.Message, state: FSMContext):
     }
 
     existing_data[id_value] = [new_entry]
-    data = await state.get_data()
     with open(file_path1, 'w', encoding='utf-8') as file:
         json.dump(existing_data, file, ensure_ascii=False, indent=2)
 
-    # current_date = datetime.now()
-    # weekday = current_date.weekday()
+    current_date = datetime.now()
+    weekday = current_date.weekday()
     #
-    # if weekday == 6:
-    #     current_date += timedelta(days=1)
+    if weekday == 6:
+        current_date += timedelta(days=1)
 
-    current_date = date(2023, 12, 4)
+    # current_date = date(2023, 1, 12)
 
-    file_path = f'/home/divan/гетБрейнсИТолькоУдалиЯТебzУдалюСЛицаЗемли/parsing_planchette/all_planchette/' \
+    file_path = f'all_planchette/' \
                 f'{current_date.strftime("%d.%m.%Y")}.json'
 
     user_id_for_pattern = id_value
@@ -417,13 +444,13 @@ async def final_reg_const(message: types.Message, state: FSMContext):
 
                 if str(data['num_para']) in json_file:
                     if type_for_search.lower():
-                        message_all += await handle_type(data, type_for_search, value_for_search, json_file)
+                        message_all += await handle_type(data, type_for_search, value_for_search, json_file, weekday)
 
         if message_all != "":
             await message.answer(message_all, reply_markup=ReplyKeyboardRemove())
         else:
             await message.answer("Пар нет!",
-                                     reply_markup=ReplyKeyboardRemove())
+                                 reply_markup=ReplyKeyboardRemove())
 
     except FileNotFoundError:
         await message.answer(f"Файл не найден")
@@ -437,7 +464,7 @@ async def final_reg_const(message: types.Message, state: FSMContext):
 @router.message(Command('remove_pattern'))
 async def remove_pattern(message: types.Message):
     user_id = str(message.from_user.id)
-    file_path = '/home/divan/гетБрейнсИТолькоУдалиЯТебzУдалюСЛицаЗемли/parsing_planchette/tg/pattern_for_user.json'
+    file_path = 'tg/pattern_for_user.json'
 
     try:
         with open(file_path, 'r', encoding='utf-8') as file:
@@ -482,17 +509,13 @@ async def print_rules(message: types.Message):
 # спешл фор зе бьютифул вумэн, вхич ис бэст оф зе бэст
 @router.message(Command('boolean_balagan_today'))
 async def print_boolean_balagan(message: types.Message):
-    # получаем текущую дату
     current_date = datetime.now()
-
-    # номер дня недели (где 0 - понедельник, 1 - вторник, ..., 6 - воскресенье)
     weekday = current_date.weekday()
 
-    # если сегодня воскресенье (weekday == 6), добавляем один день
     if weekday == 6:
         current_date += timedelta(days=1)
 
-    file_path = f'/home/divan/гетБрейнсИТолькоУдалиЯТебzУдалюСЛицаЗемли/parsing_planchette/all_planchette/' \
+    file_path = f'all_planchette/' \
                 f'{current_date.strftime("%d.%m.%Y")}.json'
 
     message_all = ""
@@ -509,18 +532,14 @@ async def print_boolean_balagan(message: types.Message):
 
 @router.message(Command('boolean_balagan_tomorrow'))
 async def print_boolean_balagan(message: types.Message):
-    # получаем текущую дату и прибавляем ещё один день, потому что... томорров)
     current_date = datetime.now()
     current_date += timedelta(days=1)
-
-    # номер дня недели (где 0 - понедельник, 1 - вторник, ..., 6 - воскресенье)
     weekday = current_date.weekday()
 
-    # если сегодня воскресенье (weekday == 6), добавляем один день
     if weekday == 6:
         current_date += timedelta(days=1)
 
-    file_path = f'/home/divan/гетБрейнсИТолькоУдалиЯТебzУдалюСЛицаЗемли/parsing_planchette/all_planchette/' \
+    file_path = f'all_planchette/' \
                 f'{current_date.strftime("%d.%m.%Y")}.json'
 
     message_all = ""
@@ -579,11 +598,8 @@ async def another_data_command(message: types.Message) -> None:
 
 
 async def main() -> None:
-    # Initialize Bot instance with a default parse mode which will be passed to all API calls
     bot = Bot(token=Links_tg.api_tg, parse_mode=ParseMode.HTML)
-    # And the run events dispatching
     dp = Dispatcher()
-    # ... and all other routers should be attached to Dispatcher
     dp.include_router(router)
 
     await dp.start_polling(bot)

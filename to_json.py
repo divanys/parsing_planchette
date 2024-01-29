@@ -29,8 +29,10 @@ def parse_xlsx_and_convert_to_json(file_path, output_directory, filename, data_c
             data_entry["header_date"] = str(sheet.cell(row=1, column=1).value)
             data_entry["header_pair"] = str(sheet.cell(row=1, column=2).value)
 
-            room_a = str(sheet.cell(row=row, column=1).value).replace(".0", "")
-            room_d = str(sheet.cell(row=row, column=4).value).replace(".0", "")
+            room_a = str(sheet.cell(row=row, column=1).value).replace(".0", "").lower()
+            room_d = str(sheet.cell(row=row, column=4).value).replace(".0", "").lower()
+            room_a = str(sheet.cell(row=row, column=1).value).replace(".0", "").lower()
+            room_d = str(sheet.cell(row=row, column=4).value).replace(".0", "").lower()
             group_b = str(sheet.cell(row=row, column=2).value).rstrip().lower()
             group_e = str(sheet.cell(row=row, column=5).value).rstrip().lower()
             teacher_c = str(sheet.cell(row=row, column=3).value).rstrip().lower()

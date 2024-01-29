@@ -87,16 +87,16 @@ if __name__ == '__main__':
     while True:
         # delete_old_files(DOWNLOAD_DIR)
 
-        # service = get_drive_service()
+        service = get_drive_service()
 
         folder_id = Links.folder_id
 
-        # files_data = list_files_in_folder(service, folder_id)
+        files_data = list_files_in_folder(service, folder_id)
 
-        # with open(OUTPUT_JSON_FILE, 'w') as json_file:
-        #     json.dump(files_data, json_file, indent=2)
+        with open(OUTPUT_JSON_FILE, 'w') as json_file:
+            json.dump(files_data, json_file, indent=2)
 
-        # download_files_from_json(OUTPUT_JSON_FILE, DOWNLOAD_DIR)
+        download_files_from_json(OUTPUT_JSON_FILE, DOWNLOAD_DIR)
 
         to_json.parse_and_convert_to_json(DOWNLOAD_DIR)
         time.sleep(180)  # Пауза в 3 минуты
