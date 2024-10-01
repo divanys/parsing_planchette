@@ -348,10 +348,7 @@ async def handle_item(data, data_type, data_value, file, weekday):
     elif weekday == 0 or weekday == 6:
         with open('shedule/monday.json', 'r', encoding='utf-8') as f:
             what_day = json.load(f)
-    elif weekday == 3:
-        with open('shedule/thursday.json', 'r', encoding='utf-8') as f:
-            what_day = json.load(f)
-    elif weekday != 3 and weekday != 0:
+    elif weekday != 0:
         with open('shedule/ordinary_day.json', 'r', encoding='utf-8') as f:
             what_day = json.load(f)
 
