@@ -3,5 +3,9 @@
   <component name="Black">
     <option name="sdkName" value="Python 3.11 (parsing_planchette)" />
   </component>
+<<<<<<< HEAD
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.12 (parsing_planchette)" project-jdk-type="Python SDK" />
+=======
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.11 (parsing_planchette)" project-jdk-type="Python SDK" />
+>>>>>>> d4ea58cce349957c513a706d8add94a0d02ed440
 </project>
